@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Air_Traffic_Landings_Statistics.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Activity Period" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Operating Airline" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Operating Airline IATA Code" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Published Airline" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Published Airline IATA Code" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="GEO Summary" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="GEO Region" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Landing Aircraft Type" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Aircraft Body Type" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Aircraft Manufacturer" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Aircraft Model" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Aircraft Version" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Landing Count" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Total Landed Weight" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="270" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_7216_c85acf010fd74360b8207b24b3fb2db2_\Engine_11772_0cb4b1c52e794300a67bbc787025d300_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="282" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="198" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">Activity Period=True,Operating Airline=True,Operating Airline IATA Code=True,Published Airline=True,Published Airline IATA Code=True,GEO Summary=True,GEO Region=True,Landing Aircraft Type=True,Aircraft Body Type=True,Aircraft Manufacturer=True,Aircraft Model=True,Aircraft Version=True,Landing Count=True,Total Landed Weight=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_7216_c85acf010fd74360b8207b24b3fb2db2_\Engine_11772_592fac1357b949b19159cd2782cc833e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="390" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_7216_c85acf010fd74360b8207b24b3fb2db2_\Engine_11772_e9ff26b56c7244dfaa4247fb8cc90b42_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_7216_c85acf010fd74360b8207b24b3fb2db2_\Engine_11772_7582791d82d54ae896f05e0a5213f541_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="354" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_7216_c85acf010fd74360b8207b24b3fb2db2_\Engine_11772_3c46f226aee1445bad72e8dfcbf8de87_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Reports" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Interactive" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>sf_air_traffic</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="90485ea7-bc88-4930-9413-ea918647eebb" />
+      <Telemetry>
+        <PreviousWorkflowId value="ef59920b-0b45-4d6e-bc67-a7c9bfdb5fdb" />
+        <OriginWorkflowId value="ef59920b-0b45-4d6e-bc67-a7c9bfdb5fdb" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

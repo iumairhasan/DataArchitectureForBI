@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Air_Traffic_Landings_Statistics.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Activity Period" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Operating Airline" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Operating Airline IATA Code" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Published Airline" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Published Airline IATA Code" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="GEO Summary" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="GEO Region" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Landing Aircraft Type" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Aircraft Body Type" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Aircraft Manufacturer" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Aircraft Model" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Aircraft Version" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Landing Count" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+            <Field name="Total Landed Weight" size="254" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="222" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Activity Period" selected="True" />
+            <Field field="Operating Airline" selected="True" />
+            <Field field="Operating Airline IATA Code" selected="True" />
+            <Field field="Published Airline" selected="True" />
+            <Field field="Published Airline IATA Code" selected="True" />
+            <Field field="GEO Summary" selected="True" />
+            <Field field="GEO Region" selected="True" />
+            <Field field="Landing Aircraft Type" selected="True" />
+            <Field field="Aircraft Body Type" selected="True" />
+            <Field field="Aircraft Manufacturer" selected="True" />
+            <Field field="Aircraft Model" selected="True" />
+            <Field field="Aircraft Version" selected="True" />
+            <Field field="Landing Count" selected="True" />
+            <Field field="Total Landed Weight" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Activity Period" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="Int32" />
+            <Field name="Operating Airline" size="40" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_String" />
+            <Field name="Operating Airline IATA Code" size="3" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="String" />
+            <Field name="Published Airline" size="40" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_String" />
+            <Field name="Published Airline IATA Code" size="3" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="String" />
+            <Field name="GEO Summary" size="13" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="String" />
+            <Field name="GEO Region" size="19" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_String" />
+            <Field name="Landing Aircraft Type" size="9" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="String" />
+            <Field name="Aircraft Body Type" size="12" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="String" />
+            <Field name="Aircraft Manufacturer" size="17" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_String" />
+            <Field name="Aircraft Model" size="9" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="V_String" />
+            <Field name="Aircraft Version" size="6" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="String" />
+            <Field name="Landing Count" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="Int16" />
+            <Field name="Total Landed Weight" source="File: C:\Users\umair\OneDrive - Northeastern University\COURSES\NEU\DAMG 7390 - Ric Sherman\DataArchitectureForBI\san fransisco\Data - San Francisco\Air_Traffic_Landings_Statistics.tsv" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="414" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Activity Period" selected="True" rename="Activity_period" />
+            <SelectField field="Operating Airline IATA Code" selected="True" type="V_WString" size="10" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="666" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_9108_7fd6c2ce34484190b313621393d82fe3_\Engine_14308_a1f7e1167eb64c9b93b25d74cfc70d5e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="750" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||sf_air_landings_stats</File>
+          <Passwords>4879E2CF75D1B8DA4388B3DB1F849EF3BBF4F9BC9</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=damg7370_output_mySQL
+Query=sf_air_landings_stats</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="510" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="606" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>LandingID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="750" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:damg7370|||sf_air_traffic_landings</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Overwrite</OutputOption>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:damg7370
+Query=sf_air_traffic_landings</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Copy of sf_air_traffic_v3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6c1ecd4c-78e1-4f67-95f5-6fab790c6357" />
+      <Telemetry>
+        <PreviousWorkflowId value="ad7d11f1-89c2-4a70-a8e6-b9bf26394e6b" />
+        <OriginWorkflowId value="ef59920b-0b45-4d6e-bc67-a7c9bfdb5fdb" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
