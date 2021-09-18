@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>4879E2CF75D1B8DA4388B3DB1F849EF3BBF4F9BC9</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.address.* 
+from sakila.address</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=damg7370_output_mySQL
+Query=select sakila.address.* 
+fr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="address_id" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.address.* &#xA;from sakila.address" type="Int32" />
+            <Field name="address" size="50" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.address.* &#xA;from sakila.address" type="V_String" />
+            <Field name="address2" size="50" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.address.* &#xA;from sakila.address" type="V_String" />
+            <Field name="district" size="20" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.address.* &#xA;from sakila.address" type="V_String" />
+            <Field name="city_id" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.address.* &#xA;from sakila.address" type="Int32" />
+            <Field name="postal_code" size="10" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.address.* &#xA;from sakila.address" type="V_String" />
+            <Field name="phone" size="20" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.address.* &#xA;from sakila.address" type="V_String" />
+            <Field name="last_update" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.address.* &#xA;from sakila.address" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>4879E2CF75D1B8DA4388B3DB1F849EF3BBF4F9BC9</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.city.* 
+from sakila.city</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=damg7370_output_mySQL
+Query=select sakila.city.* 
+from ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="city_id" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.city.* &#xA;from sakila.city" type="Int32" />
+            <Field name="city" size="50" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.city.* &#xA;from sakila.city" type="V_String" />
+            <Field name="country_id" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.city.* &#xA;from sakila.city" type="Int32" />
+            <Field name="last_update" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.city.* &#xA;from sakila.city" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="402" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>4879E2CF75D1B8DA4388B3DB1F849EF3BBF4F9BC9</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.country.* 
+from sakila.country</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=damg7370_output_mySQL
+Query=select sakila.country.* 
+fr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="country_id" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.country.* &#xA;from sakila.country" type="Int32" />
+            <Field name="country" size="50" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.country.* &#xA;from sakila.country" type="V_String" />
+            <Field name="last_update" source="File: odbc:DSN=damg7370_output_mySQL;UID=damg7370;PWD=__EncPwd1__|||select sakila.country.* &#xA;from sakila.country" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="354" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="city_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="city_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_city_id" selected="True" rename="Right_city_id" input="Right_" />
+                <SelectField field="Right_last_update" selected="True" rename="Right_last_update" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="534" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="country_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="country_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Right_last_update" selected="True" rename="Left_Right_last_update" input="Left_" />
+                <SelectField field="Right_country_id" selected="True" rename="Right_country_id" input="Right_" />
+                <SelectField field="Right_last_update" selected="True" rename="Right_last_update" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="714" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="630" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>GoID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="798" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="894" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File />
+          <Passwords />
+          <FormatSpecificOptions />
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>sakil_v1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="f12030eb-a370-4a99-b829-ef60e9669c2f" />
+      <Telemetry>
+        <PreviousWorkflowId value="ea6b9791-80fd-44ce-81c7-9d6f145309ea" />
+        <OriginWorkflowId value="ea6b9791-80fd-44ce-81c7-9d6f145309ea" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
