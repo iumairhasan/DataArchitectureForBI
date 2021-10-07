@@ -1,0 +1,501 @@
+studentNUID,firstNames,lastName,dateOfBirth,email,gender,livingOnCampus,graduationDate,geographySK,hometownStudentSK,numberOfCreditCompleted,numberOfCreditToDegree,Nationality
+4644385,Ashley,Gutierrez,1963-04-17,ashley.g@northeastern.edu,M,No,2025-02-04,100001,500001,16,16,Macedonia
+3521199,Courtney,Koch,1945-09-08,courtney.k@northeastern.edu,F,No,2024-02-19,100002,500002,4,28,Dominican Republic
+5998243,Christopher,Walker,1998-11-30,christopher.w@northeastern.edu,M,No,2023-02-25,100003,500003,12,20,Swaziland
+5338099,Benjamin,Hansen,1923-08-27,benjamin.h@northeastern.edu,F,No,2025-09-05,100004,500004,4,28,Cook Islands
+9576475,James,Thompson,1914-03-01,james.t@northeastern.edu,M,No,2024-03-22,100005,500005,8,24,Bermuda
+2223479,Christopher,Clark,1993-08-20,christopher.c@northeastern.edu,F,No,2022-05-28,100006,500006,16,16,Tonga
+9875616,Jose,Stone,1965-11-19,jose.s@northeastern.edu,M,No,2025-09-11,100007,500007,8,24,Cocos (Keeling) Islands
+2823528,Cassandra,Collins,1907-09-08,cassandra.c@northeastern.edu,F,No,2023-01-16,100008,500008,12,20,Albania
+7939495,Danielle,Hayes,1995-05-31,danielle.h@northeastern.edu,M,No,2025-01-12,100009,500009,4,28,Latvia
+1373962,Alicia,Taylor,1979-07-23,alicia.t@northeastern.edu,F,No,2025-09-16,100010,500010,4,28,Macao
+9610578,Luis,Benjamin,1976-04-10,luis.b@northeastern.edu,M,No,2025-11-07,100011,500011,12,20,Lebanon
+4519726,Timothy,Vasquez,1966-09-15,timothy.v@northeastern.edu,F,No,2022-11-08,100012,500012,8,24,Albania
+4972892,Sherry,Griffith,1932-04-29,sherry.g@northeastern.edu,M,No,2022-07-16,100013,500013,12,20,Bermuda
+3348750,Mitchell,Bowen,1934-11-08,mitchell.b@northeastern.edu,F,No,2024-11-16,100014,500014,16,16,South Georgia and the South Sandwich Islands
+4740742,Janice,Fisher,1906-11-17,janice.f@northeastern.edu,M,No,2024-02-13,100015,500015,8,24,Nepal
+1720382,Peter,Jones,2001-05-17,peter.j@northeastern.edu,F,No,2025-09-09,100016,500016,8,24,Ghana
+3422577,Alexis,Walker,2004-07-02,alexis.w@northeastern.edu,M,No,2022-07-25,100017,500017,16,16,Tonga
+2452670,Thomas,Ferrell,1968-05-25,thomas.f@northeastern.edu,F,No,2024-08-08,100018,500018,12,20,Sao Tome and Principe
+9633639,Stephen,Smith,1965-07-18,stephen.s@northeastern.edu,M,No,2022-05-01,100019,500019,16,16,Austria
+4470960,Taylor,Johnson,1980-07-15,taylor.j@northeastern.edu,F,No,2025-09-04,100020,500020,4,28,Denmark
+9738803,Jonathan,Burns,1950-03-22,jonathan.b@northeastern.edu,M,No,2024-01-25,100021,500021,8,24,Norfolk Island
+3609082,Ernest,Brown,1988-09-10,ernest.b@northeastern.edu,F,No,2023-05-24,100022,500022,4,28,Comoros
+9064016,Kyle,Adkins,1989-11-08,kyle.a@northeastern.edu,M,No,2024-12-09,100023,500023,16,16,Central African Republic
+2740736,Timothy,Adams,1981-07-05,timothy.a@northeastern.edu,F,No,2023-07-16,100024,500024,12,20,Saint Lucia
+2310780,Darlene,Mahoney,1998-07-03,darlene.m@northeastern.edu,M,No,2025-02-11,100025,500025,16,16,Lebanon
+2600218,Tina,Alvarez,1960-12-21,tina.a@northeastern.edu,F,No,2022-01-25,100026,500026,12,20,Timor-Leste
+5916583,Seth,Murphy,2019-01-21,seth.m@northeastern.edu,M,No,2024-06-16,100027,500027,4,28,Mali
+7924451,Gregory,Lopez,2016-02-19,gregory.l@northeastern.edu,F,No,2025-10-27,100028,500028,8,24,Barbados
+4571666,Zachary,Munoz,1960-12-26,zachary.m@northeastern.edu,M,No,2022-01-14,100029,500029,12,20,Tanzania
+4501703,Melissa,Hughes,1914-06-27,melissa.h@northeastern.edu,F,No,2025-06-24,100030,500030,16,16,Djibouti
+4661314,Tracy,Nguyen,1949-11-17,tracy.n@northeastern.edu,M,No,2024-03-05,100031,500031,12,20,Bulgaria
+5044459,Patricia,Hamilton,1933-07-09,patricia.h@northeastern.edu,F,No,2025-01-15,100032,500032,12,20,Bangladesh
+5141955,Devin,Ruiz,1920-01-08,devin.r@northeastern.edu,M,No,2025-10-02,100033,500033,8,24,Argentina
+8483687,Gregory,Evans,1929-02-28,gregory.e@northeastern.edu,F,No,2024-01-27,100034,500034,4,28,Grenada
+2205097,Danielle,Peterson,1967-02-19,danielle.p@northeastern.edu,M,No,2024-09-18,100035,500035,12,20,Aruba
+2139298,Tina,Turner,1945-11-25,tina.t@northeastern.edu,F,No,2025-11-06,100036,500036,12,20,Ireland
+3061758,Andrea,King,1908-02-26,andrea.k@northeastern.edu,M,No,2022-05-30,100037,500037,16,16,Grenada
+2463354,John,Welch,2006-08-05,john.w@northeastern.edu,F,No,2022-02-23,100038,500038,12,20,Singapore
+3799638,Jon,Rodriguez,1975-01-05,jon.r@northeastern.edu,M,No,2023-12-12,100039,500039,16,16,Costa Rica
+4022263,Nancy,Davila,1997-11-29,nancy.d@northeastern.edu,F,No,2024-07-27,100040,500040,16,16,India
+6101574,Nicholas,Briggs,1951-03-24,nicholas.b@northeastern.edu,M,No,2023-04-22,100041,500041,4,28,French Polynesia
+1065188,Heidi,Sexton,1993-09-28,heidi.s@northeastern.edu,F,No,2024-04-01,100042,500042,8,24,Chad
+8802496,Rodney,Garcia,1956-08-20,rodney.g@northeastern.edu,M,No,2025-08-31,100043,500043,16,16,Syrian Arab Republic
+3074310,Suzanne,Thompson,1973-06-13,suzanne.t@northeastern.edu,F,No,2022-11-18,100044,500044,8,24,Denmark
+2878035,Kevin,Lamb,2017-12-30,kevin.l@northeastern.edu,M,No,2024-06-06,100045,500045,12,20,Malta
+2526253,Drew,Barber,2016-04-28,drew.b@northeastern.edu,F,No,2025-05-04,100046,500046,12,20,Ghana
+2081358,Craig,Hernandez,1990-03-12,craig.h@northeastern.edu,M,No,2022-03-16,100047,500047,4,28,Georgia
+8187574,Larry,Hill,2019-01-18,larry.h@northeastern.edu,F,No,2023-04-07,100048,500048,12,20,Belarus
+9733552,Alyssa,Ross,1928-06-27,alyssa.r@northeastern.edu,M,No,2022-01-25,100049,500049,16,16,Norfolk Island
+6783097,Monique,Chang,2009-12-04,monique.c@northeastern.edu,F,No,2025-07-17,100050,500050,8,24,Guadeloupe
+8904241,Lisa,Patel,1992-06-12,lisa.p@northeastern.edu,M,No,2022-03-18,100051,500051,16,16,Lithuania
+8132677,Dana,Arnold,1946-06-27,dana.a@northeastern.edu,F,No,2022-06-10,100052,500052,16,16,Peru
+3274298,Kathryn,Smith,1923-10-11,kathryn.s@northeastern.edu,M,No,2024-06-11,100053,500053,12,20,Belgium
+9397596,Dave,Brown,1913-11-22,dave.b@northeastern.edu,F,No,2023-02-13,100054,500054,4,28,Nigeria
+5082280,Michael,Woods,1947-11-12,michael.w@northeastern.edu,M,No,2023-01-15,100055,500055,16,16,Kiribati
+1517546,Victoria,Brown,1964-10-18,victoria.b@northeastern.edu,F,No,2025-07-26,100056,500056,4,28,Congo
+8743102,Maria,Price,2017-03-23,maria.p@northeastern.edu,M,No,2024-03-06,100057,500057,12,20,Armenia
+3432554,Peggy,Powers,2007-06-20,peggy.p@northeastern.edu,F,No,2023-12-14,100058,500058,16,16,Fiji
+4845667,Jacqueline,Johnson,1963-11-19,jacqueline.j@northeastern.edu,M,No,2024-06-10,100059,500059,12,20,Kenya
+6304826,Danielle,Mann,1959-10-17,danielle.m@northeastern.edu,F,No,2024-06-05,100060,500060,4,28,Chile
+8748983,Courtney,Robinson,1946-08-29,courtney.r@northeastern.edu,M,No,2024-04-20,100061,500061,12,20,Ecuador
+3618035,Alison,Perez,1963-08-10,alison.p@northeastern.edu,F,No,2023-03-19,100062,500062,12,20,Bahamas
+6762327,Michelle,Freeman,1958-09-30,michelle.f@northeastern.edu,M,No,2024-03-24,100063,500063,16,16,Guernsey
+6087613,Donald,Anderson,1994-01-19,donald.a@northeastern.edu,F,No,2025-02-18,100064,500064,12,20,Belarus
+8956418,James,Williams,1992-03-29,james.w@northeastern.edu,M,No,2024-02-14,100065,500065,4,28,Chad
+2945226,Melissa,Murray,1954-06-06,melissa.m@northeastern.edu,F,No,2023-03-17,100066,500066,12,20,Puerto Rico
+7464601,Glenda,Johnson,1997-01-12,glenda.j@northeastern.edu,M,No,2025-06-05,100067,500067,8,24,Australia
+6396320,Lisa,Calderon,1937-05-18,lisa.c@northeastern.edu,F,No,2024-07-25,100068,500068,8,24,Samoa
+5724446,James,Hill,1991-02-01,james.h@northeastern.edu,M,No,2022-12-26,100069,500069,8,24,Christmas Island
+6162703,Jared,Brown,1949-05-10,jared.b@northeastern.edu,F,No,2022-07-05,100070,500070,8,24,Congo
+7472263,Jessica,Tyler,1973-12-11,jessica.t@northeastern.edu,M,No,2025-04-30,100071,500071,12,20,Namibia
+4788070,Jeremy,Sanchez,1946-11-01,jeremy.s@northeastern.edu,F,No,2025-06-03,100072,500072,8,24,Pakistan
+2999549,Sharon,Moran,1983-06-03,sharon.m@northeastern.edu,M,No,2023-07-05,100073,500073,4,28,Austria
+2489573,Devin,Rodgers,1979-12-05,devin.r@northeastern.edu,F,No,2023-09-23,100074,500074,4,28,Togo
+2229835,Vickie,Barrera,1952-12-27,vickie.b@northeastern.edu,M,No,2023-06-19,100075,500075,8,24,France
+7225608,William,Hill,2001-01-15,william.h@northeastern.edu,F,No,2025-01-13,100076,500076,8,24,Heard Island and McDonald Islands
+8828651,Jasmine,Jackson,1971-03-28,jasmine.j@northeastern.edu,M,No,2024-02-18,100077,500077,8,24,Suriname
+5603974,Julie,Maldonado,1973-10-12,julie.m@northeastern.edu,F,No,2024-08-24,100078,500078,4,28,Guinea-Bissau
+6266744,George,Perez,1948-09-07,george.p@northeastern.edu,M,No,2025-11-12,100079,500079,4,28,Netherlands Antilles
+8094151,Christine,Olson,1958-04-01,christine.o@northeastern.edu,F,No,2022-03-05,100080,500080,4,28,Rwanda
+2606828,Margaret,Sheppard,1966-01-10,margaret.s@northeastern.edu,M,No,2025-05-24,100081,500081,4,28,Albania
+6774999,Dylan,Wu,1975-02-17,dylan.w@northeastern.edu,F,No,2024-04-05,100082,500082,16,16,Cayman Islands
+6008926,David,Fisher,2008-06-10,david.f@northeastern.edu,M,No,2024-04-06,100083,500083,16,16,Kuwait
+7964272,Linda,Campos,1967-09-20,linda.c@northeastern.edu,F,No,2023-11-23,100084,500084,12,20,Somalia
+4346083,Angela,Banks,1948-05-17,angela.b@northeastern.edu,M,No,2022-03-15,100085,500085,8,24,Antarctica (the territory South of 60 deg S)
+8020598,Ronald,Garner,1960-10-19,ronald.g@northeastern.edu,F,No,2024-05-01,100086,500086,8,24,Reunion
+4039727,Isabella,Payne,2002-08-07,isabella.p@northeastern.edu,M,No,2024-05-10,100087,500087,4,28,Zimbabwe
+6615794,Stephen,Larson,1951-10-20,stephen.l@northeastern.edu,F,No,2022-08-29,100088,500088,12,20,Bosnia and Herzegovina
+1416077,April,Trujillo,1961-05-13,april.t@northeastern.edu,M,No,2025-02-27,100089,500089,12,20,French Guiana
+9859614,John,Gallegos,1941-08-10,john.g@northeastern.edu,F,No,2023-07-21,100090,500090,12,20,Christmas Island
+2127000,William,Johnson,2012-08-01,william.j@northeastern.edu,M,No,2024-06-24,100091,500091,16,16,Azerbaijan
+8960832,Diane,Stephenson,2007-03-23,diane.s@northeastern.edu,F,No,2024-11-02,100092,500092,8,24,Guinea
+6192782,Andrew,Juarez,1982-07-02,andrew.j@northeastern.edu,M,No,2022-12-13,100093,500093,12,20,Jamaica
+9306917,Michael,Harris,1906-04-03,michael.h@northeastern.edu,F,No,2023-06-29,100094,500094,16,16,Ukraine
+3369211,Ryan,Green,1957-07-02,ryan.g@northeastern.edu,M,No,2025-11-20,100095,500095,16,16,Ecuador
+5383678,Stacey,Watson,2004-03-06,stacey.w@northeastern.edu,F,No,2024-02-04,100096,500096,4,28,France
+7897123,Jessica,Choi,1926-11-02,jessica.c@northeastern.edu,M,No,2024-10-24,100097,500097,4,28,Djibouti
+7012064,Jake,Rowe,1938-06-25,jake.r@northeastern.edu,F,No,2024-04-03,100098,500098,16,16,Eritrea
+1679273,Joseph,Park,1968-04-23,joseph.p@northeastern.edu,M,No,2024-12-16,100099,500099,16,16,Central African Republic
+7715639,Kelsey,Young,1983-02-04,kelsey.y@northeastern.edu,F,No,2024-03-25,100100,500100,16,16,France
+3985762,Seth,Salazar,1925-08-12,seth.s@northeastern.edu,M,No,2023-07-03,100101,500101,4,28,United States Virgin Islands
+1416257,Ronald,Frazier,1963-09-19,ronald.f@northeastern.edu,F,No,2022-01-27,100102,500102,16,16,Antarctica (the territory South of 60 deg S)
+7069096,Christopher,Everett,2011-04-23,christopher.e@northeastern.edu,M,No,2024-03-22,100103,500103,8,24,Pitcairn Islands
+8978287,Adam,Townsend,1969-10-14,adam.t@northeastern.edu,F,No,2025-05-06,100104,500104,4,28,Papua New Guinea
+1510746,Fernando,Carson,1907-04-20,fernando.c@northeastern.edu,M,No,2023-07-26,100105,500105,12,20,Barbados
+7589204,Charles,Rich,1930-11-25,charles.r@northeastern.edu,F,No,2022-12-26,100106,500106,16,16,Afghanistan
+2352095,Emily,Doyle,1983-07-06,emily.d@northeastern.edu,M,No,2023-07-06,100107,500107,16,16,Qatar
+2235472,Sara,Davis,1924-07-26,sara.d@northeastern.edu,F,No,2025-02-12,100108,500108,4,28,Tunisia
+3661632,Charles,Lyons,2004-05-22,charles.l@northeastern.edu,M,No,2023-01-30,100109,500109,12,20,Seychelles
+7774504,Luis,Gaines,1939-11-02,luis.g@northeastern.edu,F,No,2022-08-09,100110,500110,8,24,Moldova
+1596534,Michael,Rice,1962-11-01,michael.r@northeastern.edu,M,No,2023-08-25,100111,500111,8,24,Cape Verde
+7404679,Laura,Lee,1929-07-02,laura.l@northeastern.edu,F,No,2023-10-08,100112,500112,4,28,Lao People's Democratic Republic
+1335022,Jennifer,White,1949-11-02,jennifer.w@northeastern.edu,M,No,2024-09-30,100113,500113,8,24,Algeria
+4947577,Virginia,Lewis,2013-06-16,virginia.l@northeastern.edu,F,No,2022-09-18,100114,500114,12,20,Sri Lanka
+3957146,Kevin,Berry,1959-03-25,kevin.b@northeastern.edu,M,No,2024-01-19,100115,500115,12,20,Saint Barthelemy
+6711294,Melissa,Medina,1916-09-21,melissa.m@northeastern.edu,F,No,2022-01-27,100116,500116,4,28,Saint Helena
+6013983,Ashley,Stone,1916-10-15,ashley.s@northeastern.edu,M,No,2022-05-30,100117,500117,4,28,Burkina Faso
+6663605,Brian,Garza,2002-07-13,brian.g@northeastern.edu,F,No,2022-06-08,100118,500118,4,28,Cocos (Keeling) Islands
+3462795,Troy,Garcia,2002-06-23,troy.g@northeastern.edu,M,No,2024-04-01,100119,500119,4,28,Moldova
+6222011,Brittany,Mayo,1987-04-24,brittany.m@northeastern.edu,F,No,2025-05-19,100120,500120,16,16,Lithuania
+8689280,Kristina,Baker,1999-11-24,kristina.b@northeastern.edu,M,No,2024-05-04,100121,500121,4,28,Cuba
+8840505,Jason,Day,1953-03-14,jason.d@northeastern.edu,F,No,2022-03-12,100122,500122,8,24,Romania
+1367999,Norma,Clarke,1957-10-03,norma.c@northeastern.edu,M,No,2023-10-23,100123,500123,8,24,Bulgaria
+2987219,Jeffrey,Moore,1940-11-25,jeffrey.m@northeastern.edu,F,No,2024-10-14,100124,500124,8,24,Costa Rica
+6033620,Kimberly,Hooper,1951-10-25,kimberly.h@northeastern.edu,M,No,2023-02-22,100125,500125,4,28,Vietnam
+8173292,Michael,Sparks,1980-03-28,michael.s@northeastern.edu,F,No,2023-05-06,100126,500126,8,24,Korea
+4123707,John,Nguyen,1941-10-15,john.n@northeastern.edu,M,No,2023-07-16,100127,500127,8,24,India
+3195021,Jennifer,Nunez,1973-03-25,jennifer.n@northeastern.edu,F,No,2025-10-19,100128,500128,8,24,Honduras
+1763684,Jonathan,Coleman,1958-02-10,jonathan.c@northeastern.edu,M,No,2022-02-07,100129,500129,8,24,Sudan
+4663473,Deanna,Stevens,1989-02-13,deanna.s@northeastern.edu,F,No,2025-10-29,100130,500130,16,16,Cyprus
+5161671,Jennifer,Ramirez,1947-04-06,jennifer.r@northeastern.edu,M,No,2022-01-10,100131,500131,4,28,Gibraltar
+9029788,Timothy,Young,2016-06-30,timothy.y@northeastern.edu,F,No,2024-03-23,100132,500132,4,28,Ethiopia
+7661694,Terri,Hendricks,2013-08-17,terri.h@northeastern.edu,M,No,2024-06-06,100133,500133,8,24,Haiti
+3233248,Stephanie,Gray,1953-09-06,stephanie.g@northeastern.edu,F,No,2022-12-04,100134,500134,8,24,Sudan
+5890927,Sarah,Buchanan,2021-01-20,sarah.b@northeastern.edu,M,No,2022-07-12,100135,500135,12,20,Netherlands
+1605378,Christina,Castillo,1975-02-08,christina.c@northeastern.edu,F,No,2023-08-17,100136,500136,12,20,Lao People's Democratic Republic
+7130892,Kristy,Harris,1999-03-31,kristy.h@northeastern.edu,M,No,2023-07-27,100137,500137,8,24,Brunei Darussalam
+1215753,Spencer,Singleton,1910-09-28,spencer.s@northeastern.edu,F,No,2023-01-19,100138,500138,4,28,Palau
+5136421,Elizabeth,Griffin,1954-11-12,elizabeth.g@northeastern.edu,M,No,2024-12-18,100139,500139,4,28,Lebanon
+6445836,Ray,Carroll,1957-11-21,ray.c@northeastern.edu,F,No,2025-08-25,100140,500140,12,20,Togo
+2067515,Shawn,Jones,1973-04-12,shawn.j@northeastern.edu,M,No,2023-09-01,100141,500141,4,28,Western Sahara
+6672358,Brooke,Mcgee,1957-12-06,brooke.m@northeastern.edu,F,No,2022-03-28,100142,500142,4,28,Niger
+8753824,Andrea,Clark,1968-10-08,andrea.c@northeastern.edu,M,No,2023-06-12,100143,500143,16,16,Haiti
+2272070,Evan,Sullivan,1925-04-02,evan.s@northeastern.edu,F,No,2023-11-18,100144,500144,8,24,Mexico
+2045793,Christine,Marquez,1918-01-15,christine.m@northeastern.edu,M,No,2023-03-22,100145,500145,12,20,Ecuador
+1129364,Paul,Williams,1955-08-23,paul.w@northeastern.edu,F,No,2022-11-19,100146,500146,12,20,Cocos (Keeling) Islands
+4479916,Kristen,Ramirez,2004-03-08,kristen.r@northeastern.edu,M,No,2025-05-14,100147,500147,16,16,Switzerland
+7921460,Katrina,Cox,1953-11-07,katrina.c@northeastern.edu,F,No,2023-02-01,100148,500148,8,24,Cote d'Ivoire
+4425904,Matthew,Rodriguez,1941-03-06,matthew.r@northeastern.edu,M,No,2025-11-06,100149,500149,12,20,Cape Verde
+5963189,Ralph,Allen,1939-05-22,ralph.a@northeastern.edu,F,No,2024-05-10,100150,500150,4,28,New Zealand
+1990901,Gregory,Parks,1993-10-15,gregory.p@northeastern.edu,M,No,2023-12-20,100151,500151,8,24,Christmas Island
+8835978,Heather,Wright,1919-05-03,heather.w@northeastern.edu,F,No,2022-12-04,100152,500152,4,28,Saint Lucia
+2949491,Jonathan,Sanchez,1959-10-11,jonathan.s@northeastern.edu,M,No,2025-07-19,100153,500153,4,28,Saint Barthelemy
+2854323,Carla,Lopez,2001-02-15,carla.l@northeastern.edu,F,No,2022-06-04,100154,500154,16,16,Armenia
+5227888,Leslie,Smith,2009-09-08,leslie.s@northeastern.edu,M,No,2025-05-12,100155,500155,12,20,Macao
+8940838,Jason,Preston,1954-10-13,jason.p@northeastern.edu,F,No,2023-06-10,100156,500156,12,20,Lesotho
+4503333,Ashley,Buck,1968-11-01,ashley.b@northeastern.edu,M,No,2024-05-29,100157,500157,8,24,Vanuatu
+9474241,Ashley,Burgess,1990-05-02,ashley.b@northeastern.edu,F,No,2022-02-07,100158,500158,12,20,Bahamas
+4722672,Kenneth,Costa,1969-02-23,kenneth.c@northeastern.edu,M,No,2025-05-30,100159,500159,12,20,Palestinian Territory
+6116997,Joshua,Cardenas,1911-07-07,joshua.c@northeastern.edu,F,No,2025-03-05,100160,500160,8,24,Panama
+9438896,Phillip,Rodriguez,1943-02-28,phillip.r@northeastern.edu,M,No,2025-10-28,100161,500161,12,20,Mozambique
+1019909,Jason,Crane,1962-03-09,jason.c@northeastern.edu,F,No,2025-09-23,100162,500162,4,28,Myanmar
+1732094,Amy,Howard,1974-08-08,amy.h@northeastern.edu,M,No,2024-07-21,100163,500163,8,24,New Zealand
+2042005,Robert,Johns,1926-04-23,robert.j@northeastern.edu,F,No,2025-04-01,100164,500164,16,16,French Guiana
+1512262,Joy,Conner,1994-06-11,joy.c@northeastern.edu,M,No,2023-02-09,100165,500165,4,28,Antarctica (the territory South of 60 deg S)
+2662159,Yolanda,Daniels,1922-07-07,yolanda.d@northeastern.edu,F,No,2022-09-18,100166,500166,8,24,Anguilla
+5535182,Steven,Nunez,2013-06-09,steven.n@northeastern.edu,M,No,2022-10-01,100167,500167,16,16,Slovenia
+5763039,Jimmy,Dennis,1907-12-24,jimmy.d@northeastern.edu,F,No,2023-08-03,100168,500168,16,16,Syrian Arab Republic
+4214931,Jeremy,Jones,2002-07-08,jeremy.j@northeastern.edu,M,No,2023-11-17,100169,500169,12,20,Timor-Leste
+8398776,Kimberly,Sanchez,1995-10-29,kimberly.s@northeastern.edu,F,No,2023-07-13,100170,500170,4,28,United States Minor Outlying Islands
+3598913,Joseph,Smith,1958-05-06,joseph.s@northeastern.edu,M,No,2024-02-20,100171,500171,4,28,Northern Mariana Islands
+6925788,James,Garcia,1986-12-19,james.g@northeastern.edu,F,No,2022-02-19,100172,500172,12,20,Nigeria
+9633544,Franklin,Gilbert,2009-10-25,franklin.g@northeastern.edu,M,No,2025-10-15,100173,500173,8,24,Guyana
+5767182,Eric,Andersen,1919-10-06,eric.a@northeastern.edu,F,No,2022-06-23,100174,500174,8,24,French Polynesia
+8424379,Alan,Green,2000-11-15,alan.g@northeastern.edu,M,No,2024-08-29,100175,500175,16,16,Burundi
+6251095,Anthony,Davis,2017-03-10,anthony.d@northeastern.edu,F,No,2022-11-02,100176,500176,4,28,Norway
+6816080,Catherine,Reese,1918-06-20,catherine.r@northeastern.edu,M,No,2025-01-19,100177,500177,12,20,Somalia
+3893966,Jason,Oliver,2009-05-11,jason.o@northeastern.edu,F,No,2024-01-31,100178,500178,12,20,Sierra Leone
+5936959,Derrick,Martin,2021-07-30,derrick.m@northeastern.edu,M,No,2022-01-19,100179,500179,12,20,Brunei Darussalam
+9019809,Charles,Thompson,1908-07-30,charles.t@northeastern.edu,F,No,2025-06-01,100180,500180,4,28,Kuwait
+8713757,Paul,Gilmore,1916-03-25,paul.g@northeastern.edu,M,No,2025-07-18,100181,500181,16,16,Marshall Islands
+1393792,Juan,Glass,1925-06-11,juan.g@northeastern.edu,F,No,2025-08-08,100182,500182,12,20,Indonesia
+4987219,April,Wilson,1963-10-01,april.w@northeastern.edu,M,No,2025-11-29,100183,500183,4,28,Zambia
+8496218,Sarah,Harris,1963-11-29,sarah.h@northeastern.edu,F,No,2024-10-15,100184,500184,12,20,Algeria
+2388717,Kristin,Flores,2003-10-23,kristin.f@northeastern.edu,M,No,2025-12-17,100185,500185,4,28,Luxembourg
+7610271,Tonya,Oneill,1969-07-06,tonya.o@northeastern.edu,F,No,2024-01-12,100186,500186,4,28,Senegal
+4192059,Alyssa,Cook,2009-03-04,alyssa.c@northeastern.edu,M,No,2025-08-05,100187,500187,12,20,French Southern Territories
+7402945,Jamie,Savage,1946-07-07,jamie.s@northeastern.edu,F,No,2022-06-09,100188,500188,8,24,British Indian Ocean Territory (Chagos Archipelago)
+5476427,Victoria,Hale,2000-02-11,victoria.h@northeastern.edu,M,No,2022-07-15,100189,500189,8,24,Germany
+9451381,Monica,Jones,1961-10-19,monica.j@northeastern.edu,F,No,2025-02-09,100190,500190,16,16,Macao
+8415800,Kelly,Johnson,1919-03-02,kelly.j@northeastern.edu,M,No,2025-03-07,100191,500191,12,20,Belgium
+3762348,Ashley,Murphy,1964-12-24,ashley.m@northeastern.edu,F,No,2025-07-03,100192,500192,8,24,Monaco
+4464207,Priscilla,Jones,1957-04-11,priscilla.j@northeastern.edu,M,No,2025-03-09,100193,500193,12,20,Gabon
+4264872,Jessica,Anderson,1999-07-06,jessica.a@northeastern.edu,F,No,2023-02-03,100194,500194,12,20,Slovenia
+6383357,Derek,Hanna,1956-10-29,derek.h@northeastern.edu,M,No,2025-05-31,100195,500195,16,16,Bolivia
+2712495,Maurice,Henderson,1932-08-15,maurice.h@northeastern.edu,F,No,2024-04-20,100196,500196,8,24,Anguilla
+5875496,Karen,Rasmussen,1943-03-25,karen.r@northeastern.edu,M,No,2024-02-10,100197,500197,8,24,Cape Verde
+9435315,Amanda,King,1966-10-30,amanda.k@northeastern.edu,F,No,2025-01-03,100198,500198,12,20,Malaysia
+1174044,Melissa,Atkinson,2008-06-20,melissa.a@northeastern.edu,M,No,2022-01-16,100199,500199,12,20,Armenia
+7525003,Todd,Duncan,2020-09-16,todd.d@northeastern.edu,F,No,2024-11-26,100200,500200,12,20,Tokelau
+7577622,Claudia,Johnson,1922-04-07,claudia.j@northeastern.edu,M,No,2022-10-25,100201,500201,16,16,Armenia
+3850689,Lisa,Wood,1988-03-28,lisa.w@northeastern.edu,F,No,2023-02-05,100202,500202,4,28,Guam
+3153078,Sue,White,2014-04-18,sue.w@northeastern.edu,M,No,2024-09-25,100203,500203,12,20,Kuwait
+1215650,Brandy,Lee,1927-01-11,brandy.l@northeastern.edu,F,No,2025-08-05,100204,500204,12,20,Vietnam
+7980237,Brenda,Trujillo,1924-10-10,brenda.t@northeastern.edu,M,No,2025-12-15,100205,500205,4,28,Egypt
+6618921,Brenda,Haley,1996-03-09,brenda.h@northeastern.edu,F,No,2023-06-28,100206,500206,8,24,Botswana
+8949936,Justin,Johnson,1970-05-17,justin.j@northeastern.edu,M,No,2022-05-28,100207,500207,8,24,Palau
+2631648,Julie,Bridges,1970-01-23,julie.b@northeastern.edu,F,No,2024-10-27,100208,500208,16,16,Guatemala
+1464127,Anna,Webb,1974-08-05,anna.w@northeastern.edu,M,No,2022-09-24,100209,500209,8,24,Martinique
+6709160,Matthew,Stephens,1985-07-26,matthew.s@northeastern.edu,F,No,2025-08-10,100210,500210,16,16,American Samoa
+6159306,Amy,Love,1995-06-20,amy.l@northeastern.edu,M,No,2025-04-30,100211,500211,12,20,Belarus
+6616560,Isaac,Price,2003-12-21,isaac.p@northeastern.edu,F,No,2022-05-18,100212,500212,12,20,Sudan
+3006580,Christopher,Klein,2005-01-06,christopher.k@northeastern.edu,M,No,2025-11-04,100213,500213,16,16,Congo
+9210929,Gina,Brown,1963-10-29,gina.b@northeastern.edu,F,No,2024-05-05,100214,500214,12,20,Nauru
+3500543,Susan,Walker,1984-03-30,susan.w@northeastern.edu,M,No,2023-10-11,100215,500215,12,20,Jamaica
+2893030,Charles,Cooper,1916-02-27,charles.c@northeastern.edu,F,No,2025-12-23,100216,500216,12,20,South Africa
+5982431,Bill,Ortiz,1933-01-03,bill.o@northeastern.edu,M,No,2022-08-29,100217,500217,16,16,Italy
+4384424,Haley,Bradley,1942-09-19,haley.b@northeastern.edu,F,No,2022-05-06,100218,500218,12,20,Kiribati
+9893239,Darius,Collins,1936-08-11,darius.c@northeastern.edu,M,No,2022-01-01,100219,500219,8,24,Tonga
+8049630,Kristin,Best,2001-07-11,kristin.b@northeastern.edu,F,No,2022-01-20,100220,500220,12,20,Kenya
+6453229,Zachary,Campbell,1920-08-15,zachary.c@northeastern.edu,M,No,2022-06-27,100221,500221,12,20,Sierra Leone
+3110513,Michael,Heath,1996-02-12,michael.h@northeastern.edu,F,No,2023-05-09,100222,500222,12,20,Korea
+4283550,Sarah,Greene,1929-03-05,sarah.g@northeastern.edu,M,No,2022-08-09,100223,500223,8,24,Dominica
+1178632,Felicia,Gordon,1983-04-19,felicia.g@northeastern.edu,F,No,2023-01-19,100224,500224,12,20,Tokelau
+8787365,Thomas,Pratt,1998-01-25,thomas.p@northeastern.edu,M,No,2023-01-24,100225,500225,12,20,Mexico
+1056242,Allison,Williams,1914-06-20,allison.w@northeastern.edu,F,No,2025-09-10,100226,500226,8,24,El Salvador
+4592678,Steven,Velasquez,1927-03-05,steven.v@northeastern.edu,M,No,2025-07-17,100227,500227,12,20,Brunei Darussalam
+3138512,Crystal,Harris,1979-11-23,crystal.h@northeastern.edu,F,No,2024-01-24,100228,500228,16,16,Comoros
+4152316,Matthew,White,2001-01-30,matthew.w@northeastern.edu,M,No,2024-08-11,100229,500229,8,24,San Marino
+6785126,Andrew,Owen,1926-12-31,andrew.o@northeastern.edu,F,No,2022-06-21,100230,500230,4,28,Turkey
+4104833,Adam,Chan,1973-05-06,adam.c@northeastern.edu,M,No,2023-08-24,100231,500231,8,24,Bahrain
+9241033,Mary,Crosby,1920-01-30,mary.c@northeastern.edu,F,No,2022-01-02,100232,500232,12,20,Nicaragua
+7404083,Maria,Conrad,1962-01-25,maria.c@northeastern.edu,M,No,2025-11-04,100233,500233,8,24,Mauritius
+9695661,Sonya,Ramos,1922-07-28,sonya.r@northeastern.edu,F,No,2025-03-13,100234,500234,16,16,Greece
+5896419,Alexis,Greene,1956-08-07,alexis.g@northeastern.edu,M,No,2025-11-26,100235,500235,12,20,Portugal
+9451903,Sandra,Gregory,1954-02-09,sandra.g@northeastern.edu,F,No,2022-01-11,100236,500236,8,24,Belgium
+4054535,Angela,Hickman,1998-01-16,angela.h@northeastern.edu,M,No,2022-08-04,100237,500237,16,16,Malta
+6341848,Emily,Dunn,1938-06-17,emily.d@northeastern.edu,F,No,2024-09-23,100238,500238,12,20,Turks and Caicos Islands
+4832924,Bonnie,Lambert,1971-05-13,bonnie.l@northeastern.edu,M,No,2024-08-09,100239,500239,8,24,Poland
+6547198,Sarah,Estes,1998-08-15,sarah.e@northeastern.edu,F,No,2024-11-24,100240,500240,8,24,Pakistan
+3959246,Elizabeth,Montoya,2012-07-02,elizabeth.m@northeastern.edu,M,No,2024-06-02,100241,500241,4,28,Belgium
+2420836,Larry,Maxwell,1957-10-25,larry.m@northeastern.edu,F,No,2025-08-01,100242,500242,8,24,Falkland Islands (Malvinas)
+4689306,Elizabeth,Rogers,1985-05-29,elizabeth.r@northeastern.edu,M,No,2023-03-27,100243,500243,16,16,Oman
+1623563,Jesse,Williams,1953-12-16,jesse.w@northeastern.edu,F,No,2023-10-06,100244,500244,4,28,Jordan
+2138944,Ryan,Nguyen,2009-05-11,ryan.n@northeastern.edu,M,No,2024-12-14,100245,500245,8,24,Turkey
+7377725,Katie,Coffey,1954-04-14,katie.c@northeastern.edu,F,No,2024-03-02,100246,500246,8,24,Western Sahara
+9367544,Miranda,Zimmerman,2004-06-19,miranda.z@northeastern.edu,M,No,2025-11-09,100247,500247,8,24,Bahamas
+2424177,Tracy,Ayers,1972-09-20,tracy.a@northeastern.edu,F,No,2024-08-21,100248,500248,4,28,Martinique
+7421632,Alicia,Perez,1941-02-26,alicia.p@northeastern.edu,M,No,2024-11-20,100249,500249,4,28,Serbia
+2834882,Christina,Wilkins,1908-01-18,christina.w@northeastern.edu,F,No,2023-04-29,100250,500250,16,16,Thailand
+6049714,Anthony,Johnson,1978-01-13,anthony.j@northeastern.edu,M,No,2025-02-21,100251,500251,8,24,Mali
+7861706,Shelley,Lewis,1998-09-20,shelley.l@northeastern.edu,F,No,2023-04-23,100252,500252,16,16,Barbados
+7579640,Richard,Saunders,1987-03-26,richard.s@northeastern.edu,M,No,2025-03-16,100253,500253,8,24,Indonesia
+2374993,Samuel,Mayo,1993-08-05,samuel.m@northeastern.edu,F,No,2022-01-27,100254,500254,16,16,Fiji
+3403917,Oscar,Smith,1951-08-03,oscar.s@northeastern.edu,M,No,2023-10-29,100255,500255,8,24,Djibouti
+9255640,Jared,Smith,1914-01-22,jared.s@northeastern.edu,F,No,2023-12-04,100256,500256,16,16,Pakistan
+3700341,Peter,Cline,1907-09-15,peter.c@northeastern.edu,M,No,2024-10-05,100257,500257,16,16,Cook Islands
+3844987,Heather,Russo,1965-02-17,heather.r@northeastern.edu,F,No,2025-06-02,100258,500258,4,28,Cambodia
+9309528,Ryan,Smith,1980-08-27,ryan.s@northeastern.edu,M,No,2023-12-07,100259,500259,8,24,Iraq
+8867017,Janet,Ellis,1984-01-08,janet.e@northeastern.edu,F,No,2024-03-11,100260,500260,4,28,Tajikistan
+4121136,Angela,Henry,1992-03-15,angela.h@northeastern.edu,M,No,2022-02-24,100261,500261,4,28,Poland
+7486249,Traci,Brown,1907-08-18,traci.b@northeastern.edu,F,No,2024-02-06,100262,500262,4,28,Cuba
+2928624,Joshua,Brown,1958-02-19,joshua.b@northeastern.edu,M,No,2024-02-12,100263,500263,16,16,Mali
+2136510,Michael,Roach,2001-03-25,michael.r@northeastern.edu,F,No,2022-11-15,100264,500264,4,28,Gibraltar
+4055752,Lawrence,Ramos,1918-11-08,lawrence.r@northeastern.edu,M,No,2023-02-12,100265,500265,12,20,Mali
+4436848,Amy,Cruz,1984-03-03,amy.c@northeastern.edu,F,No,2024-10-25,100266,500266,12,20,Zambia
+4397611,Christopher,Foley,1991-04-17,christopher.f@northeastern.edu,M,No,2024-10-31,100267,500267,16,16,Myanmar
+7280967,Jessica,Dodson,1958-09-21,jessica.d@northeastern.edu,F,No,2024-11-17,100268,500268,4,28,Indonesia
+5037011,Pamela,Donaldson,2002-09-18,pamela.d@northeastern.edu,M,No,2022-03-20,100269,500269,4,28,Christmas Island
+4666176,Keith,Duke,1965-12-29,keith.d@northeastern.edu,F,No,2024-05-26,100270,500270,8,24,Saint Vincent and the Grenadines
+4781976,Michelle,Johnson,1921-11-06,michelle.j@northeastern.edu,M,No,2024-06-21,100271,500271,4,28,Kenya
+2205598,Dorothy,Smith,2010-02-10,dorothy.s@northeastern.edu,F,No,2025-08-16,100272,500272,8,24,Andorra
+2963243,Christopher,Jacobson,1968-11-29,christopher.j@northeastern.edu,M,No,2023-05-31,100273,500273,8,24,Nepal
+9843074,Madison,Elliott,1936-06-09,madison.e@northeastern.edu,F,No,2024-09-16,100274,500274,16,16,Netherlands Antilles
+7440433,Lauren,Thomas,1937-11-18,lauren.t@northeastern.edu,M,No,2022-02-14,100275,500275,8,24,Philippines
+2008478,Donna,Miller,2010-03-25,donna.m@northeastern.edu,F,No,2025-01-19,100276,500276,4,28,Uzbekistan
+7517816,Candace,Johnson,1984-06-23,candace.j@northeastern.edu,M,No,2022-01-15,100277,500277,8,24,Saudi Arabia
+4091022,Dana,Cortez,1995-04-17,dana.c@northeastern.edu,F,No,2023-10-01,100278,500278,4,28,Kyrgyz Republic
+8203973,Ryan,Alvarado,1909-01-09,ryan.a@northeastern.edu,M,No,2025-05-30,100279,500279,8,24,Svalbard & Jan Mayen Islands
+4448009,David,Hughes,2009-03-31,david.h@northeastern.edu,F,No,2024-02-14,100280,500280,12,20,Pakistan
+3692212,Patrick,Barnett,1965-01-13,patrick.b@northeastern.edu,M,No,2023-12-19,100281,500281,8,24,Denmark
+6637329,Nicholas,Ruiz,2021-07-06,nicholas.r@northeastern.edu,F,No,2025-03-26,100282,500282,8,24,Maldives
+3744196,Anthony,Tran,2010-12-06,anthony.t@northeastern.edu,M,No,2025-09-14,100283,500283,4,28,Norway
+2282751,Christopher,Hampton,1908-04-23,christopher.h@northeastern.edu,F,No,2023-07-17,100284,500284,8,24,Bulgaria
+6245592,Melissa,Campbell,2014-08-05,melissa.c@northeastern.edu,M,No,2022-02-06,100285,500285,8,24,Canada
+9181779,Danielle,Garcia,1969-11-12,danielle.g@northeastern.edu,F,No,2025-05-06,100286,500286,12,20,Iraq
+7177021,Anthony,Grant,1984-02-16,anthony.g@northeastern.edu,M,No,2024-02-18,100287,500287,8,24,Palau
+5371760,Elizabeth,Maxwell,1955-07-07,elizabeth.m@northeastern.edu,F,No,2024-08-21,100288,500288,8,24,Argentina
+5004350,Tanya,Carpenter,1974-11-16,tanya.c@northeastern.edu,M,No,2022-08-18,100289,500289,16,16,Faroe Islands
+3199042,Ronald,Gibson,2005-04-23,ronald.g@northeastern.edu,F,No,2023-06-15,100290,500290,12,20,Burkina Faso
+6100226,Taylor,Moore,2010-01-31,taylor.m@northeastern.edu,M,No,2023-04-02,100291,500291,12,20,Bahamas
+9074670,Scott,Hardy,1987-02-13,scott.h@northeastern.edu,F,No,2024-01-08,100292,500292,8,24,Botswana
+5433869,Lisa,Tucker,1993-07-09,lisa.t@northeastern.edu,M,No,2023-05-01,100293,500293,16,16,Mauritius
+6515019,Deborah,Peterson,1959-04-21,deborah.p@northeastern.edu,F,No,2024-12-31,100294,500294,12,20,El Salvador
+5042514,Anthony,Wilcox,1976-11-27,anthony.w@northeastern.edu,M,No,2024-09-22,100295,500295,8,24,El Salvador
+4646356,Sarah,Bond,1941-10-15,sarah.b@northeastern.edu,F,No,2025-08-09,100296,500296,8,24,Iran
+6639762,Rachel,Ramirez,1951-03-01,rachel.r@northeastern.edu,M,No,2023-06-01,100297,500297,8,24,Brazil
+9446080,Donald,Herring,1982-09-30,donald.h@northeastern.edu,F,No,2023-12-23,100298,500298,8,24,Canada
+7155293,Jennifer,Austin,1929-10-16,jennifer.a@northeastern.edu,M,No,2023-05-02,100299,500299,4,28,Saint Vincent and the Grenadines
+2647027,Drew,Baird,1968-08-08,drew.b@northeastern.edu,F,No,2023-01-22,100300,500300,4,28,Grenada
+6200610,Paul,Johnston,1960-10-22,paul.j@northeastern.edu,M,No,2022-08-24,100301,500301,8,24,Cocos (Keeling) Islands
+7325299,Adam,Reilly,1967-08-11,adam.r@northeastern.edu,F,No,2025-10-02,100302,500302,16,16,Spain
+3648802,Anthony,Harris,1951-08-17,anthony.h@northeastern.edu,M,No,2023-11-12,100303,500303,16,16,Christmas Island
+4413412,John,Owens,2004-04-19,john.o@northeastern.edu,F,No,2025-07-10,100304,500304,16,16,Germany
+7758872,Deborah,Nunez,2014-10-05,deborah.n@northeastern.edu,M,No,2023-03-05,100305,500305,8,24,Philippines
+2523049,Karen,Moore,2002-11-18,karen.m@northeastern.edu,F,No,2024-07-14,100306,500306,8,24,Kuwait
+6476265,Megan,Hamilton,1924-03-25,megan.h@northeastern.edu,M,No,2024-07-26,100307,500307,8,24,Sao Tome and Principe
+1530663,Kayla,Salazar,1912-09-06,kayla.s@northeastern.edu,F,No,2024-09-18,100308,500308,12,20,Nicaragua
+4501298,Anthony,Moss,1957-07-18,anthony.m@northeastern.edu,M,No,2023-04-19,100309,500309,16,16,Saudi Arabia
+3274339,Phillip,Wheeler,1919-02-08,phillip.w@northeastern.edu,F,No,2022-09-18,100310,500310,4,28,China
+3161385,Stephanie,Smith,1954-05-30,stephanie.s@northeastern.edu,M,No,2024-12-15,100311,500311,4,28,Panama
+7583936,Stephen,Hawkins,1929-12-09,stephen.h@northeastern.edu,F,No,2024-03-08,100312,500312,8,24,Lebanon
+9088444,Jose,Martin,1912-04-04,jose.m@northeastern.edu,M,No,2025-07-15,100313,500313,16,16,Congo
+8328206,Clifford,Tyler,2004-03-02,clifford.t@northeastern.edu,F,No,2022-04-02,100314,500314,16,16,Ghana
+1146516,Wesley,Leonard,1953-12-01,wesley.l@northeastern.edu,M,No,2024-11-23,100315,500315,4,28,Gabon
+4410341,Nicole,Fernandez,1998-07-26,nicole.f@northeastern.edu,F,No,2024-02-21,100316,500316,8,24,Togo
+1180179,Jean,Weaver,1943-07-26,jean.w@northeastern.edu,M,No,2024-10-25,100317,500317,16,16,Guadeloupe
+6689427,Kayla,Rodriguez,1933-06-14,kayla.r@northeastern.edu,F,No,2025-08-07,100318,500318,12,20,Slovakia (Slovak Republic)
+6013734,Courtney,Harris,1912-12-02,courtney.h@northeastern.edu,M,No,2023-03-17,100319,500319,16,16,Norfolk Island
+5500672,Jacob,Daniels,1914-06-21,jacob.d@northeastern.edu,F,No,2022-05-27,100320,500320,8,24,Serbia
+6626345,Katelyn,Phillips,2015-01-27,katelyn.p@northeastern.edu,M,No,2024-01-02,100321,500321,8,24,Christmas Island
+3890142,Jeffery,Riggs,1982-04-11,jeffery.r@northeastern.edu,F,No,2024-11-05,100322,500322,12,20,Yemen
+7664765,Ryan,Stewart,1951-09-28,ryan.s@northeastern.edu,M,No,2023-01-03,100323,500323,4,28,Pakistan
+8967095,Michelle,Fisher,1930-01-13,michelle.f@northeastern.edu,F,No,2023-04-29,100324,500324,4,28,Cyprus
+5886875,Lisa,Perez,1942-12-09,lisa.p@northeastern.edu,M,No,2025-02-16,100325,500325,16,16,Western Sahara
+5839402,Amber,Stevens,1939-02-26,amber.s@northeastern.edu,F,No,2024-06-22,100326,500326,16,16,Saint Helena
+2406159,Richard,Jones,1929-11-04,richard.j@northeastern.edu,M,No,2025-09-21,100327,500327,8,24,Sri Lanka
+3594830,Charles,Williams,1924-01-01,charles.w@northeastern.edu,F,No,2024-12-13,100328,500328,12,20,Panama
+7370615,Kelly,Shaw,1990-01-20,kelly.s@northeastern.edu,M,No,2023-07-26,100329,500329,12,20,San Marino
+8852356,Michael,Miller,1915-12-22,michael.m@northeastern.edu,F,No,2024-07-27,100330,500330,16,16,Mozambique
+6476944,Paul,Hawkins,1968-07-10,paul.h@northeastern.edu,M,No,2022-04-16,100331,500331,8,24,Bosnia and Herzegovina
+4578443,Melissa,Pham,1932-03-12,melissa.p@northeastern.edu,F,No,2025-07-02,100332,500332,12,20,Nauru
+3522353,Derek,Howard,1943-10-27,derek.h@northeastern.edu,M,No,2025-12-02,100333,500333,12,20,Antigua and Barbuda
+7347499,Lindsey,Richardson,1940-02-03,lindsey.r@northeastern.edu,F,No,2023-02-16,100334,500334,16,16,Gabon
+7766460,Cynthia,Clark,2011-01-30,cynthia.c@northeastern.edu,M,No,2023-03-26,100335,500335,8,24,Afghanistan
+3675786,Alec,Villanueva,1919-06-10,alec.v@northeastern.edu,F,No,2022-10-03,100336,500336,12,20,Macao
+9430534,Kevin,Ramirez,1914-08-13,kevin.r@northeastern.edu,M,No,2022-02-20,100337,500337,4,28,Macedonia
+6002102,Michael,Hodge,2006-10-03,michael.h@northeastern.edu,F,No,2025-06-16,100338,500338,12,20,Cocos (Keeling) Islands
+2442743,Aaron,Morales,1996-11-19,aaron.m@northeastern.edu,M,No,2022-06-14,100339,500339,16,16,Sudan
+7021735,Jessica,Jones,1970-04-05,jessica.j@northeastern.edu,F,No,2024-02-19,100340,500340,12,20,San Marino
+3059270,Cheyenne,Torres,1971-06-08,cheyenne.t@northeastern.edu,M,No,2025-04-03,100341,500341,16,16,Somalia
+2406234,Jessica,Rios,1905-12-29,jessica.r@northeastern.edu,F,No,2025-10-10,100342,500342,12,20,Angola
+8891024,Jennifer,Mclaughlin,1910-12-26,jennifer.m@northeastern.edu,M,No,2024-06-27,100343,500343,8,24,Cuba
+2738643,Kylie,Andrade,1966-05-07,kylie.a@northeastern.edu,F,No,2023-01-03,100344,500344,12,20,Puerto Rico
+5763697,Susan,Roy,2018-11-30,susan.r@northeastern.edu,M,No,2025-06-10,100345,500345,12,20,Somalia
+8067351,Rebecca,Rangel,2001-03-27,rebecca.r@northeastern.edu,F,No,2025-11-22,100346,500346,8,24,Guatemala
+2059268,Leah,Russo,2008-08-18,leah.r@northeastern.edu,M,No,2022-10-22,100347,500347,4,28,Philippines
+6388479,John,Gray,2012-09-09,john.g@northeastern.edu,F,No,2025-11-03,100348,500348,16,16,Korea
+1809546,Kelli,Mercado,1907-04-23,kelli.m@northeastern.edu,M,No,2024-04-13,100349,500349,8,24,Paraguay
+2610106,Leah,Jenkins,1926-02-14,leah.j@northeastern.edu,F,No,2024-04-15,100350,500350,12,20,Sweden
+7211534,Ryan,Drake,1936-10-28,ryan.d@northeastern.edu,M,No,2025-06-02,100351,500351,12,20,Netherlands Antilles
+1463282,Morgan,Holt,1922-09-26,morgan.h@northeastern.edu,F,No,2024-08-09,100352,500352,12,20,Libyan Arab Jamahiriya
+8436528,Randy,Jones,1925-05-15,randy.j@northeastern.edu,M,No,2024-09-10,100353,500353,8,24,Wallis and Futuna
+5975853,Michael,Scott,1927-01-10,michael.s@northeastern.edu,F,No,2022-04-05,100354,500354,8,24,Palau
+5118905,Taylor,Johnson,2006-06-25,taylor.j@northeastern.edu,M,No,2023-08-19,100355,500355,16,16,Sweden
+6865978,John,Phelps,1977-11-29,john.p@northeastern.edu,F,No,2024-05-17,100356,500356,4,28,Congo
+3449086,Tricia,Rivera,2010-10-12,tricia.r@northeastern.edu,M,No,2023-09-27,100357,500357,12,20,India
+1974646,Tyler,Davis,2004-09-12,tyler.d@northeastern.edu,F,No,2024-06-06,100358,500358,4,28,Pitcairn Islands
+2518290,Breanna,Levine,1954-03-05,breanna.l@northeastern.edu,M,No,2022-09-30,100359,500359,16,16,Mexico
+1117324,Steven,Perez,1909-06-28,steven.p@northeastern.edu,F,No,2022-02-04,100360,500360,12,20,Nicaragua
+1204260,Bryce,Rogers,1997-01-16,bryce.r@northeastern.edu,M,No,2024-10-21,100361,500361,4,28,Netherlands Antilles
+9145982,Janet,Martinez,2000-04-18,janet.m@northeastern.edu,F,No,2022-02-20,100362,500362,12,20,Peru
+5470298,Andrew,Munoz,1990-11-10,andrew.m@northeastern.edu,M,No,2022-09-10,100363,500363,8,24,Cuba
+9856210,Garrett,Brown,1934-04-05,garrett.b@northeastern.edu,F,No,2024-06-20,100364,500364,12,20,Latvia
+5425199,Curtis,Rios,1987-07-28,curtis.r@northeastern.edu,M,No,2023-03-25,100365,500365,4,28,Russian Federation
+8066117,Isaac,Sherman,1976-10-05,isaac.s@northeastern.edu,F,No,2023-05-01,100366,500366,16,16,Belgium
+6710200,Catherine,Collins,2002-07-11,catherine.c@northeastern.edu,M,No,2024-05-15,100367,500367,12,20,Northern Mariana Islands
+5969102,Danny,Walters,1906-09-03,danny.w@northeastern.edu,F,No,2023-04-22,100368,500368,4,28,Denmark
+2226683,Edwin,Keith,1937-04-07,edwin.k@northeastern.edu,M,No,2024-02-23,100369,500369,4,28,Nauru
+3455453,Laura,Bean,1911-08-24,laura.b@northeastern.edu,F,No,2025-08-19,100370,500370,12,20,Saint Pierre and Miquelon
+7354262,Nicole,Gomez,1999-01-16,nicole.g@northeastern.edu,M,No,2024-09-11,100371,500371,4,28,Bermuda
+1026806,Marissa,Holland,1911-05-29,marissa.h@northeastern.edu,F,No,2024-09-22,100372,500372,4,28,Isle of Man
+5907389,Michele,Warren,1947-05-19,michele.w@northeastern.edu,M,No,2022-01-03,100373,500373,12,20,Guam
+4160286,Richard,Walker,1960-01-06,richard.w@northeastern.edu,F,No,2022-03-15,100374,500374,4,28,Germany
+2685420,Erin,Quinn,1977-11-26,erin.q@northeastern.edu,M,No,2023-01-08,100375,500375,12,20,Brunei Darussalam
+6369545,Lisa,Ryan,1949-05-12,lisa.r@northeastern.edu,F,No,2023-02-08,100376,500376,8,24,Kyrgyz Republic
+1802762,Michael,Villegas,1996-06-09,michael.v@northeastern.edu,M,No,2025-05-30,100377,500377,12,20,Jamaica
+6676122,Joshua,Rosales,1943-06-17,joshua.r@northeastern.edu,F,No,2022-06-24,100378,500378,12,20,French Guiana
+6610832,Ronald,King,1964-10-21,ronald.k@northeastern.edu,M,No,2024-08-04,100379,500379,12,20,Faroe Islands
+4069372,Alexis,Howell,1995-06-13,alexis.h@northeastern.edu,F,No,2023-05-27,100380,500380,4,28,Ghana
+7375841,Christina,Fisher,1936-07-24,christina.f@northeastern.edu,M,No,2022-01-31,100381,500381,12,20,Chad
+4409647,Melissa,Smith,1993-12-22,melissa.s@northeastern.edu,F,No,2024-10-13,100382,500382,4,28,Bulgaria
+4587218,Kristopher,Edwards,1917-10-15,kristopher.e@northeastern.edu,M,No,2025-04-12,100383,500383,4,28,Iraq
+5037577,Johnathan,Barnett,2020-09-20,johnathan.b@northeastern.edu,F,No,2025-11-01,100384,500384,8,24,Barbados
+1844436,Deanna,Miller,1948-09-01,deanna.m@northeastern.edu,M,No,2024-08-08,100385,500385,16,16,Comoros
+3253928,Tiffany,Patton,2015-08-25,tiffany.p@northeastern.edu,F,No,2023-10-08,100386,500386,16,16,South Africa
+6290616,Donna,Torres,1967-07-11,donna.t@northeastern.edu,M,No,2023-02-05,100387,500387,4,28,Korea
+7305125,George,Noble,1973-06-12,george.n@northeastern.edu,F,No,2024-12-28,100388,500388,4,28,French Polynesia
+7710870,Kathryn,Carr,1978-09-01,kathryn.c@northeastern.edu,M,No,2022-05-28,100389,500389,8,24,Greenland
+1371287,Marilyn,Bray,1987-08-02,marilyn.b@northeastern.edu,F,No,2025-10-27,100390,500390,8,24,Somalia
+3537255,Robin,Byrd,1930-10-10,robin.b@northeastern.edu,M,No,2023-04-12,100391,500391,16,16,Maldives
+8674116,Charles,Harrison,2017-01-25,charles.h@northeastern.edu,F,No,2025-10-31,100392,500392,12,20,Norfolk Island
+4047896,Christina,Williams,1915-10-08,christina.w@northeastern.edu,M,No,2022-08-17,100393,500393,8,24,Morocco
+2512397,Bradley,Cowan,1956-03-15,bradley.c@northeastern.edu,F,No,2024-10-29,100394,500394,8,24,Korea
+5034166,Gregory,Cobb,1936-04-08,gregory.c@northeastern.edu,M,No,2022-07-16,100395,500395,4,28,Liechtenstein
+3330167,William,Murphy,1917-04-29,william.m@northeastern.edu,F,No,2024-04-27,100396,500396,4,28,Cocos (Keeling) Islands
+8979312,Tammy,Garcia,1968-03-04,tammy.g@northeastern.edu,M,No,2022-06-03,100397,500397,12,20,Samoa
+7106067,Samuel,Christensen,1910-12-30,samuel.c@northeastern.edu,F,No,2024-07-07,100398,500398,4,28,Puerto Rico
+9229471,William,Carr,1936-03-21,william.c@northeastern.edu,M,No,2022-10-01,100399,500399,8,24,Cayman Islands
+1675071,Jessica,Anderson,1960-01-25,jessica.a@northeastern.edu,F,No,2023-02-15,100400,500400,12,20,Cook Islands
+7420592,Mariah,Peterson,1962-08-28,mariah.p@northeastern.edu,M,No,2025-08-26,100401,500401,4,28,Liberia
+8788285,Mathew,Smith,1921-12-12,mathew.s@northeastern.edu,F,No,2024-03-27,100402,500402,4,28,Tuvalu
+9202329,Kathy,Cole,1993-05-02,kathy.c@northeastern.edu,M,No,2023-09-10,100403,500403,8,24,Latvia
+7028882,Stephanie,Rivera,1922-12-29,stephanie.r@northeastern.edu,F,No,2024-12-05,100404,500404,12,20,American Samoa
+3484864,Jamie,Williams,1944-06-09,jamie.w@northeastern.edu,M,No,2022-03-17,100405,500405,12,20,French Guiana
+1520377,Curtis,Miranda,2004-04-24,curtis.m@northeastern.edu,F,No,2025-08-04,100406,500406,12,20,Anguilla
+7986326,David,Kidd,1938-06-17,david.k@northeastern.edu,M,No,2025-02-03,100407,500407,12,20,Philippines
+8344494,Brian,Williams,1917-09-14,brian.w@northeastern.edu,F,No,2022-09-14,100408,500408,4,28,Venezuela
+5180565,Katie,Jones,1984-12-23,katie.j@northeastern.edu,M,No,2023-05-05,100409,500409,8,24,Pitcairn Islands
+7572758,Leah,Thompson,1996-05-26,leah.t@northeastern.edu,F,No,2024-03-28,100410,500410,12,20,Saint Kitts and Nevis
+9811017,Jennifer,Fleming,1977-06-24,jennifer.f@northeastern.edu,M,No,2024-11-03,100411,500411,4,28,Egypt
+6579058,Courtney,Clark,1986-04-28,courtney.c@northeastern.edu,F,No,2024-10-24,100412,500412,16,16,Bahamas
+9323059,Brandon,West,1926-09-30,brandon.w@northeastern.edu,M,No,2023-10-06,100413,500413,16,16,Korea
+4576782,David,Mills,1914-02-26,david.m@northeastern.edu,F,No,2023-09-03,100414,500414,8,24,Holy See (Vatican City State)
+9494340,Amber,Lewis,1954-09-30,amber.l@northeastern.edu,M,No,2023-08-21,100415,500415,4,28,Vanuatu
+2567846,Caitlin,Smith,1948-12-15,caitlin.s@northeastern.edu,F,No,2023-12-04,100416,500416,4,28,New Caledonia
+8829487,Marc,Reyes,1937-04-26,marc.r@northeastern.edu,M,No,2025-02-28,100417,500417,16,16,Finland
+1248192,Aaron,Ellis,1966-10-15,aaron.e@northeastern.edu,F,No,2022-02-22,100418,500418,16,16,Bangladesh
+1403579,Andrew,White,1986-04-05,andrew.w@northeastern.edu,M,No,2023-06-08,100419,500419,4,28,Poland
+6718073,Stephanie,Johnson,1910-07-02,stephanie.j@northeastern.edu,F,No,2025-12-02,100420,500420,16,16,Congo
+6681187,Hannah,Camacho,2013-02-09,hannah.c@northeastern.edu,M,No,2025-08-08,100421,500421,12,20,Netherlands
+3644647,Jacob,Wilson,1996-11-19,jacob.w@northeastern.edu,F,No,2025-01-19,100422,500422,16,16,Spain
+7205067,Robin,Santiago,1990-04-25,robin.s@northeastern.edu,M,No,2025-06-12,100423,500423,8,24,Tajikistan
+4911879,Anthony,Smith,1934-11-08,anthony.s@northeastern.edu,F,No,2023-02-26,100424,500424,16,16,Pakistan
+8825566,Amy,Morgan,1928-11-28,amy.m@northeastern.edu,M,No,2022-10-05,100425,500425,8,24,Antigua and Barbuda
+7752350,Alexandra,Campbell,1909-06-08,alexandra.c@northeastern.edu,F,No,2024-06-15,100426,500426,12,20,Mexico
+1283850,Erin,Lee,1949-02-15,erin.l@northeastern.edu,M,No,2022-06-06,100427,500427,16,16,Ghana
+7660806,David,Johnson,1925-04-01,david.j@northeastern.edu,F,No,2023-02-24,100428,500428,12,20,Saint Helena
+6640078,Thomas,Harrell,2013-02-22,thomas.h@northeastern.edu,M,No,2022-05-16,100429,500429,8,24,Norfolk Island
+4575369,Christopher,Lloyd,2019-11-02,christopher.l@northeastern.edu,F,No,2024-01-12,100430,500430,12,20,Guam
+4076493,Rachel,Jones,1980-04-06,rachel.j@northeastern.edu,M,No,2024-10-13,100431,500431,12,20,Mongolia
+7876722,Ann,Lindsey,1943-05-06,ann.l@northeastern.edu,F,No,2022-10-30,100432,500432,8,24,Palestinian Territory
+2061097,Ashley,Gordon,1946-08-26,ashley.g@northeastern.edu,M,No,2025-05-29,100433,500433,16,16,Tokelau
+8635419,Patrick,Shaffer,1948-02-03,patrick.s@northeastern.edu,F,No,2025-02-16,100434,500434,4,28,Philippines
+6207736,Jennifer,Hammond,1916-04-07,jennifer.h@northeastern.edu,M,No,2025-02-20,100435,500435,8,24,Palau
+5672143,Danielle,Gibson,1937-11-29,danielle.g@northeastern.edu,F,No,2025-01-19,100436,500436,8,24,Sao Tome and Principe
+3473498,David,Smith,1951-04-21,david.s@northeastern.edu,M,No,2023-01-19,100437,500437,4,28,Madagascar
+8038083,Jessica,Sims,1927-08-04,jessica.s@northeastern.edu,F,No,2024-04-26,100438,500438,12,20,Thailand
+3316337,Debra,Shepherd,1917-05-17,debra.s@northeastern.edu,M,No,2022-10-21,100439,500439,12,20,Barbados
+3591532,Christopher,Rowe,1910-07-25,christopher.r@northeastern.edu,F,No,2022-07-11,100440,500440,12,20,United Kingdom
+5023265,Edwin,Fisher,1936-10-24,edwin.f@northeastern.edu,M,No,2023-01-30,100441,500441,16,16,Cuba
+6167908,Jaclyn,Owens,2012-01-25,jaclyn.o@northeastern.edu,F,No,2024-01-29,100442,500442,4,28,Monaco
+7216643,Aaron,Mccullough,1967-04-09,aaron.m@northeastern.edu,M,No,2025-09-17,100443,500443,16,16,Portugal
+8480611,Stephanie,Baker,2000-07-09,stephanie.b@northeastern.edu,F,No,2024-09-05,100444,500444,16,16,Anguilla
+4230384,Dennis,Lara,1926-09-12,dennis.l@northeastern.edu,M,No,2022-06-09,100445,500445,4,28,American Samoa
+6546966,Michael,Osborne,1954-04-25,michael.o@northeastern.edu,F,No,2024-02-23,100446,500446,4,28,Lebanon
+3221806,Misty,Weaver,1929-01-04,misty.w@northeastern.edu,M,No,2022-09-21,100447,500447,16,16,Philippines
+7684767,Kerri,Kane,2020-01-21,kerri.k@northeastern.edu,F,No,2024-10-11,100448,500448,16,16,Saint Kitts and Nevis
+8088794,Melissa,Durham,1964-04-20,melissa.d@northeastern.edu,M,No,2023-01-03,100449,500449,16,16,Solomon Islands
+7533370,Denise,Murray,1954-02-09,denise.m@northeastern.edu,F,No,2023-08-16,100450,500450,8,24,Australia
+9588210,Carrie,Randolph,1915-11-17,carrie.r@northeastern.edu,M,No,2022-04-06,100451,500451,12,20,Sudan
+4116939,Brett,Dawson,1954-01-02,brett.d@northeastern.edu,F,No,2024-07-18,100452,500452,4,28,Togo
+6546627,John,Jimenez,1971-10-01,john.j@northeastern.edu,M,No,2024-12-06,100453,500453,12,20,Iraq
+3868638,Melissa,Jordan,1959-09-15,melissa.j@northeastern.edu,F,No,2024-11-30,100454,500454,12,20,South Georgia and the South Sandwich Islands
+1806632,Jon,Dougherty,1944-11-20,jon.d@northeastern.edu,M,No,2022-09-07,100455,500455,16,16,Brunei Darussalam
+6605272,Mary,Butler,1943-04-08,mary.b@northeastern.edu,F,No,2025-04-06,100456,500456,4,28,Faroe Islands
+6629356,Todd,Martinez,1977-08-11,todd.m@northeastern.edu,M,No,2024-06-10,100457,500457,4,28,Holy See (Vatican City State)
+4736371,Becky,Smith,1966-11-14,becky.s@northeastern.edu,F,No,2022-10-10,100458,500458,12,20,Swaziland
+4844418,Malik,Webb,2002-06-19,malik.w@northeastern.edu,M,No,2024-01-19,100459,500459,16,16,Peru
+3604089,Monica,Villarreal,1940-04-08,monica.v@northeastern.edu,F,No,2025-08-13,100460,500460,16,16,Monaco
+9271972,Shelby,Winters,1909-10-19,shelby.w@northeastern.edu,M,No,2023-05-01,100461,500461,12,20,Ireland
+6050108,Scott,Rose,1919-09-04,scott.r@northeastern.edu,F,No,2025-11-26,100462,500462,4,28,Sweden
+2021805,Steven,Carter,1930-01-25,steven.c@northeastern.edu,M,No,2022-12-12,100463,500463,8,24,Malawi
+8362938,Christine,Morris,1914-10-22,christine.m@northeastern.edu,F,No,2022-05-16,100464,500464,16,16,Serbia
+1628223,Laura,Olson,1961-06-09,laura.o@northeastern.edu,M,No,2023-01-09,100465,500465,12,20,Poland
+1942186,Andrew,Koch,1975-07-15,andrew.k@northeastern.edu,F,No,2025-09-04,100466,500466,4,28,Armenia
+5577592,Tyrone,Bowers,1955-08-01,tyrone.b@northeastern.edu,M,No,2022-01-30,100467,500467,4,28,Somalia
+1160205,James,Walton,1919-10-09,james.w@northeastern.edu,F,No,2023-05-17,100468,500468,12,20,Congo
+5957831,Victoria,Spencer,1965-02-07,victoria.s@northeastern.edu,M,No,2022-04-11,100469,500469,8,24,Uzbekistan
+9200915,Alexander,Short,1977-02-18,alexander.s@northeastern.edu,F,No,2023-11-06,100470,500470,12,20,Singapore
+8305939,Sarah,Fox,2004-04-23,sarah.f@northeastern.edu,M,No,2023-08-07,100471,500471,4,28,Canada
+7019482,Rhonda,Burch,1960-07-20,rhonda.b@northeastern.edu,F,No,2023-10-23,100472,500472,16,16,Dominican Republic
+6187475,Benjamin,Weaver,1956-06-03,benjamin.w@northeastern.edu,M,No,2024-08-17,100473,500473,16,16,Argentina
+6441514,Joseph,Fernandez,2016-08-09,joseph.f@northeastern.edu,F,No,2025-08-04,100474,500474,16,16,Italy
+7710584,Tyler,Ferguson,1986-12-31,tyler.f@northeastern.edu,M,No,2024-05-09,100475,500475,16,16,Equatorial Guinea
+2926399,James,Carson,1997-07-10,james.c@northeastern.edu,F,No,2025-10-27,100476,500476,16,16,Uzbekistan
+1970243,Joyce,Long,1944-09-05,joyce.l@northeastern.edu,M,No,2024-12-21,100477,500477,8,24,Croatia
+1545445,Sabrina,Miller,1985-04-08,sabrina.m@northeastern.edu,F,No,2025-11-14,100478,500478,16,16,Sudan
+3043501,Julie,Ward,2018-11-17,julie.w@northeastern.edu,M,No,2025-06-10,100479,500479,12,20,Portugal
+8155306,Steven,Thomas,1998-06-03,steven.t@northeastern.edu,F,No,2025-05-01,100480,500480,12,20,Somalia
+6693107,Jasmine,Bradley,1981-05-19,jasmine.b@northeastern.edu,M,No,2022-07-13,100481,500481,16,16,Svalbard & Jan Mayen Islands
+3352619,Jason,Walter,2020-08-13,jason.w@northeastern.edu,F,No,2022-05-22,100482,500482,12,20,United States Virgin Islands
+2858121,Alec,Marquez,1917-01-26,alec.m@northeastern.edu,M,No,2023-02-01,100483,500483,8,24,Peru
+7333386,Janice,Underwood,1991-11-21,janice.u@northeastern.edu,F,No,2023-05-25,100484,500484,8,24,Vietnam
+2091534,Michele,Fitzgerald,2001-03-13,michele.f@northeastern.edu,M,No,2025-06-05,100485,500485,16,16,Antarctica (the territory South of 60 deg S)
+2969085,James,Greene,1910-02-25,james.g@northeastern.edu,F,No,2022-09-11,100486,500486,4,28,Lithuania
+4061463,Jennifer,Gibson,1957-03-08,jennifer.g@northeastern.edu,M,No,2023-06-16,100487,500487,8,24,Palestinian Territory
+9178079,Christina,Reeves,1993-06-20,christina.r@northeastern.edu,F,No,2025-02-20,100488,500488,8,24,Kyrgyz Republic
+5205395,Walter,Jones,1927-08-03,walter.j@northeastern.edu,M,No,2023-05-07,100489,500489,8,24,Panama
+7565113,Scott,Garza,1971-12-30,scott.g@northeastern.edu,F,No,2022-02-17,100490,500490,4,28,Netherlands
+7807852,Sherry,Collier,1918-08-02,sherry.c@northeastern.edu,M,No,2024-07-30,100491,500491,16,16,Latvia
+8174219,Kimberly,Smith,1970-11-01,kimberly.s@northeastern.edu,F,No,2023-10-03,100492,500492,12,20,El Salvador
+9296538,Mary,Rivera,1912-07-27,mary.r@northeastern.edu,M,No,2025-03-11,100493,500493,8,24,Nepal
+3992805,Kristen,Trujillo,1949-03-09,kristen.t@northeastern.edu,F,No,2025-08-24,100494,500494,16,16,Saint Vincent and the Grenadines
+3649581,Mark,Johns,2010-02-16,mark.j@northeastern.edu,M,No,2022-09-25,100495,500495,12,20,Honduras
+4553520,Ryan,Smith,1991-08-26,ryan.s@northeastern.edu,F,No,2024-03-03,100496,500496,16,16,Costa Rica
+2169123,Melissa,Nichols,1946-06-07,melissa.n@northeastern.edu,M,No,2025-08-06,100497,500497,8,24,Ecuador
+1576446,Brad,Johnson,1917-07-21,brad.j@northeastern.edu,F,No,2023-03-22,100498,500498,8,24,Poland
+3126372,Elizabeth,Hines,1921-05-30,elizabeth.h@northeastern.edu,M,No,2024-03-25,100499,500499,4,28,Israel
+7422770,Billy,Becker,1941-01-15,billy.b@northeastern.edu,F,No,2025-12-06,100500,500500,16,16,Guernsey

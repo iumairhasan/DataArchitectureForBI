@@ -1,0 +1,2161 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="120">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="689" y="101" width="240" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_factStudentEnrollment</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+          <Caption>input_factStudentEnrollment</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="115">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="846" y="197" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="studentEnrollmentSK" selected="True" rename="sutdentEnrollmentSK" type="Int32" size="4" />
+                <SelectField field="studentNUID" selected="True" type="Int32" size="4" />
+                <SelectField field="CRN_SK" selected="True" rename="CRN" type="Int32" size="4" />
+                <SelectField field="departmentSK" selected="True" type="Int32" size="4" />
+                <SelectField field="professorNUID" selected="True" type="Int32" size="4" />
+                <SelectField field="calendarSK" selected="True" type="Int32" size="4" />
+                <SelectField field="dropDate" selected="True" type="Date" size="10" />
+                <SelectField field="grades" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="116">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="954" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.factStudentEnrollment</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Delete</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.factStudentEnrollment</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="117">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="978" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_11648_4b55299141dc4621b3bc53071dcf65f7_\Engine_19132_c482deddf97d4c6b84323d1cb4f17f31_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="119">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="714" y="197" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>factStudentEnrollment_alt.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="calendarSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="studentEnrollmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="dropDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="113">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="282" y="234" width="230" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimAvailableCourses</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="109">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="306" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimAvailableCourses.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimAvailableCourses.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="availableCoursesSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimAvailableCourses.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimAvailableCourses.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimAvailableCourses.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimAvailableCourses.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimAvailableCourses.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="110">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="450" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="availableCoursesSK" selected="True" type="Int32" size="4" />
+                <SelectField field="CRN_SK" selected="True" rename="CRN" type="Int32" size="4" />
+                <SelectField field="semesterSK" selected="True" type="Int32" size="4" />
+                <SelectField field="departmentSK" selected="True" type="Int32" size="4" />
+                <SelectField field="professorNUID" selected="True" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="111">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="594" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_10552_317df9c9a8eb46ab9cb918e36ebbc275_\Engine_19132_e92221942c174a6c8b7e3b32d27496de_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="606" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimAvailableCourses</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimAvailableCourses</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="108">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="282" y="186" width="221" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimCourseOffering</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="104">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="414" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="CRN" selected="True" type="Int32" size="4" />
+                <SelectField field="semesterSK" selected="True" />
+                <SelectField field="departmentSK" selected="True" />
+                <SelectField field="professorNUID" selected="True" />
+                <SelectField field="geographySK" selected="True" rename="geagraphySK" />
+                <SelectField field="currentlyAvailable" selected="True" />
+                <SelectField field="section" selected="True" />
+                <SelectField field="courseNumber" selected="True" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="570" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_4460_6ba7072921464857b2de42f2e4052e09_\Engine_19132_d7391b2369ed470f82ae926d3a6fba6a_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="106">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="306" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimCourseOffering.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="107">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="534" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimCourseOffering</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimCourseOffering</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="102">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="90" y="318" width="174" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimCourse</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="246" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="courseNumber" selected="True" type="Int32" size="4" />
+                <SelectField field="departmentSK" selected="True" type="Int32" size="4" />
+                <SelectField field="courseName" selected="True" />
+                <SelectField field="lectureMode" selected="True" />
+                <SelectField field="numberOfCredits" selected="True" />
+                <SelectField field="isCore" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="99">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="390" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_18292_7aefc6e7751f4a33b48edd7be51af102_\Engine_19132_c51e2373587847249f02838b4c831f75_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimCourse.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="courseName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="numberOfCredits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="isCore" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="lectureMode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="101">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="390" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimCourse</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimCourse</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="66" y="234" width="185" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimCalendar</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="101" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>factStudentEnrollment_alt.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="calendarSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="studentEnrollmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="546" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="282" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="calendarSK" selected="True" type="Int32" size="4" />
+                <SelectField field="date" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="318" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="calendarSK" selected="True" type="Int32" size="4" />
+                <SelectField field="date" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="90" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimStudents_alt.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="geagraphySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="hometownStudentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="calendarSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="dateOfBirth" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="Nationality" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="livingOnCampus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="numberOfCreditCompleted" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="numberOfCreditToDegree" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+                <Field name="graduationDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="198" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DATETIMEADD('2016-01-01', RANDINT(146), 'days')" field="date" size="10" type="Date" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[date = DATETIMEADD('2016-01-01', RANDINT(146), 'days')
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="222" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DATETIMEADD('2016-01-01', RANDINT(2), 'years')" field="date" size="10" type="Date" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[date = DATETIMEADD('2016-01-01', RANDINT(2), 'years')
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="85">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="653" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeMonth(date)" field="month" size="4" type="Int32" />
+                <FormulaField expression="DateTimeYear(date)" field="year" size="4" type="Int32" />
+                <FormulaField expression="DateTimeDay(date)" field="day" size="4" type="Int32" />
+                <FormulaField expression="RandInt(4)" field="semester" size="4" type="Int32" />
+                <FormulaField expression="RandInt(1)" field="holidayBool" size="4" type="Int32" />
+                <FormulaField expression="DateTimeFormat([Date],&quot;%W&quot;)" field="weekOfYear" size="2147483647" type="V_String" />
+                <FormulaField expression="DateTimeFormat(date,&quot;%A&quot;)" field="dayName" size="2147483647" type="V_String" />
+                <FormulaField expression="ToNumber(DateTimeFormat([Date],&quot;%w&quot;))" field="dayOfWeeks" size="4" type="Int32" />
+                <FormulaField expression="datetimeformat(date,&quot;%B&quot;)&#xA;&#xA;" field="monthName" size="2147483647" type="V_String" />
+                <FormulaField expression="RandInt(16)" field="semesterWeek" size="4" type="Int32" />
+                <FormulaField expression="RandInt(4)" field="semesterMonth" size="4" type="Int32" />
+                <FormulaField expression="DateTimeMonth(date)" field="monthOfYear" size="4" type="Int32" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>month = DateTimeMonth(date)
+year = DateTimeYear(date)
+day = DateTimeDay(date)
+se...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="87">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="798" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="calendarSK" selected="True" />
+                <SelectField field="date" selected="True" />
+                <SelectField field="month" selected="True" />
+                <SelectField field="year" selected="True" />
+                <SelectField field="semester" selected="True" type="V_String" size="11" />
+                <SelectField field="holidayBool" selected="True" type="String" size="11" />
+                <SelectField field="semesterWeek" selected="True" />
+                <SelectField field="semesterMonth" selected="True" />
+                <SelectField field="day" selected="False" />
+                <SelectField field="dayName" selected="True" rename="dayNameOfWeek" />
+                <SelectField field="dayOfWeeks" selected="True" rename="dayOfWeek" />
+                <SelectField field="monthOfYear" selected="True" />
+                <SelectField field="monthName" selected="True" rename="monthNameOfYear" />
+                <SelectField field="weekOfYear" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="88">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="942" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_16264_1511892207e74d099cdd8587f0355ee7_\Engine_19132_d4213770eaca4e93baa9d375bf66036e_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="954" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimCalendar</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimCalendar</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="78" y="270" width="185" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimStudents</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="102" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimStudents.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="firstNames" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="dateOfBirth" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="livingOnCampus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="graduationDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="hometownStudentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="numberOfCreditCompleted" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="numberOfCreditToDegree" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+                <Field name="Nationality" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudents.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="246" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>calendarSK</FieldName>
+              <StartValue>810001</StartValue>
+              <FieldType>Int64</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="366" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="studentNUID" selected="True" type="Int32" size="4" />
+                <SelectField field="geographySK" selected="True" rename="geagraphySK" type="Int32" size="4" />
+                <SelectField field="hometownStudentSK" selected="True" type="Int32" size="4" />
+                <SelectField field="calendarSK" selected="True" type="Int32" size="4" />
+                <SelectField field="firstNames" selected="True" rename="firstName" />
+                <SelectField field="lastName" selected="True" />
+                <SelectField field="dateOfBirth" selected="True" type="Date" size="10" />
+                <SelectField field="email" selected="True" />
+                <SelectField field="gender" selected="True" />
+                <SelectField field="Nationality" selected="True" rename="nationality" />
+                <SelectField field="livingOnCampus" selected="True" />
+                <SelectField field="numberOfCreditCompleted" selected="True" type="Int32" size="4" />
+                <SelectField field="numberOfCreditToDegree" selected="True" rename="numberOfCreditsToDegree" type="Int32" size="4" />
+                <SelectField field="graduationDate" selected="True" type="Date" size="10" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="498" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\dimStudents_alt.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimStudents_alt.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="510" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_4936_60b2fb54859045f0872eb88bee31d39d_\Engine_19132_7dea4e23a26d48dba663c7e2211f44e2_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="510" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimStudents</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimStudents</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="66" y="53" width="202" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimGeographys</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="91" y="109" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimGeography.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+                <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+                <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+                <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="535" y="151" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimGeographys</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimGeographys</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="223" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="geographySK" selected="True" rename="geagraphySK" />
+                <SelectField field="homeAddress" selected="True" />
+                <SelectField field="state" selected="True" />
+                <SelectField field="city" selected="True" />
+                <SelectField field="zipcode" selected="True" />
+                <SelectField field="country" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="438" y="179" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_21280_e4fb761d9b914c82a7fae20823856f66_\Engine_22864_0f1a8b2c5b0b445eb576bc122f7bdf28_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="118" width="295" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimStudentHometownOutrigger</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+          <Caption>input_dimStudentHometownOutrigger</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="167" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudentHomeTownOutrigger.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimStudentHomeTownOutrigger.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="hometownStudentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudentHomeTownOutrigger.csv" type="V_String" />
+                <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudentHomeTownOutrigger.csv" type="V_String" />
+                <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudentHomeTownOutrigger.csv" type="V_String" />
+                <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudentHomeTownOutrigger.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudentHomeTownOutrigger.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimStudentHomeTownOutrigger.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="235" y="168" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="hometownStudentSK" selected="True" />
+                <SelectField field="homeAddress" selected="True" />
+                <SelectField field="state" selected="True" />
+                <SelectField field="city" selected="True" />
+                <SelectField field="zipcode" selected="True" />
+                <SelectField field="country" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="391" y="180" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimStudentHometownOutrigger</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimStudentHometownOutrig...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="66" y="155" width="187" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimSemester</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+          <Caption>input_dimSemester</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Caption>input_dimSemester</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="427" y="216" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimSemester</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimSemester</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="91" y="204" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimSemester.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimSemester.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimSemester.csv" type="V_String" />
+                <Field name="semesterName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimSemester.csv" type="V_String" />
+                <Field name="semesterStartDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimSemester.csv" type="V_String" />
+                <Field name="semesterEndDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimSemester.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="247" y="216" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="semesterSK" selected="True" type="Int32" size="4" />
+                <SelectField field="semesterName" selected="True" />
+                <SelectField field="semesterStartDate" selected="True" type="Date" size="10" />
+                <SelectField field="semesterEndDate" selected="True" type="Date" size="10" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="66" y="191" width="194" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimProfessors</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="91" y="264" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessors.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimProfessors.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessors.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessors.csv" type="V_String" />
+                <Field name="hometownProfessorSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessors.csv" type="V_String" />
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessors.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessors.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessors.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessors.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessors.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="247" y="252" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="professorNUID" selected="True" type="Int32" size="4" />
+                <SelectField field="geographySK" selected="True" rename="geagraphySK" type="Int32" size="4" />
+                <SelectField field="hometownProfessorSK" selected="True" type="Int32" size="4" />
+                <SelectField field="firstName" selected="True" />
+                <SelectField field="lastName" selected="True" />
+                <SelectField field="email" selected="True" />
+                <SelectField field="gender" selected="True" />
+                <SelectField field="officeNumber" selected="True" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="391" y="240" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_24108_7c4abb0cdf8f49dfa9357aff2ccb565f_\Engine_22864_095588aeeadc44df8aaca068c6e202ce_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="367" y="300" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimProfessors</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimProfessors</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="270" y="155" width="208" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimDepartments</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="391" y="240" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="departmentSK" selected="True" type="Int32" size="4" />
+                <SelectField field="college" selected="True" type="String" size="254" />
+                <SelectField field="departmentName" selected="True" type="String" size="254" />
+                <SelectField field="programName" selected="True" type="String" size="254" />
+                <SelectField field="programStartDate" selected="True" type="Date" size="10" />
+                <SelectField field="programEndDate" selected="True" type="Date" size="10" />
+                <SelectField field="numberOfCredits" selected="True" type="Int32" size="4" />
+                <SelectField field="perCreditFee" selected="True" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="295" y="239" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimDepartments.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimDepartments.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimDepartments.csv" type="V_String" />
+                <Field name="college" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimDepartments.csv" type="V_String" />
+                <Field name="departmentName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimDepartments.csv" type="V_String" />
+                <Field name="programName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimDepartments.csv" type="V_String" />
+                <Field name="programStartDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimDepartments.csv" type="V_String" />
+                <Field name="programEndDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimDepartments.csv" type="V_String" />
+                <Field name="numberOfCredits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimDepartments.csv" type="V_String" />
+                <Field name="perCreditFee" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimDepartments.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="499" y="204" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_19820_bf4439adb9e548f98a1e87e20ad59e2d_\Engine_22864_265773787848454b825f6d7c6be3c095_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="511" y="264" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimDepartments</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimDepartments</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="282" y="54" width="303" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>input_dimProfessorHometownOutrigger</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="642" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimProfessorHometownOutrigger</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimProfessorHometownOutr...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="306" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessorHomeTownOutrigger.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimProfessorHomeTownOutrigger.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="hometownProfessorSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessorHomeTownOutrigger.csv" type="V_String" />
+                <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessorHomeTownOutrigger.csv" type="V_String" />
+                <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessorHomeTownOutrigger.csv" type="V_String" />
+                <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessorHomeTownOutrigger.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessorHomeTownOutrigger.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimProfessorHomeTownOutrigger.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="474" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="hometownProfessorSK" selected="True" />
+                <SelectField field="country" selected="True" />
+                <SelectField field="homeAddress" selected="True" />
+                <SelectField field="city" selected="True" />
+                <SelectField field="state" selected="True" />
+                <SelectField field="zipcode" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="115" Connection="Output" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="115" Connection="Output" />
+      <Destination ToolID="117" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="115" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="109" Connection="Output" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="105" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Output" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Team7_Graduate_Student_Model_inputtingData</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6b9a6f36-a50b-4f74-a743-c24fcbf5489d" />
+      <Telemetry>
+        <PreviousWorkflowId value="bd17b8fa-fa3e-439c-bc21-471be9621bc0" />
+        <OriginWorkflowId value="bd17b8fa-fa3e-439c-bc21-471be9621bc0" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

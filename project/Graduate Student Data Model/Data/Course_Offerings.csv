@@ -1,0 +1,51 @@
+Term/Sem,College,Program,Program level,ProgramName/Department,Course Number,Section,Credits,CRN,Term,Instructor,Campus,Core,firstName,lastName,email,officeNumber,gender,lectureMode
+Spring,COE,IS,Graduate,Application Engineering and Development,5100,2,4,33460,Spring 2020 ,"Dosapati, Siva(Primary)","Seattle, WA",Yes,Siva,Dosapati,rebecca.w@northeastern.edu,6174562081,M,In-Person
+Spring,COE,IS,Graduate,Application Engineering and Development,5100,3,4,34708,Spring 2020 ,"Oza, Taral(Primary)","Silicon Valley, CA",Yes,Taral,Oza,monica.d@northeastern.edu,6174562082,M,In-Person
+Spring,COE,IS,Graduate,Application Engineering and Development,5100,4,4,34721,Spring 2020 ,"Bugrara, Khaled(Primary)",Boston,Yes,Khaled,Bugrara,roger.w@northeastern.edu,6174562083,M,In-Person
+Spring,COE,IS,Graduate,Lab for INFO 5100,5101,1,0,34129,Spring 2020 ,"Dosapati, Siva(Primary)","Seattle, WA",Yes,Siva,Dosapati,jonathan.g@northeastern.edu,6174562084,M,In-Person
+Spring,COE,IS,Graduate,Lab for INFO 5100,5101,2,0,34850,Spring 2020 ,"Bugrara, Khaled(Primary)",Boston,Yes,Khaled,Bugrara,justin.h@northeastern.edu,6174562085,M,In-Person
+Spring,COE,IS,Graduate,Lab for INFO 5100,5101,3,0,34885,Spring 2020 ,"Oza, Taral(Primary)","Silicon Valley, CA",Yes,Taral,Oza,ashley.m@northeastern.edu,6174562086,M,In-Person
+Spring,COE,IS,Graduate,Data Science Engineering Methods and Tools,6105,2,4,35632,Spring 2020 ,"Liu, Handan(Primary)",Boston,No,Handan,Liu,david.o@northeastern.edu,6174562087,F,In-Person
+Spring,COE,IS,Graduate,Data Science Engineering Methods and Tools,6105,5,4,35636,Spring 2020 ,"Nasrabadi, Ebrahim(Primary)","Seattle, WA",No,Ebrahim,Nasrabadi,jeanette.g@northeastern.edu,6174562088,M,In-Person
+Spring,COE,IS,Graduate,Data Science Engineering Methods and Tools,6105,6,4,35639,Spring 2020 ,"Konstantopoulos, Constantin(Primary)",Boston,No,Constantin,Konstantopoulos,eric.m@northeastern.edu,6174562089,M,In-Person
+Spring,COE,IS,Graduate,Data Science Engineering Methods and Tools,6105,7,4,35642,Spring 2020 ,"Konstantopoulos, Constantin(Primary)",Boston,No,Constantin,Konstantopoulos,phillip.p@northeastern.edu,6174562090,M,Online
+Spring,COE,IS,Graduate,Data Science Engineering Methods and Tools,6105,8,4,35643,Spring 2020 ,"Hariharan, Ramkumar(Primary)","Silicon Valley, CA",No,Ramkumar,Hariharan,jordan.w@northeastern.edu,6174562091,M,In-Person
+Spring,COE,IS,Graduate,Data Science Engineering Methods and Tools,6105,9,4,35644,Spring 2020 ,"Hariharan, Ramkumar(Primary)",Online,No,Ramkumar,Hariharan,mark.s@northeastern.edu,6174562092,M,In-Person
+Spring,COE,IS,Graduate,Data Science Engineering Methods and Tools,6105,10,4,37555,Spring 2020 ,"Liu, Handan(Primary)",Boston,No,Handan,Liu,joseph.p@northeastern.edu,6174562093,F,In-Person
+Spring,COE,IS,Graduate,Web Design and User Experience Engineering,6150,1,4,33513,Spring 2020 ,"Chawla, Vishal(Primary)",Boston,No,Vishal,Chawla,stacy.l@northeastern.edu,6174562094,M,In-Person
+Spring,COE,IS,Graduate,Web Design and User Experience Engineering,6150,2,4,34710,Spring 2020 ,"Arulraj, Amuthan(Primary)",Boston,No,Amuthan,Arulraj,ricky.c@northeastern.edu,6174562095,M,In-Person
+Spring,COE,IS,Graduate,Web Design and User Experience Engineering,6150,3,4,35654,Spring 2020 ,"Bingham, April(Primary)","Seattle, WA",No,April,Bingham,andre.t@northeastern.edu,6174562096,M,In-Person
+Spring,COE,IS,Graduate,Program Structure and Algorithms,6205,1,4,32421,Spring 2020 ,"Ghassemi, Mohsen(Primary)",Boston,No,Mohsen,Ghassemi,michelle.f@northeastern.edu,6174562097,M,In-Person
+Spring,COE,IS,Graduate,Program Structure and Algorithms,6205,2,4,33459,Spring 2020 ,"Ashish, Ashish(Primary)","Seattle, WA",No,Ashish,Ashish,barbara.r@northeastern.edu,6174562098,M,In-Person
+Spring,COE,IS,Graduate,Program Structure and Algorithms,6205,3,4,34506,Spring 2020 ,"Hillyard, Robin(Primary)",Boston,No,Robin,Hillyard,laura.h@northeastern.edu,6174562099,M,In-Person
+Spring,COE,IS,Graduate,Program Structure and Algorithms,6205,5,4,34507,Spring 2020 ,"Hillyard, Robin(Primary)",Boston,No,Robin,Hillyard,daniel.j@northeastern.edu,6174562100,M,In-Person
+Spring,COE,IS,Graduate,Program Structure and Algorithms,6205,6,4,34847,Spring 2020 ,"Vasudevamurthy, Jagadeesh(Primary)","Silicon Valley, CA",No,Jagadeesh,Vasudevamurthy,sharon.j@northeastern.edu,6174562101,M,In-Person
+Spring,COE,IS,Graduate,Program Structure and Algorithms,6205,7,4,35645,Spring 2020 ,"Ghassemi, Mohsen(Primary)",Boston,No,Mohsen,Ghassemi,david.f@northeastern.edu,6174562102,M,In-Person
+Spring,COE,IS,Graduate,Data Management and Database Design,6210,1,4,32555,Spring 2020 ,"Montrond, Manuel(Primary)",Boston,No,Manuel,Montrond,jose.r@northeastern.edu,6174562103,M,In-Person
+Spring,COE,IS,Graduate,Data Management and Database Design,6210,2,4,33009,Spring 2020 ,"Wang, Wuping(Primary)",Online,No,Wuping,Wang,stephanie.n@northeastern.edu,6174562104,M,Online
+Spring,COE,IS,Graduate,Data Management and Database Design,6210,5,4,34654,Spring 2020 ,"Wang, Wuping(Primary)","Seattle, WA",No,Wuping,Wang,audrey.a@northeastern.edu,6174562105,M,In-Person
+Spring,COE,IS,Graduate,Data Management and Database Design,6210,6,4,34711,Spring 2020 ,"Mutsalklisana, Chaiyaporn(Primary)",Boston,No,Chaiyaporn,Mutsalklisana,sarah.d@northeastern.edu,6174562106,M,In-Person
+Spring,COE,IS,Graduate,Data Management and Database Design,6210,8,4,38073,Spring 2020 ,"Brown, Nicholas(Primary)",Boston,No,Nicholas,Brown,jonathan.f@northeastern.edu,6174562107,M,In-Person
+Spring,COE,IS,Graduate,Data Management and Database Design,6210,9,4,38074,Spring 2020 ,"Montrond, Manuel(Primary)",Boston,No,Manuel,Montrond,heather.s@northeastern.edu,6174562108,M,In-Person
+Spring,COE,IS,Graduate,Data Management and Database Design,6210,10,4,38782,Spring 2020 ,"Kuragayala, Naveen(Primary)",Boston,No,Naveen,Kuragayala,paula.b@northeastern.edu,6174562109,M,In-Person
+Spring,COE,IS,Graduate,Business Analysis and Information Engineering,6215,1,4,30819,Spring 2020 ,"Guschin, Andrei(Primary)",Online,No,Andrei,Guschin,jennifer.j@northeastern.edu,6174562110,M,In-Person
+Spring,COE,IS,Graduate,Planning and Managing Information Systems Development,6245,1,4,36225,Spring 2020 ,"Heydari, Kambiz(Primary)",Boston,No,Kambiz,Heydari,wendy.b@northeastern.edu,6174562111,M,In-Person
+Spring,COE,IS,Graduate,Web Development Tools and Methods,6250,2,4,31822,Spring 2020 ,"Ozbek, Yusuf(Primary)",Boston,No,Yusuf,Ozbek,kimberly.g@northeastern.edu,6174562112,M,In-Person
+Spring,COE,IS,Graduate,Web Development Tools and Methods,6250,4,4,33496,Spring 2020 ,"Ozbek, Yusuf(Primary)",Boston,No,Yusuf,Ozbek,eric.a@northeastern.edu,6174562113,M,In-Person
+Spring,COE,IS,Graduate,Web Development Tools and Methods,6250,5,4,34149,Spring 2020 ,"Ritter, Brett(Primary)","Seattle, WA",No,Brett,Ritter,lauren.r@northeastern.edu,6174562114,M,In-Person
+Spring,COE,IS,Graduate,Web Development Tools and Methods,6250,7,4,34846,Spring 2020 ,"Ritter, Brett(Primary)","Silicon Valley, CA",No,Brett,Ritter,katie.p@northeastern.edu,6174562115,M,In-Person
+Spring,COE,IS,Graduate,Lab for INFO 6250,6251,1,0,33313,Spring 2020 ,"Ozbek, Yusuf(Primary)",Boston,No,Yusuf,Ozbek,travis.p@northeastern.edu,6174562116,M,In-Person
+Spring,COE,IS,Graduate,Lab for INFO 6250,6251,2,0,33314,Spring 2020 ,"Ozbek, Yusuf(Primary)",Boston,No,Yusuf,Ozbek,cheryl.s@northeastern.edu,6174562117,M,Online
+Spring,COE,IS,Graduate,Lab for INFO 6250,6251,4,0,33326,Spring 2020 ,"Ozbek, Yusuf(Primary)",Boston,No,Yusuf,Ozbek,scott.m@northeastern.edu,6174562118,M,In-Person
+Spring,COE,IS,Graduate,Lab for INFO 6250,6251,5,0,33327,Spring 2020 ,"Ozbek, Yusuf(Primary)",Boston,No,Yusuf,Ozbek,deanna.p@northeastern.edu,6174562119,M,In-Person
+Spring,COE,IS,Graduate,Lab for INFO 6250,6251,7,0,33329,Spring 2020 ,"Ozbek, Yusuf(Primary)",Boston,No,Yusuf,Ozbek,roy.b@northeastern.edu,6174562120,M,In-Person
+Spring,COE,IS,Graduate,Lab for INFO 6250,6251,12,0,36142,Spring 2020 ,"Ritter, Brett(Primary)","Silicon Valley, CA",No,Brett,Ritter,robert.m@northeastern.edu,6174562121,M,In-Person
+Spring,COE,IS,Graduate,Lab for INFO 6250,6251,17,0,34908,Spring 2020 ,"Ritter, Brett(Primary)","Seattle, WA",No,Brett,Ritter,kenneth.b@northeastern.edu,6174562122,M,Online
+Spring,COE,IS,Graduate,Software Quality Control and Management,6255,1,4,35652,Spring 2020 ,"Servattalab, Matthew(Primary)",Boston,No,Matthew,Servattalab,martin.k@northeastern.edu,6174562123,M,In-Person
+Spring,COE,IS,Graduate,Software Quality Control and Management,6255,2,4,36364,Spring 2020 ,"Servattalab, Matthew(Primary)",Boston,No,Matthew,Servattalab,brittany.m@northeastern.edu,6174562124,M,In-Person
+Spring,COE,IS,Graduate,Smartphones-Based Web Development,6350,1,4,32485,Spring 2020 ,"Ahmed, Rabah(Primary)",Boston,No,Rabah,Ahmed,janice.w@northeastern.edu,6174562125,M,In-Person
+Spring,COE,IS,Graduate,Smartphones-Based Web Development,6350,2,4,33952,Spring 2020 ,"Ashish, Ashish(Primary)","Seattle, WA",No,Ashish,Ashish,jamie.r@northeastern.edu,6174562126,M,In-Person
+Spring,COE,IS,Graduate,Smartphones-Based Web Development,6350,3,4,36699,Spring 2020 ,"Oza, Taral(Primary)","Silicon Valley, CA",No,Taral,Oza,barbara.l@northeastern.edu,6174562127,M,In-Person
+Spring,COE,IS,Graduate,Business Ethics and Intellectual Property for Engineers,6660,1,4,34702,Spring 2020 ,"Boivin, Nicholas(Primary)",Boston,No,Nicholas,Boivin,tiffany.s@northeastern.edu,6174562128,M,In-Person
+Spring,COE,IS,Graduate,Co-op Work Experience,6964,2,0,38528,Spring 2020 ,"Ochengco, Abigail(Primary)","No campus, no room needed",No,Abigail,Ochengco,brandon.m@northeastern.edu,6174562129,M,In-Person
+Spring,COE,IS,Graduate,Co-op Work Experience,6964,6,0,38529,Spring 2020 ,"Klaphake, Carrie(Primary)","No campus, no room needed",No,Carrie,Klaphake,jennifer.h@northeastern.edu,6174562130,M,In-Person

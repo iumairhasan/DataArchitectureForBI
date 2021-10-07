@@ -1,0 +1,15 @@
+courseName,courseNumber,numberOfCredits,isCore,lectureMode,departmentSK
+Application Engineering and Development,5100,4,Yes,In-Person,657840
+Lab for INFO 5100,5101,0,Yes,Online,657840
+Data Science Engineering Methods and Tools,6105,4,No,In-Person,657840
+Web Design and User Experience Engineering,6150,4,No,In-Person,657840
+Program Structure and Algorithms,6205,4,No,In-Person,657840
+Data Management and Database Design,6210,4,No,In-Person,657840
+Business Analysis and Information Engineering,6215,4,No,In-Person,657840
+Planning and Managing Information Systems Development,6245,4,No,In-Person,657840
+Web Development Tools and Methods,6250,4,No,In-Person,657841
+Lab for INFO 6250,6251,0,No,In-Person,657841
+Software Quality Control and Management,6255,4,No,In-Person,657841
+Smartphones-Based Web Development,6350,4,No,In-Person,657841
+Business Ethics and Intellectual Property for Engineers,6660,4,No,In-Person,657841
+Co-op Work Experience,6964,0,No,In-Person,657841

@@ -1,0 +1,3039 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1411" y="607" width="196" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>dimAvailableCourses</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1435" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimCourseOffering.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="1543" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>availableCoursesSK</FieldName>
+              <StartValue>900001</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="availableCoursesSK" source="RecordID: Starting Value=900001" type="Int32" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="availableCoursesSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1807" y="667" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="availableCoursesSK" selected="True" />
+                <SelectField field="semesterSK" selected="True" />
+                <SelectField field="departmentSK" selected="True" />
+                <SelectField field="professorNUID" selected="True" />
+                <SelectField field="CRN" selected="True" rename="CRN_SK" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="availableCoursesSK" source="RecordID: Starting Value=900001" type="Int32" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="availableCoursesSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1675" y="667" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>currentlyAvailable</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-10-05 21:04:37</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2021-10-05 21:04:37</StartDate>
+                  <EndDate>2021-10-05 21:04:37</EndDate>
+                  <Operand>Yes</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[currentlyAvailable] = "Yes"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="availableCoursesSK" source="RecordID: Starting Value=900001" type="Int32" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="availableCoursesSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="availableCoursesSK" source="RecordID: Starting Value=900001" type="Int32" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="availableCoursesSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1939" y="667" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimAvailableCourses.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimAvailableCourses.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1963" y="799" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>
+              </TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="703" y="679" width="196" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>dimAvailableCourses</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="727" y="727" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimCourseOffering.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="835" y="727" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>availableCoursesSK</FieldName>
+              <StartValue>900001</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="availableCoursesSK" source="RecordID: Starting Value=900001" type="Int32" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="availableCoursesSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1099" y="739" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="availableCoursesSK" selected="True" />
+                <SelectField field="semesterSK" selected="True" />
+                <SelectField field="departmentSK" selected="True" />
+                <SelectField field="professorNUID" selected="True" />
+                <SelectField field="CRN" selected="True" rename="CRN_SK" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="availableCoursesSK" source="RecordID: Starting Value=900001" type="Int32" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="availableCoursesSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="967" y="739" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>currentlyAvailable</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-10-05 21:04:37</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2021-10-05 21:04:37</StartDate>
+                  <EndDate>2021-10-05 21:04:37</EndDate>
+                  <Operand>Yes</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[currentlyAvailable] = "Yes"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="availableCoursesSK" source="RecordID: Starting Value=900001" type="Int32" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="availableCoursesSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="availableCoursesSK" source="RecordID: Starting Value=900001" type="Int32" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="availableCoursesSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1231" y="739" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimAvailableCourses.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimAvailableCourses.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1255" y="871" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>
+              </TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="101" y="690" width="206" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>factStudentEnrollment</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="438" y="967" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>
+              </TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="126" y="799" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>factStudentEnrollment.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="151" y="967" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimCourseOffering.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="355" y="871" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="CRN_SK" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="CRN" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_studentNUID" selected="True" input="Left_" />
+                    <SelectField field="Left_CRN_SK" selected="True" input="Left_" />
+                    <SelectField field="Left_grades" selected="True" input="Left_" />
+                    <SelectField field="Right_courseNumber" selected="True" input="Right_" />
+                    <SelectField field="Right_semesterSK" selected="True" input="Right_" />
+                    <SelectField field="Right_departmentSK" selected="True" rename="Right_departmentSK" input="Right_" />
+                    <SelectField field="Right_professorNUID" selected="True" rename="Right_professorNUID" input="Right_" />
+                    <SelectField field="Right_geographySK" selected="True" input="Right_" />
+                    <SelectField field="Right_currentlyAvailable" selected="True" input="Right_" />
+                    <SelectField field="Right_section" selected="True" input="Right_" />
+                    <SelectField field="Right_CRN" selected="True" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="CRN_SK" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="CRN_SK" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="semesterSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="currentlyAvailable" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="CRN" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="247" y="798" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="departmentSK" selected="False" />
+                <SelectField field="professorNUID" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="439" y="739" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="semesterSK" selected="False" />
+                <SelectField field="Right_departmentSK" selected="False" />
+                <SelectField field="geographySK" selected="False" />
+                <SelectField field="currentlyAvailable" selected="False" />
+                <SelectField field="CRN" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="CRN_SK" order="" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="559" y="883" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimCourse.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ProgramName/Department" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="Credits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="667" y="943" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>
+              </TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="703" y="799" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="courseNumber" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Course Number" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="courseNumber" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="ProgramName/Department" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="Credits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="courseNumber" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="ProgramName/Department" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="Credits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourse.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Course Number" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="499" y="787" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="studentNUID" selected="True" />
+                <SelectField field="CRN_SK" selected="True" />
+                <SelectField field="grades" selected="True" />
+                <SelectField field="courseNumber" selected="True" />
+                <SelectField field="Right_departmentSK" selected="True" />
+                <SelectField field="Right_professorNUID" selected="True" />
+                <SelectField field="section" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="courseNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="CRN_SK" order="" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1255" y="799" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>
+              </TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="811" y="799" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="studentNUID" selected="True" />
+                <SelectField field="CRN_SK" selected="True" />
+                <SelectField field="grades" selected="True" />
+                <SelectField field="Right_departmentSK" selected="True" />
+                <SelectField field="Right_professorNUID" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="Right_departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="943" y="799" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>studentEnrollmentSK</FieldName>
+              <StartValue>700001</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="studentEnrollmentSK" source="RecordID: Starting Value=700001" type="Int32" />
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="Right_departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="studentEnrollmentSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="1063" y="799" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>calendarSK</FieldName>
+              <StartValue>800001</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="calendarSK" source="RecordID: Starting Value=800001" type="Int32" />
+                <Field name="studentEnrollmentSK" source="RecordID: Starting Value=700001" type="Int32" />
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="Right_departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="Right_professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="studentEnrollmentSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1147" y="799" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="calendarSK" selected="True" />
+                <SelectField field="studentEnrollmentSK" selected="True" />
+                <SelectField field="studentNUID" selected="True" />
+                <SelectField field="CRN_SK" selected="True" />
+                <SelectField field="grades" selected="True" />
+                <SelectField field="Right_departmentSK" selected="True" rename="departmentSK" />
+                <SelectField field="Right_professorNUID" selected="True" rename="professorNUID" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="calendarSK" source="RecordID: Starting Value=800001" type="Int32" />
+                <Field name="studentEnrollmentSK" source="RecordID: Starting Value=700001" type="Int32" />
+                <Field name="studentNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="CRN_SK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="grades" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\factStudentEnrollment.csv" type="V_String" />
+                <Field name="departmentSK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimCourseOffering.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="studentEnrollmentSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1255" y="859" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data_from_Alteryx\factStudentEnrollment_alt.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>factStudentEnrollment_alt.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1496" y="319" width="174" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>dimDepartments</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1797" y="368" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_23724_3f523385b7f54ad5ab735d059b9709c0_\Engine_2028_f382883eb9f543cf99d2e4cfa59c07cd_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1521" y="368" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimDepartmentsdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="college" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="departmentName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="programName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="programStartDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="programEndDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="numberOfCredits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="perCreditFee" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="1665" y="368" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>departmentSK</FieldName>
+              <StartValue>657840</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="departmentSK" source="RecordID: Starting Value=657840" type="Int32" />
+                <Field name="college" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="departmentName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="programName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="programStartDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="programEndDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="numberOfCredits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+                <Field name="perCreditFee" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartmentsdata.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="departmentSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1773" y="404" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimDepartments.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimDepartments.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1484" y="55" width="140" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>dimCourse</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+          <Caption>dimCourse</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Caption>dimCourse</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1509" y="128" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Course_Offerings.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Term/Sem" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="College" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Program" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Program level" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="ProgramName/Department" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Credits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Term" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Instructor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Campus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lectureMode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="1773" y="128" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Course Number" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Unique">
+              <RecordInfo>
+                <Field name="ProgramName/Department" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Credits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Course Number" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Duplicates">
+              <RecordInfo>
+                <Field name="ProgramName/Department" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Credits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Course Number" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1917" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_23724_3f523385b7f54ad5ab735d059b9709c0_\Engine_2028_9775638cfd3343648ec7479d76c777cc_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1629" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ProgramName/Department" selected="True" />
+                <SelectField field="Course Number" selected="True" />
+                <SelectField field="Credits" selected="True" />
+                <SelectField field="Core" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ProgramName/Department" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Credits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1917" y="176" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimCourse.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimCourse.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="342" width="159" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>dimProfessors</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="619" y="391" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_14968_3ce656502f794f10a9844362500b9ecd_\Engine_9228_c8243b63da104c8abb3cdcf1d8c496c5_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="366" y="415" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="firstName" />
+                <Field field="lastName" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Unique">
+              <RecordInfo>
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="firstName" order="Asc" />
+                <Field field="lastName" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Duplicates">
+              <RecordInfo>
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="firstName" order="Asc" />
+                <Field field="lastName" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="474" y="391" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>professorNUID</FieldName>
+              <StartValue>46587</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="professorNUID" source="RecordID: Starting Value=46587" type="Int32" />
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="firstName" order="Asc" />
+                <Field field="lastName" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="211" y="415" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="firstName" selected="True" />
+                <SelectField field="lastName" selected="True" />
+                <SelectField field="email" selected="True" />
+                <SelectField field="officeNumber" selected="True" />
+                <SelectField field="gender" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="78" y="391" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Course_Offerings.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Term/Sem" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="College" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Program" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Program level" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="ProgramName/Department" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Credits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Term" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Instructor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Campus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lectureMode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="631" y="451" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\dimProfessors.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimProfessors.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="848" y="318" width="261" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>dimStudentHometownOutrigger</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+          <Caption>dimStudentHometownOutrigger</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="873" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>GeneratedData.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="NUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="FirstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="LastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="DOB" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="OnCampus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="GraduationDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="StreetAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Nationality" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="EmpStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="CoopStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Instructor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Grade" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1305" y="368" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_14968_3ce656502f794f10a9844362500b9ecd_\Engine_9228_59b9ab20002945bd9af117780ff5243c_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="1017" y="368" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>hometownStudentSK</FieldName>
+              <StartValue>500001</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="hometownStudentSK" source="RecordID: Starting Value=500001" type="Int32" />
+                <Field name="Field_1" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="NUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="FirstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="LastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="DOB" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="OnCampus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="GraduationDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="StreetAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Nationality" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="EmpStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="CoopStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Instructor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Grade" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="hometownStudentSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1161" y="368" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="hometownStudentSK" selected="True" />
+                <SelectField field="Country" selected="True" rename="country" />
+                <SelectField field="Home_Address" selected="True" rename="homeAddress" />
+                <SelectField field="Home_City" selected="True" rename="city" />
+                <SelectField field="Home_State" selected="True" rename="state" />
+                <SelectField field="Home_Zipcode" selected="True" rename="zipcode" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="hometownStudentSK" source="RecordID: Starting Value=500001" type="Int32" />
+                <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="hometownStudentSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1269" y="416" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\ameya\Desktop\dimStudentHomeTownOutrigger.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimStudentHomeTownOutrigger.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="836" y="54" width="272" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>dimProfessorHomeTownOutrigger</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="861" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ProfessorsData.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1293" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_14968_3ce656502f794f10a9844362500b9ecd_\Engine_9228_7718cce4473a4199a84bee0a5e3f4af7_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1281" y="152" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\ameya\Desktop\dimProfessorHomeTownOutrigger.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimProfessorHomeTownOutrigger.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="993" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>hometownProfessorSK</FieldName>
+              <StartValue>400001</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="hometownProfessorSK" source="RecordID: Starting Value=400001" type="Int32" />
+                <Field name="professorNUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="hometownProfessorSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1125" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="hometownProfessorSK" selected="True" />
+                <SelectField field="country" selected="True" />
+                <SelectField field="homeAddress" selected="True" />
+                <SelectField field="city" selected="True" />
+                <SelectField field="state" selected="True" />
+                <SelectField field="zipcode" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="hometownProfessorSK" source="RecordID: Starting Value=400001" type="Int32" />
+                <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\ProfessorsData.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="hometownProfessorSK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="79" y="55" width="163" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>dimGeography</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="104" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>GeneratedData.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="NUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="FirstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="LastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="DOB" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="OnCampus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="GraduationDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="StreetAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Nationality" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="EmpStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="CoopStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Instructor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Grade" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="452" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="geographySK" selected="True" />
+                <SelectField field="StreetAddress" selected="True" rename="homeAddress" />
+                <SelectField field="City" selected="True" rename="city" />
+                <SelectField field="State" selected="True" rename="state" />
+                <SelectField field="Zipcode" selected="True" rename="zipcode" />
+                <SelectField field="Country" selected="True" rename="country" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="geographySK" source="RecordID: Starting Value=100001" type="Int32" />
+                <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="geographySK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="260" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>geographySK</FieldName>
+              <StartValue>100001</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="geographySK" source="RecordID: Starting Value=100001" type="Int32" />
+                <Field name="Field_1" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="NUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="FirstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="LastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="DOB" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="OnCampus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="GraduationDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="StreetAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Nationality" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="EmpStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="CoopStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Instructor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Grade" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="geographySK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="739" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_14968_3ce656502f794f10a9844362500b9ecd_\Engine_9228_cecb9c4a28b44517a02b740cce548c29_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="585" y="140" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="geographySK" source="RecordID: (Multiple Sources)" type="Int32" />
+                <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="465" y="176" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="geographySK" selected="True" />
+                <SelectField field="Country" selected="True" rename="country" />
+                <SelectField field="Prof_Address" selected="True" rename="homeAddress" />
+                <SelectField field="Prof_City" selected="True" rename="city" />
+                <SelectField field="Prof_State" selected="True" rename="state" />
+                <SelectField field="Prof_Zipcode" selected="True" rename="zipcode" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="geographySK" source="RecordID: Starting Value=200001" type="Int32" />
+                <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="geographySK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="116" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>GeneratedData.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="NUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="FirstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="LastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="DOB" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="OnCampus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="GraduationDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="StreetAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Nationality" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="EmpStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="CoopStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Instructor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Grade" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="261" y="212" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>geographySK</FieldName>
+              <StartValue>200001</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="geographySK" source="RecordID: Starting Value=200001" type="Int32" />
+                <Field name="Field_1" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="NUID" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="FirstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="LastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="DOB" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="OnCampus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="GraduationDate" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="StreetAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Nationality" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="EmpStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="CoopStatus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Home_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Prof_Zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Instructor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Grade" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\GeneratedData.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="geographySK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="261" y="332" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>geographySK</FieldName>
+              <StartValue>300001</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="geographySK" source="RecordID: Starting Value=300001" type="Int32" />
+                <Field name="Term/Sem" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="College" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Program" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Program level" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="ProgramName/Department" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Credits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Term" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Instructor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Campus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lectureMode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="geographySK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="115" y="331" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Course_Offerings.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Term/Sem" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="College" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Program" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Program level" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="ProgramName/Department" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Course Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Section" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Credits" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="CRN" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Term" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Instructor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Campus" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="Core" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="firstName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lastName" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="email" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="officeNumber" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+                <Field name="lectureMode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Course_Offerings.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="403" y="332" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="geographySK" selected="True" />
+                <SelectField field="courseAddress" selected="True" rename="homeAddress" />
+                <SelectField field="courseCity" selected="True" rename="city" />
+                <SelectField field="courseState" selected="True" rename="state" />
+                <SelectField field="courseZipcode" selected="True" rename="zipcode" />
+                <SelectField field="country" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="geographySK" source="RecordID: Starting Value=300001" type="Int32" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="geographySK" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="705" y="188" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\ameya\Desktop\dimGeography.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dimGeography.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="True" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="True" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="57" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Join" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Join" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Join" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="62" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="62" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Join" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Unique" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Unique" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Unique" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Team7_Graduate_Student_Model</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="203e6a84-7383-43d3-afe1-2dec434b724d" />
+      <Telemetry>
+        <PreviousWorkflowId value="48925230-98cf-4f21-9243-cbf3fc0edca8" />
+        <OriginWorkflowId value="2d6d17e9-60f4-45c1-82b2-66a3f09ae2c7" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (23)</Name>
+          <ToolId value="23" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="8" Selected="False" />
+        <Tool ToolId="20" Selected="False" />
+        <Tool ToolId="27" Selected="False" />
+        <Tool ToolId="31" Selected="False" />
+        <Tool ToolId="37" Selected="True" />
+        <Tool ToolId="38" Selected="True" />
+        <Tool ToolId="39" Selected="True" />
+        <Tool ToolId="42" Selected="False" />
+        <Tool ToolId="45" Selected="False" />
+        <Tool ToolId="49" Selected="True" />
+        <Tool ToolId="50" Selected="True" />
+        <Tool ToolId="51" Selected="True" />
+        <Tool ToolId="69" Selected="True" />
+        <Tool ToolId="64" Selected="False" />
+        <Tool ToolId="61" Selected="False" />
+        <Tool ToolId="54" Selected="False" />
+        <Tool ToolId="75" Selected="True" />
+        <Tool ToolId="76" Selected="False" />
+        <Tool ToolId="82" Selected="True" />
+        <Tool ToolId="83" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

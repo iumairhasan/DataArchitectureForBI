@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dimGeography.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="geographySK" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+            <Field name="homeAddress" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+            <Field name="city" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+            <Field name="state" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+            <Field name="zipcode" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+            <Field name="country" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\Graduate Student Data Model\Data\dimGeography.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="558" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:graduateStudentModel|||dbo.dimGeographys</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Append</OutputOption>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:graduateStudentModel
+Query=dbo.dimGeographys</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="geographySK" selected="True" rename="geagraphySK" />
+            <SelectField field="homeAddress" selected="True" />
+            <SelectField field="state" selected="True" />
+            <SelectField field="city" selected="True" />
+            <SelectField field="zipcode" selected="True" />
+            <SelectField field="country" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="462" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_21280_e4fb761d9b914c82a7fae20823856f66_\Engine_22864_0f1a8b2c5b0b445eb576bc122f7bdf28_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Team7_Graduate_Student_Model_inputtingData</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6b9a6f36-a50b-4f74-a743-c24fcbf5489d" />
+      <Telemetry>
+        <PreviousWorkflowId value="bd17b8fa-fa3e-439c-bc21-471be9621bc0" />
+        <OriginWorkflowId value="bd17b8fa-fa3e-439c-bc21-471be9621bc0" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
