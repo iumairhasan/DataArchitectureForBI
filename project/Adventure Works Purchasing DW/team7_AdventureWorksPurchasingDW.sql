@@ -56,7 +56,7 @@ go
  */
 
 CREATE TABLE dimEmployee(
-    BusinessEntityID     int             NOT NULL,
+    EmpBusinessEntityID     int             NOT NULL,
     NationalIDNumber     varchar(100)    NULL,
     firstName            varchar(200)    NULL,
     lastName             varchar(250)    NULL,
@@ -88,7 +88,7 @@ CREATE TABLE dimEmployee(
     DI_Job_ID            int             NULL,
     DI_Create_Date       date            NULL,
     DI_Modified_Date     date            NULL,
-    CONSTRAINT PK_Employee_BusinessEntityID PRIMARY KEY NONCLUSTERED (BusinessEntityID)
+    CONSTRAINT PK_Employee_BusinessEntityID PRIMARY KEY NONCLUSTERED (EmpBusinessEntityID)
 )
 
 go
@@ -132,7 +132,7 @@ go
  */
 
 CREATE TABLE dimProduct(
-    ProductID               int             IDENTITY(1,1),
+    ProductID               int             ,
     Name                    varchar(250)    NOT NULL,
     ProductNumber           nvarchar(25)    NOT NULL,
     MakeFlag                int             DEFAULT (1) NULL,
@@ -142,9 +142,9 @@ CREATE TABLE dimProduct(
                             CONSTRAINT CK_Product_SafetyStockLevel CHECK ([SafetyStockLevel]>(0)),
     ReorderPoint            smallint        NULL
                             CONSTRAINT CK_Product_ReorderPoint CHECK ([ReorderPoint]>(0)),
-    StandardCost            int             NULL
+    StandardCost            float           NULL
                             CONSTRAINT CK_Product_StandardCost CHECK ([StandardCost]>=(0.00)),
-    ListPrice               int             NULL
+    ListPrice               float            NULL
                             CONSTRAINT CK_Product_ListPrice CHECK ([ListPrice]>=(0.00)),
     Size                    varchar(50)     NULL,
     Weight                  float           NULL
@@ -178,6 +178,8 @@ alter table dimProduct
 alter column DaysToManufacture       int              NULL;
 alter table dimProduct
 alter column ProductNumber           nvarchar(25)     NULL;
+alter table dimProduct
+alter column  ModifiedDate            datetime     NULL;
 
 go
 
@@ -188,22 +190,23 @@ ELSE
     PRINT '<<< FAILED CREATING TABLE dimProduct >>>'
 go
 
+/*alter table dimProduct
+alter column StandardCost            float ;
+alter table dimProduct
+alter column ListPrice               float ;*/
+
 /* 
  * TABLE: dimProductCategory 
  */
 
 CREATE TABLE dimProductCategory(
-    ProductCategoryID    int         IDENTITY(1,1),
+    ProductCategoryID    int         not null,
     categoryName         Name        NULL,
     ModifiedDate         datetime    CONSTRAINT [DF_ProductCategory_ModifiedDate] DEFAULT (getdate()) NULL,
     CONSTRAINT PK_ProductCategory_ProductCategoryID PRIMARY KEY NONCLUSTERED (ProductCategoryID)
 )
 
-alter table dimProductCategory
-alter column ProductCategoryID    int
 
-alter table dimProductCategory
-alter column ModifiedDate         datetime 
 
 go
 
@@ -219,7 +222,7 @@ go
  */
 
 CREATE TABLE dimProductSubcategory(
-    ProductSubcategoryID    int         IDENTITY(1,1),
+    ProductSubcategoryID    int         ,
     ProductCategoryID       int         NOT NULL,
     subCategoryName         Name        NULL,
     ModifiedDate            datetime    CONSTRAINT [DF_ProductSubcategory_ModifiedDate] DEFAULT (getdate()) NULL,
@@ -269,7 +272,7 @@ go
  */
 
 CREATE TABLE dimVendor(
-    BusinessEntityID           int               NOT NULL,
+    VendorBusinessEntityID           int               NOT NULL,
     AccountNumber              varchar(75)       NULL,
     Name                       varchar(250)      NULL,
     CreditRating               tinyint           NULL
@@ -283,7 +286,7 @@ CREATE TABLE dimVendor(
     DI_Job_ID                  int               NULL,
     DI_Create_Date             date              NULL,
     DI_Modified_Date           date              NULL,
-    CONSTRAINT PK_Vendor_BusinessEntityID PRIMARY KEY NONCLUSTERED (BusinessEntityID)
+    CONSTRAINT PK_Vendor_BusinessEntityID PRIMARY KEY NONCLUSTERED (VendorBusinessEntityID)
 )
 
 go
@@ -301,14 +304,15 @@ go
 
 CREATE TABLE factPurchases(
     factPurchaseSK      int      NOT NULL,
-    orderID             int      NOT NULL,
-    ProductID           int      NOT NULL,
-    BusinessEntityID    int      NOT NULL,
-    ShipMethodID        int      NOT NULL,
+    orderID             int       not NULL,
+    ProductID           int       NULL,
+    VendorBusinessEntityID    int       NULL,
+	EmpBusinessEntityID int      null,
+    ShipMethodID        int       NULL,
     revisionNumber      int      NULL,
-    dueDateKey          int      NOT NULL,
-    orderDateKey        int      NOT NULL,
-    shipDateKey         int      NOT NULL,
+    dueDateKey          int       NULL,
+    orderDateKey        int       NULL,
+    shipDateKey         int       NULL,
     status              int      NULL,
     orderQuantity       int      NULL,
     salesAmount         float    NULL,
@@ -336,6 +340,12 @@ IF OBJECT_ID('factPurchases') IS NOT NULL
 ELSE
     PRINT '<<< FAILED CREATING TABLE factPurchases >>>'
 go
+/*
+alter table factPurchases
+add EmpBusinessEntityID int
+ FOREIGN KEY(EmpBusinessEntityID) REFERENCES dimEmployee(BusinessEntityID);*/
+
+
 
 /* 
  * TABLE: dimEmployee 
@@ -377,8 +387,8 @@ ALTER TABLE factPurchases ADD CONSTRAINT RefdimProduct4
 go
 
 ALTER TABLE factPurchases ADD CONSTRAINT RefdimVendor5 
-    FOREIGN KEY (BusinessEntityID)
-    REFERENCES dimVendor(BusinessEntityID)
+    FOREIGN KEY (VendorBusinessEntityID)
+    REFERENCES dimVendor(VendorBusinessEntityID)
 go
 
 ALTER TABLE factPurchases ADD CONSTRAINT RefdimShipmentMethod9 
@@ -387,8 +397,8 @@ ALTER TABLE factPurchases ADD CONSTRAINT RefdimShipmentMethod9
 go
 
 ALTER TABLE factPurchases ADD CONSTRAINT RefdimEmployee17 
-    FOREIGN KEY (BusinessEntityID)
-    REFERENCES dimEmployee(BusinessEntityID)
+    FOREIGN KEY (EmpBusinessEntityID)
+    REFERENCES dimEmployee(EmpBusinessEntityID)
 go
 
 ALTER TABLE factPurchases ADD CONSTRAINT RefdimDate27 
