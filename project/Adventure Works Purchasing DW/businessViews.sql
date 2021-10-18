@@ -113,3 +113,24 @@ group by VendorBusinessEntityID, name
 
 select * from  "vendorPurchases"
 order by 3 desc
+
+create view "VendorGeo" as
+with temp as (
+select distinct fp.factPurchaseSK, 
+fp.EmpBusinessEntityID,fp.VendorBusinessEntityID, salesAmount, taxAmt , frieght , totalDue, dv.name
+from factPurchases fp
+join dimvendor dv
+on fp.VendorBusinessEntityID = dv.VendorBusinessEntityID
+) 
+select provinceName, city, sum(salesAmount) as Purchases
+from temp t
+join dimVendor v
+on t.VendorBusinessEntityID = v.VendorBusinessEntityID
+join dimGeography ad
+on v.AddressID = ad.addressid
+group by provinceName, city
+
+select * from "VendorGeo"
+order by 1, 2
+
+

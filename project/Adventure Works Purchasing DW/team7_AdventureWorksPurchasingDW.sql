@@ -298,6 +298,18 @@ ELSE
     PRINT '<<< FAILED CREATING TABLE dimVendor >>>'
 go
 
+
+alter table dimVendor
+add AddressID int 
+
+ALTER TABLE dimVendor ADD CONSTRAINT RefdimGeography60 
+    FOREIGN KEY (AddressID)
+    REFERENCES dimGeography(AddressID)
+
+
+
+select * from dimVendor
+
 /* 
  * TABLE: factPurchases 
  */
