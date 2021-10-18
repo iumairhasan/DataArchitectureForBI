@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="97">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="800" y="211" width="128" height="24" />
+        <Position x="801" y="210" width="128" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -11,6 +11,9 @@
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="True" />
           <Folded value="True" />
+          <Caption>dimDate</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -21,7 +24,7 @@
       <ChildNodes>
         <Node ToolID="81">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="824" y="259" />
+            <Position x="826" y="259" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -56,7 +59,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="82">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="824" y="331" />
+            <Position x="826" y="331" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -91,7 +94,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="83">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="824" y="415" />
+            <Position x="826" y="414" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -126,7 +129,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="84">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="956" y="259" />
+            <Position x="958" y="259" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -147,7 +150,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="85">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="944" y="331" />
+            <Position x="946" y="330" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -168,7 +171,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="86">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="944" y="415" />
+            <Position x="946" y="414" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -189,7 +192,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="87">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-            <Position x="1112" y="331" />
+            <Position x="1114" y="329" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -208,7 +211,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="88">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1244" y="331" />
+            <Position x="1246" y="331" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -227,7 +230,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="89">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1388" y="331" />
+            <Position x="1390" y="331" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -249,11 +252,11 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="90">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1208" y="295" />
+            <Position x="1210" y="295" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_7892_c91a52bfeb254cb3852e5d3c80c18ba0_\Engine_26608_70a49a1e6dba48858cdf80c9db62fabf_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_26876_be500a5b09c244a5be4a3d5028edcc38_\Engine_24828_bb7fd7a1f4654f99bf406a55e99fc979_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -277,11 +280,11 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="91">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1460" y="283" />
+            <Position x="1462" y="283" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_7892_c91a52bfeb254cb3852e5d3c80c18ba0_\Engine_26608_7f4d8900f0e9478c9eafad186cc4ba5f_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_26876_be500a5b09c244a5be4a3d5028edcc38_\Engine_24828_8754f0ecd0434cf4844e9a150479e1b4_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -305,7 +308,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="92">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-            <Position x="1316" y="391" />
+            <Position x="1318" y="391" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -323,11 +326,11 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="93">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1328" y="271" />
+            <Position x="1330" y="271" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_7892_c91a52bfeb254cb3852e5d3c80c18ba0_\Engine_26608_5db988f40c1347e8a67f62f20a7ad1f4_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_26876_be500a5b09c244a5be4a3d5028edcc38_\Engine_24828_c95772c3ffad4d678af8f21b62f2f9be_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -351,7 +354,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="94">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1484" y="367" />
+            <Position x="1486" y="367" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -379,11 +382,11 @@ EnglishDay...</DefaultAnnotationText>
         </Node>
         <Node ToolID="95">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1592" y="295" />
+            <Position x="1594" y="295" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_7892_c91a52bfeb254cb3852e5d3c80c18ba0_\Engine_26608_af00e8b74b0143229dd26840d0df9767_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_26876_be500a5b09c244a5be4a3d5028edcc38_\Engine_24828_d126d1a7d586461ab3e333f85d7644bc_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -407,7 +410,7 @@ EnglishDay...</DefaultAnnotationText>
         </Node>
         <Node ToolID="96">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1568" y="427" />
+            <Position x="1570" y="427" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -437,15 +440,14 @@ EnglishDay...</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
         </Node>
-        <Node ToolID="102">
+        <Node ToolID="122">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="1652" y="487" />
+            <Position x="1640" y="474" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <File MaxRecords="" FileFormat="23">aka:Team7_AdventureWorks2019PurchasingDW|||dbo.dimDate</File>
+              <File MaxRecords="" FileFormat="23">aka:team7_AdventureWorksPurchasingDW|||dimDate</File>
               <Passwords />
-              <CachedCosmeticName />
               <FormatSpecificOptions>
                 <TransactionMessages>False</TransactionMessages>
                 <Geometry>True</Geometry>
@@ -462,8 +464,8 @@ EnglishDay...</DefaultAnnotationText>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText>aka:Team7_AdventureWorks2019PurchasingDW
-Query=dbo.dimDate</DefaultAnnotationText>
+              <DefaultAnnotationText>aka:team7_AdventureWorksPurchasingDW
+Query=dimDate</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
@@ -473,7 +475,7 @@ Query=dbo.dimDate</DefaultAnnotationText>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="872" y="151" width="155" height="24" />
+        <Position x="1100" y="318" width="155" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -491,7 +493,7 @@ Query=dbo.dimDate</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="23">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="896" y="199" />
+            <Position x="1124" y="366" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -535,7 +537,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="25">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1016" y="199" />
+            <Position x="1244" y="366" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -557,11 +559,11 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="26">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1148" y="199" />
+            <Position x="1376" y="366" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_4588_448a5b4c23a2404eaf54881e87da18d4_\Engine_26608_f73f9e63482144e2b38c0396065571ef_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_31272_73cfb3a5b6f94ce1989427cd284d2e25_\Engine_24828_c92d509172d44deea14fba544fecdb72_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -585,11 +587,11 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="100">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="1136" y="271" />
+            <Position x="1448" y="402" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <File MaxRecords="" FileFormat="23">aka:Team7_AdventureWorks2019PurchasingDW|||dbo.dimShipmentMethod</File>
+              <File MaxRecords="" FileFormat="23">aka:team7_AdventureWorksPurchasingDW|||dimShipmentMethod</File>
               <Passwords />
               <CachedCosmeticName />
               <FormatSpecificOptions>
@@ -608,25 +610,114 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText>aka:Team7_AdventureWorks2019PurchasingDW
-Query=dbo.dimShipmentMethod</DefaultAnnotationText>
+              <DefaultAnnotationText>aka:team7_AdventureWorksPurchasingDW
+Query=dimShipmentMethod</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
+        <Node ToolID="123">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1256" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="SOR_LoadDate" size="10" type="Date" />
+                <FormulaField expression="DateTimeNow()" field="SOR_UpdateDate" size="10" type="Date" />
+                <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="10" type="Date" />
+                <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
+                <FormulaField expression="20001" field="DI_Job_ID" size="4" type="Int32" />
+                <FormulaField expression="2001" field="SOR_ID	" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>SOR_LoadDate = DateTimeNow()
+SOR_UpdateDate = DateTimeNow()
+DI_Create_Date = Dat...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="124">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1340" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ShipMethodID" selected="True" />
+                <SelectField field="Name" selected="True" />
+                <SelectField field="ShipBase" selected="True" />
+                <SelectField field="ShipRate" selected="True" />
+                <SelectField field="SOR_LoadDate" selected="True" />
+                <SelectField field="SOR_UpdateDate" selected="True" />
+                <SelectField field="DI_Create_Date" selected="True" />
+                <SelectField field="DI_Modified_Date" selected="True" />
+                <SelectField field="DI_Job_ID" selected="True" />
+                <SelectField field="SOR_ID " selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="125">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1448" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_31272_73cfb3a5b6f94ce1989427cd284d2e25_\Engine_24828_a64e19b561774068bde568f35a3a77ee_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="341" y="257" width="756" height="361" />
+        <Position x="163" y="196" width="143" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>dimVendor</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+          <Caption>dimVendor</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Caption>dimVendor</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="False" />
-          <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -637,7 +728,7 @@ Query=dbo.dimShipmentMethod</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="28">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="366" y="306" />
+            <Position x="188" y="245" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -686,7 +777,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="29">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="474" y="306" />
+            <Position x="296" y="246" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -713,101 +804,11 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="630" y="306" />
+            <Position x="452" y="246" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_31508_2235860e9a4e4b22b0ce36b726849703_\Engine_22556_8fce8619f6a14becb81c702ea2dd760b_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="107">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="822" y="306" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_31508_2235860e9a4e4b22b0ce36b726849703_\Engine_22556_91deb5c495244ca68b251df3b8f1754a_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="108">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="702" y="414" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="True" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="BusinessEntityID" selected="True" />
-                <SelectField field="AccountNumber" selected="True" type="V_String" size="15" />
-                <SelectField field="Name" selected="True" type="V_String" size="50" />
-                <SelectField field="CreditRating" selected="True" />
-                <SelectField field="PreferredVendorStatus" selected="True" type="Int16" size="2" />
-                <SelectField field="ActiveFlag" selected="True" type="Int16" size="2" />
-                <SelectField field="PurchasingWebServiceURL" selected="True" type="V_String" size="1024" />
-                <SelectField field="ModifiedDate" selected="False" />
-                <SelectField field="SOR_ID	" selected="True" />
-                <SelectField field="SOR_LoadDate" selected="True" />
-                <SelectField field="SOR_UpdateDate" selected="True" />
-                <SelectField field="DI_Job_ID" selected="True" />
-                <SelectField field="DI_Create_Date" selected="True" />
-                <SelectField field="DI_Modified_Date" selected="True" />
-                <SelectField field="*Unknown" selected="False" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="112">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="954" y="534" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_31508_2235860e9a4e4b22b0ce36b726849703_\Engine_22556_9b183f8194a1403b9535f3c5bf8ded77_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_21612_ec24ed1b0fa84659b86da6e7f2d53e71_\Engine_22556_d54f1c02952f48db8aa43662491ba0d0_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -831,7 +832,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="113">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="570" y="402" />
+            <Position x="332" y="342" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -841,6 +842,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
                 <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="10" type="Date" />
                 <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
                 <FormulaField expression="10001" field="DI_Job_ID" size="4" type="Int32" />
+                <FormulaField expression="1001" field="SOR_ID	" size="2" type="Int16" />
               </FormulaFields>
             </Configuration>
             <Annotation DisplayMode="0">
@@ -853,17 +855,25 @@ DI_Create_Date = Dat...</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
         </Node>
-        <Node ToolID="114">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-            <Position x="786" y="474" />
+        <Node ToolID="117">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="572" y="378" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <FieldName><![CDATA[SOR_ID	]]></FieldName>
-              <StartValue>100001</StartValue>
-              <FieldType>Int32</FieldType>
-              <FieldSize>6</FieldSize>
-              <Position>1</Position>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_21612_ec24ed1b0fa84659b86da6e7f2d53e71_\Engine_22556_228705ffc0454ef996cb687cd0bf2ff4_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -871,11 +881,11 @@ DI_Create_Date = Dat...</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
         </Node>
-        <Node ToolID="115">
+        <Node ToolID="118">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="966" y="414" />
+            <Position x="536" y="246" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -905,9 +915,70 @@ Query=dimVendor</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
+        <Node ToolID="119">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="404" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BusinessEntityID" selected="True" />
+                <SelectField field="AccountNumber" selected="True" />
+                <SelectField field="Name" selected="True" />
+                <SelectField field="CreditRating" selected="True" />
+                <SelectField field="PreferredVendorStatus" selected="True" type="Int16" size="2" />
+                <SelectField field="ActiveFlag" selected="True" type="Int16" size="2" />
+                <SelectField field="PurchasingWebServiceURL" selected="True" />
+                <SelectField field="SOR_LoadDate" selected="True" />
+                <SelectField field="SOR_UpdateDate" selected="True" />
+                <SelectField field="DI_Create_Date" selected="True" />
+                <SelectField field="DI_Modified_Date" selected="True" />
+                <SelectField field="DI_Job_ID" selected="True" />
+                <SelectField field="SOR_ID " selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="692" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_21612_ec24ed1b0fa84659b86da6e7f2d53e71_\Engine_22556_13a88cf619a749d68a13f69b7d2d8f3e_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
         <Node ToolID="116">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="870" y="474" />
+            <Position x="572" y="450" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -927,6 +998,8 @@ Query=dimVendor</DefaultAnnotationText>
                 <SelectField field="DI_Job_ID" selected="True" />
                 <SelectField field="DI_Create_Date" selected="True" />
                 <SelectField field="DI_Modified_Date" selected="True" />
+                <SelectField field="RecordID" selected="False" />
+                <SelectField field="SOR_ID " selected="False" />
                 <SelectField field="*Unknown" selected="False" />
               </SelectFields>
             </Configuration>
@@ -938,13 +1011,45 @@ Query=dimVendor</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
         </Node>
-        <Node ToolID="117">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="870" y="534" />
+        <Node ToolID="120">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="476" y="414" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_31508_2235860e9a4e4b22b0ce36b726849703_\Engine_22556_487c4d615d064df9a7dceb13648c4655_.yxdb</TempFile>
+              <FieldName>demo</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="121">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="572" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_21612_ec24ed1b0fa84659b86da6e7f2d53e71_\Engine_22556_5635f110059842aebd353e6ddc9fb01b_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -958,7 +1063,7 @@ Query=dimVendor</DefaultAnnotationText>
     </Node>
     <Node ToolID="80">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="619" y="78" width="151" height="24" />
+        <Position x="619" y="305" width="151" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -966,6 +1071,9 @@ Query=dimVendor</DefaultAnnotationText>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="True" />
           <Folded value="True" />
+          <Caption>dimProducts</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -976,7 +1084,7 @@ Query=dimVendor</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="70">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="644" y="162" />
+            <Position x="644" y="389" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1058,11 +1166,11 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="71">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="992" y="127" />
+            <Position x="992" y="354" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_27280_ac309daf1e0b48d7a227517a5d13c2e2_\Engine_26608_a874dcac79e3481a8c466e9dc6b18e31_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_9568_d9d0c7b8dd60490c8296421280f44262_\Engine_9016_14bfc5b7e8174c448613ce36d478dab9_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1086,7 +1194,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="72">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="752" y="162" />
+            <Position x="752" y="389" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1103,7 +1211,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
                 <SelectField field="ReorderPoint" selected="True" />
                 <SelectField field="StandardCost" selected="True" type="Float" size="4" />
                 <SelectField field="ListPrice" selected="True" type="Float" size="4" />
-                <SelectField field="Size" selected="False" type="V_String" size="5" />
+                <SelectField field="Size" selected="True" type="V_String" size="5" />
                 <SelectField field="Weight" selected="True" type="Float" size="4" />
                 <SelectField field="DaysToManufacture" selected="True" />
                 <SelectField field="ProductLine" selected="True" type="V_String" size="2" />
@@ -1113,6 +1221,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
                 <SelectField field="ProductModelID" selected="True" />
                 <SelectField field="SellStartDate" selected="True" />
                 <SelectField field="SellEndDate" selected="True" />
+                <SelectField field="DiscontinuedDate" selected="True" />
                 <SelectField field="*Unknown" selected="False" />
               </SelectFields>
             </Configuration>
@@ -1126,7 +1235,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="73">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="644" y="283" />
+            <Position x="644" y="509" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1171,7 +1280,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="74">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="740" y="283" />
+            <Position x="740" y="510" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1193,7 +1302,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="75">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="848" y="199" />
+            <Position x="848" y="425" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -1224,11 +1333,11 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="76">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="884" y="139" />
+            <Position x="884" y="366" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_27280_ac309daf1e0b48d7a227517a5d13c2e2_\Engine_26608_4b413f30f0234b8d9423bfbd071bda1f_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_9568_d9d0c7b8dd60490c8296421280f44262_\Engine_9016_d64ddbeacc2845f8a2b0d37229df2b3c_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1252,11 +1361,11 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="77">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1052" y="199" />
+            <Position x="1100" y="426" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_27280_ac309daf1e0b48d7a227517a5d13c2e2_\Engine_26608_1c7d147778e545e0946fbbb80f8e35ef_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_9568_d9d0c7b8dd60490c8296421280f44262_\Engine_9016_4e6a5d6627334094a2f7533534f1c944_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1280,11 +1389,11 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="78">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="968" y="247" />
+            <Position x="968" y="474" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_27280_ac309daf1e0b48d7a227517a5d13c2e2_\Engine_26608_0b1d739ea2bd4d618061686b34b985b7_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_9568_d9d0c7b8dd60490c8296421280f44262_\Engine_9016_6f18076660764f34908bfe7901cf5333_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1308,7 +1417,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="79">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-            <Position x="956" y="199" />
+            <Position x="956" y="426" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1325,18 +1434,156 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
         </Node>
+        <Node ToolID="129">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1148" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ProductID" selected="True" />
+                <SelectField field="Name" selected="True" />
+                <SelectField field="ProductNumber" selected="True" />
+                <SelectField field="MakeFlag" selected="True" />
+                <SelectField field="FinishedGoodsFlag" selected="True" />
+                <SelectField field="Color" selected="True" />
+                <SelectField field="SafetyStockLevel" selected="True" />
+                <SelectField field="ReorderPoint" selected="True" />
+                <SelectField field="StandardCost" selected="True" />
+                <SelectField field="ListPrice" selected="True" />
+                <SelectField field="Size" selected="True" />
+                <SelectField field="Weight" selected="True" />
+                <SelectField field="DaysToManufacture" selected="True" />
+                <SelectField field="ProductLine" selected="True" />
+                <SelectField field="Class" selected="True" />
+                <SelectField field="Style" selected="True" />
+                <SelectField field="ProductSubcategoryID" selected="True" />
+                <SelectField field="modelName" selected="True" />
+                <SelectField field="ProductModelID" selected="False" />
+                <SelectField field="SellStartDate" selected="True" />
+                <SelectField field="SellEndDate" selected="True" />
+                <SelectField field="DiscontinuedDate" selected="True" />
+                <SelectField field="SOR_ID " selected="True" />
+                <SelectField field="SOR_LoadDate" selected="True" />
+                <SelectField field="SOR_UpdateDate" selected="True" />
+                <SelectField field="DI_Job_ID" selected="True" />
+                <SelectField field="DI_Create_Date" selected="True" />
+                <SelectField field="DI_Modified_Date" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="130">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1052" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="SOR_LoadDate" size="10" type="Date" />
+                <FormulaField expression="DateTimeNow()" field="SOR_UpdateDate" size="10" type="Date" />
+                <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="10" type="Date" />
+                <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
+                <FormulaField expression="30001" field="DI_Job_ID" size="4" type="Int32" />
+                <FormulaField expression="3001" field="SOR_ID	" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>SOR_LoadDate = DateTimeNow()
+SOR_UpdateDate = DateTimeNow()
+DI_Create_Date = Dat...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="131">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1256" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_9568_d9d0c7b8dd60490c8296421280f44262_\Engine_9016_edf085a006884a96a9cefc13974ccb6f_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1242" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:team7_AdventureWorksPurchasingDW|||dbo.dimProduct</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Create</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:team7_AdventureWorksPurchasingDW
+Query=dbo.dimProduct</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="66">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="366" y="54" width="156" height="24" />
+        <Position x="256" y="0" width="1561" height="570" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>dimEmployee</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="True" />
-          <Folded value="True" />
+          <Folded value="False" />
+          <Caption>dimEmployee</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Caption>dimEmployee</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
           <Caption>dimEmployee</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="False" />
@@ -1350,7 +1597,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="2">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="1148" y="463" />
+            <Position x="1038" y="409" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1391,11 +1638,11 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="8">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1448" y="210" />
+            <Position x="1338" y="157" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_22172_9726d748d009483c977ae865948260fc_\Engine_26608_f53e6d8a1a9b4506bb5490836f83d53a_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_18672_56d2aef276e94b61a55b185378bd9615_\Engine_29168_9316e0fdec26463db8c3f56caca3587b_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1419,7 +1666,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="13">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1280" y="463" />
+            <Position x="1170" y="409" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1441,7 +1688,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="41">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="391" y="103" />
+            <Position x="282" y="48" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1504,7 +1751,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="42">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="620" y="175" />
+            <Position x="510" y="121" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1525,7 +1772,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="43">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="392" y="211" />
+            <Position x="281" y="156" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1584,7 +1831,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="44">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="524" y="174" />
+            <Position x="414" y="121" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -1642,7 +1889,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="524" y="270" />
+            <Position x="413" y="217" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1683,7 +1930,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="47">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="931" y="270" />
+            <Position x="822" y="217" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1728,7 +1975,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="48">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="752" y="271" />
+            <Position x="642" y="217" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1771,7 +2018,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="49">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="1064" y="319" />
+            <Position x="954" y="265" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1811,7 +2058,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="50">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="860" y="271" />
+            <Position x="750" y="217" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1833,7 +2080,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="51">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1016" y="270" />
+            <Position x="906" y="217" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1855,7 +2102,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="52">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1184" y="307" />
+            <Position x="1074" y="253" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1877,7 +2124,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="53">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="632" y="270" />
+            <Position x="522" y="217" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1899,7 +2146,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="54">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="764" y="199" />
+            <Position x="654" y="145" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -1930,7 +2177,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="55">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="943" y="211" />
+            <Position x="834" y="157" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -1993,7 +2240,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="56">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="1112" y="210" />
+            <Position x="1002" y="157" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -2026,7 +2273,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="57">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="1256" y="223" />
+            <Position x="1146" y="169" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -2059,7 +2306,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="58">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1340" y="223" />
+            <Position x="1230" y="169" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2111,11 +2358,11 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="59">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="692" y="330" />
+            <Position x="654" y="366" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_22172_9726d748d009483c977ae865948260fc_\Engine_26608_d9672254c77448a8854a4d438b10c171_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_18672_56d2aef276e94b61a55b185378bd9615_\Engine_29168_07289b04bfdc4be7bf5144680d94cc91_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -2139,11 +2386,11 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="60">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="620" y="342" />
+            <Position x="510" y="289" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_22172_9726d748d009483c977ae865948260fc_\Engine_26608_54976336390d43748e90910d8420ed65_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_18672_56d2aef276e94b61a55b185378bd9615_\Engine_29168_3d8c1a62a62b4d2d9d257bc050bf7b22_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -2167,7 +2414,7 @@ Query=select AdventureWorks2019.Hu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="61">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="1148" y="367" />
+            <Position x="1038" y="313" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2210,7 +2457,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="62">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1244" y="367" />
+            <Position x="1134" y="313" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2230,7 +2477,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="63">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="1364" y="391" />
+            <Position x="1254" y="337" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -2265,7 +2512,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="64">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="1484" y="295" />
+            <Position x="1374" y="241" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -2296,11 +2543,11 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="65">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1628" y="295" />
+            <Position x="1518" y="241" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_22172_9726d748d009483c977ae865948260fc_\Engine_26608_08953a03fdad4db0b7f1799e4437d03d_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_18672_56d2aef276e94b61a55b185378bd9615_\Engine_29168_c7997522bbf548eb9f86485381665efa_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -2324,18 +2571,21 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="67">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1604" y="367" />
+            <Position x="1494" y="313" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <FormulaFields>
                 <FormulaField expression="Replace([PhoneNumber],&quot;-&quot;,&quot;&quot;)" field="phoneNumber" size="21" type="V_String" />
+                <FormulaField expression="Replace([PhoneNumber],&quot;(&quot;,&quot;&quot;)" field="PhoneNumber" size="21" type="V_String" />
+                <FormulaField expression="Replace([PhoneNumber],&quot;)&quot;,&quot;&quot;)" field="PhoneNumber" size="21" type="V_String" />
+                <FormulaField expression="Replace([PhoneNumber],&quot; &quot;,&quot;&quot;)" field="PhoneNumber" size="21" type="V_String" />
               </FormulaFields>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText><![CDATA[phoneNumber = Replace([PhoneNumber],"-","")
-]]></DefaultAnnotationText>
+              <DefaultAnnotationText>phoneNumber = Replace([PhoneNumber],"-","")
+PhoneNumber = Replace([PhoneNumber],...</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
@@ -2343,15 +2593,33 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="68">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1687" y="367" />
+            <Position x="1578" y="313" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <OrderChanged value="False" />
               <CommaDecimal value="False" />
               <SelectFields>
-                <SelectField field="PhoneNumber" selected="True" type="Int64" size="8" />
-                <SelectField field="*Unknown" selected="True" />
+                <SelectField field="BusinessEntityID" selected="True" />
+                <SelectField field="NationalIDNumber" selected="True" />
+                <SelectField field="FirstName" selected="True" rename="firstName" />
+                <SelectField field="LastName" selected="True" rename="lastName" />
+                <SelectField field="MiddleName" selected="True" rename="middleName" />
+                <SelectField field="EmailAddress" selected="True" rename="emailAddress" />
+                <SelectField field="PhoneNumber" selected="True" rename="phone" type="Int64" size="8" />
+                <SelectField field="LoginID" selected="True" />
+                <SelectField field="OrganizationLevel" selected="True" />
+                <SelectField field="JobTitle" selected="True" />
+                <SelectField field="BirthDate" selected="True" />
+                <SelectField field="MaritalStatus" selected="True" />
+                <SelectField field="Gender" selected="True" />
+                <SelectField field="HireDate" selected="True" />
+                <SelectField field="SalariedFlag" selected="True" />
+                <SelectField field="VacationHours" selected="True" />
+                <SelectField field="SickLeaveHours" selected="True" />
+                <SelectField field="AddressID" selected="True" />
+                <SelectField field="addressType" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
               </SelectFields>
             </Configuration>
             <Annotation DisplayMode="0">
@@ -2364,11 +2632,109 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="69">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1760" y="367" />
+            <Position x="1649" y="313" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_22172_9726d748d009483c977ae865948260fc_\Engine_26608_80b6674428d6479ebe40067024f323b0_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_18672_56d2aef276e94b61a55b185378bd9615_\Engine_29168_a0f4e34b900947dcb9e3ba8708cc4c95_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="136">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1566" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="SOR_LoadDate" size="10" type="Date" />
+                <FormulaField expression="DateTimeNow()" field="SOR_UpdateDate" size="10" type="Date" />
+                <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="10" type="Date" />
+                <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
+                <FormulaField expression="40001" field="DI_Job_ID" size="4" type="Int32" />
+                <FormulaField expression="4001" field="SOR_ID	" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>SOR_LoadDate = DateTimeNow()
+SOR_UpdateDate = DateTimeNow()
+DI_Create_Date = Dat...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="137">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1662" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BusinessEntityID" selected="True" />
+                <SelectField field="NationalIDNumber" selected="True" />
+                <SelectField field="FirstName" selected="True" rename="firstName" />
+                <SelectField field="LastName" selected="True" rename="lastName" />
+                <SelectField field="MiddleName" selected="True" rename="middleName" />
+                <SelectField field="EmailAddress" selected="True" rename="emailAddress" />
+                <SelectField field="PhoneNumber" selected="True" rename="phone" type="Int64" size="8" />
+                <SelectField field="LoginID" selected="True" />
+                <SelectField field="OrganizationLevel" selected="True" />
+                <SelectField field="JobTitle" selected="True" />
+                <SelectField field="BirthDate" selected="True" />
+                <SelectField field="MaritalStatus" selected="True" />
+                <SelectField field="Gender" selected="True" />
+                <SelectField field="HireDate" selected="True" />
+                <SelectField field="SalariedFlag" selected="True" />
+                <SelectField field="VacationHours" selected="True" />
+                <SelectField field="SickLeaveHours" selected="True" />
+                <SelectField field="AddressID" selected="True" />
+                <SelectField field="addressType" selected="True" />
+                <SelectField field="SOR_LoadDate" selected="True" />
+                <SelectField field="SOR_UpdateDate" selected="True" />
+                <SelectField field="DI_Create_Date" selected="True" />
+                <SelectField field="DI_Modified_Date" selected="True" />
+                <SelectField field="DI_Job_ID" selected="True" />
+                <SelectField field="SOR_ID " selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="138">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1734" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_18672_56d2aef276e94b61a55b185378bd9615_\Engine_29168_612b89b6f4394c608bfc24075cc56516_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -2394,7 +2760,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="413" y="161" width="163" height="24" />
+        <Position x="54" y="90" width="163" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2402,9 +2768,6 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="True" />
           <Folded value="True" />
-          <Caption>dimGeography</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -2415,7 +2778,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="3">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="438" y="354" />
+            <Position x="78" y="282" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2464,7 +2827,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="4">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="438" y="233" />
+            <Position x="77" y="162" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2515,7 +2878,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="9">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1362" y="258" />
+            <Position x="1002" y="186" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2543,7 +2906,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="11">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="702" y="342" />
+            <Position x="342" y="270" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2582,7 +2945,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="12">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="582" y="210" />
+            <Position x="222" y="138" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2608,7 +2971,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="570" y="318" />
+            <Position x="210" y="246" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2634,7 +2997,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="15">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="846" y="330" />
+            <Position x="486" y="258" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2656,7 +3019,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="16">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="714" y="221" />
+            <Position x="354" y="150" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -2689,7 +3052,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="17">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="834" y="234" />
+            <Position x="473" y="162" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2717,7 +3080,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="18">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="942" y="258" />
+            <Position x="582" y="186" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -2757,7 +3120,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1230" y="234" />
+            <Position x="870" y="162" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2789,7 +3152,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="21">
           <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-            <Position x="1122" y="258" />
+            <Position x="761" y="186" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2809,7 +3172,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="99">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="1314" y="306" />
+            <Position x="954" y="234" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2835,9 +3198,6 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
 Query=dimGeography</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
@@ -2845,7 +3205,7 @@ Query=dimGeography</DefaultAnnotationText>
     </Node>
     <Node ToolID="39">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="68" y="283" width="152" height="24" />
+        <Position x="68" y="210" width="152" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2863,7 +3223,7 @@ Query=dimGeography</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="36">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="92" y="331" />
+            <Position x="92" y="258" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2903,13 +3263,15 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="37">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="200" y="331" />
+            <Position x="200" y="258" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <OrderChanged value="False" />
               <CommaDecimal value="False" />
               <SelectFields>
+                <SelectField field="ProductCategoryID" selected="False" />
+                <SelectField field="Name" selected="True" rename="categoryName" />
                 <SelectField field="rowguid" selected="False" />
                 <SelectField field="ModifiedDate" selected="True" type="Date" size="10" />
                 <SelectField field="*Unknown" selected="True" />
@@ -2925,11 +3287,11 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="38">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="308" y="331" />
+            <Position x="308" y="258" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_27884_bfcd178d3c244397be6703c45e8f1132_\Engine_26608_c5e78b3ddc674e1f9acd4ab8ff41d676_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_31056_518ffbea47d94d409759f78b5bf36a84_\Engine_24828_3734297befee43fabe29b13eec2ceccd_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -2951,11 +3313,43 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
         </Node>
+        <Node ToolID="127">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="308" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:team7_AdventureWorksPurchasingDW|||dimProductCategory</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:team7_AdventureWorksPurchasingDW
+Query=dimProductCategory</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="35">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="198" width="215" height="24" />
+        <Position x="54" y="341" width="215" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2963,9 +3357,6 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="True" />
           <Folded value="True" />
-          <Caption>dimProductSubcategory</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="True" />
           <Caption>dimProductSubcategory</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="False" />
@@ -2979,7 +3370,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="32">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="79" y="247" />
+            <Position x="79" y="390" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3021,7 +3412,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="33">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="176" y="247" />
+            <Position x="176" y="390" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3045,11 +3436,11 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         </Node>
         <Node ToolID="34">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="308" y="247" />
+            <Position x="308" y="390" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_27884_bfcd178d3c244397be6703c45e8f1132_\Engine_26608_0f3d054ad456448a8d5b2abcf37109fc_.yxdb</TempFile>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_13428_ffa29f902675482b84352a2eca9db8e5_\Engine_24828_2b91cdf0589643a78aa31666c64ae665_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -3070,6 +3461,37 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
             </Annotation>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="126">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="308" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:team7_AdventureWorksPurchasingDW|||dimProductSubcategory</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:team7_AdventureWorksPurchasingDW
+Query=dimProductSubcategory</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
       </ChildNodes>
     </Node>
@@ -3137,18 +3559,30 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="96" Connection="Output" />
-      <Destination ToolID="102" Connection="Input" />
+      <Destination ToolID="122" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="23" Connection="Output" />
       <Destination ToolID="25" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="123" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="25" Connection="Output" />
       <Destination ToolID="26" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="25" Connection="Output" />
+      <Origin ToolID="123" Connection="Output" />
+      <Destination ToolID="124" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="Output" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="Output" />
       <Destination ToolID="100" Connection="Input" />
     </Connection>
     <Connection>
@@ -3164,32 +3598,32 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
       <Destination ToolID="30" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="108" Connection="Output" />
-      <Destination ToolID="107" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="108" Connection="Output" />
-      <Destination ToolID="114" Connection="Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="113" Connection="Output" />
-      <Destination ToolID="108" Connection="Input" />
+      <Destination ToolID="119" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="114" Connection="Output" />
-      <Destination ToolID="116" Connection="Input" />
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="118" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="114" Connection="Output" />
+      <Origin ToolID="119" Connection="Output" />
       <Destination ToolID="117" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="120" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="116" Connection="Output" />
       <Destination ToolID="112" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="116" Connection="Output" />
-      <Destination ToolID="115" Connection="Input" />
+      <Origin ToolID="120" Connection="Output" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="120" Connection="Output" />
+      <Destination ToolID="121" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="70" Connection="Output" />
@@ -3230,6 +3664,22 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="79" Connection="Output" />
       <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="130" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="129" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="129" Connection="Output" />
+      <Destination ToolID="135" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="Output" />
+      <Destination ToolID="129" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
@@ -3344,8 +3794,20 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
       <Destination ToolID="68" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="136" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="68" Connection="Output" />
       <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="136" Connection="Output" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="138" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="3" Connection="Output" />
@@ -3404,12 +3866,20 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
       <Destination ToolID="38" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="127" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="32" Connection="Output" />
       <Destination ToolID="33" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="33" Connection="Output" />
       <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="126" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -3431,7 +3901,7 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Copy of ADWPurchasingDW</Name>
+      <Name>Copy of ADWPurchasingDW_Autosave_Autosave_Autosave</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -3446,9 +3916,9 @@ Query=select AdventureWorks2019.Pr...</DefaultAnnotationText>
         <Description />
         <File />
       </Example>
-      <WorkflowId value="4e9c1cb0-845f-41a7-b8d9-1d35d7761762" />
+      <WorkflowId value="bb96087a-c4da-4572-b643-8497aef67013" />
       <Telemetry>
-        <PreviousWorkflowId value="d87a1e60-8ef6-4cc8-80ac-c7f7fa7c5e53" />
+        <PreviousWorkflowId value="4e9c1cb0-845f-41a7-b8d9-1d35d7761762" />
         <OriginWorkflowId value="a83a1aa5-fe6d-4060-ad07-2831d0abeaac" />
       </Telemetry>
     </MetaInfo>
