@@ -1,7 +1,6 @@
 -- Business Questions for Purshasing DW
 
 -- What are AdventureWorks purchases (Purchase cost & quantity) by product? 
-select * from factpurchases
 
 with valuesa as (
 select  (unitPrice*orderQuantity) as "Ordervalue",  fp.ProductID, dp.Name, orderQuantity
@@ -31,8 +30,7 @@ from factPurchases fp
 join dimvendor dv
 on fp.VendorBusinessEntityID = dv.VendorBusinessEntityID
 ) 
-select distinct VendorBusinessEntityID, name, sum(t.salesAmount) as "totalSales", 
---(select sum(salesAmount) from factPurchases fp3 where fp3.VendorBusinessEntityID = t.VendorBusinessEntityID) as "totalSales", 
+select distinct VendorBusinessEntityID, name, sum(t.salesAmount) as "totalSales",  
 (select sum(orderQuantity) from factPurchases fp2 where fp2.VendorBusinessEntityID = t.VendorBusinessEntityID) as "purchasedQuantity"
 from temp t
 group by VendorBusinessEntityID, name
