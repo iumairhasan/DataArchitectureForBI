@@ -134,3 +134,25 @@ select * from "VendorGeo"
 order by 1, 2
 
 
+select * from vendorContacts
+order by 1
+
+create view vendorContact as 
+with temp as (
+select distinct fp.factPurchaseSK, 
+fp.EmpBusinessEntityID,fp.VendorBusinessEntityID, salesAmount, taxAmt , frieght , totalDue, dv.name
+from factPurchases fp
+join dimvendor dv
+on fp.VendorBusinessEntityID = dv.VendorBusinessEntityID
+) 
+select vc.firstName, vc.lastName, vc.VendorName, sum(t.salesAmount) as totalSales, vc.contactType
+from temp t
+join vendorContacts vc
+on vc.VendorBusinessEntityID = t.VendorBusinessEntityID
+group by vc.firstName, vc.lastName, vc.VendorName, vc.contactType
+
+select * from vendorContact
+order by 3
+
+
+

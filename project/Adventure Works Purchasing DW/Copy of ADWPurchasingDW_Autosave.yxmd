@@ -1,6 +1,443 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="2021.3">
   <Nodes>
+    <Node ToolID="186">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="318" y="78" width="162" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>vendorContact</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="174">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="342" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File RecordLimit="" FileFormat="23">aka:AdventureWorks2019|||select AdventureWorks2019.Purchasing.Vendor.* 
+from AdventureWorks2019.Purchasing.Vendor</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:AdventureWorks2019
+Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BusinessEntityID" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Purchasing.Vendor.* &#xA;from AdventureWorks2019.Purchasing.Vendor" type="Int32" />
+                <Field name="AccountNumber" size="15" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Purchasing.Vendor.* &#xA;from AdventureWorks2019.Purchasing.Vendor" type="V_WString" />
+                <Field name="Name" size="50" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Purchasing.Vendor.* &#xA;from AdventureWorks2019.Purchasing.Vendor" type="V_WString" />
+                <Field name="CreditRating" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Purchasing.Vendor.* &#xA;from AdventureWorks2019.Purchasing.Vendor" type="Int16" />
+                <Field name="PreferredVendorStatus" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Purchasing.Vendor.* &#xA;from AdventureWorks2019.Purchasing.Vendor" type="Bool" />
+                <Field name="ActiveFlag" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Purchasing.Vendor.* &#xA;from AdventureWorks2019.Purchasing.Vendor" type="Bool" />
+                <Field name="PurchasingWebServiceURL" size="1024" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Purchasing.Vendor.* &#xA;from AdventureWorks2019.Purchasing.Vendor" type="V_WString" />
+                <Field name="ModifiedDate" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Purchasing.Vendor.* &#xA;from AdventureWorks2019.Purchasing.Vendor" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="175">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="390" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="23">aka:AdventureWorks2019|||select AdventureWorks2019.Person.BusinessEntityContact.* 
+from AdventureWorks2019.Person.BusinessEntityContact</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:AdventureWorks2019
+Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BusinessEntityID" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.BusinessEntityContact.* &#xA;from AdventureWorks2019.Person.BusinessEntityContact" type="Int32" />
+                <Field name="PersonID" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.BusinessEntityContact.* &#xA;from AdventureWorks2019.Person.BusinessEntityContact" type="Int32" />
+                <Field name="ContactTypeID" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.BusinessEntityContact.* &#xA;from AdventureWorks2019.Person.BusinessEntityContact" type="Int32" />
+                <Field name="rowguid" size="36" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.BusinessEntityContact.* &#xA;from AdventureWorks2019.Person.BusinessEntityContact" type="V_String" />
+                <Field name="ModifiedDate" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.BusinessEntityContact.* &#xA;from AdventureWorks2019.Person.BusinessEntityContact" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="176">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="582" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File RecordLimit="" FileFormat="23">aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* 
+from AdventureWorks2019.Person.Person</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:AdventureWorks2019
+Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BusinessEntityID" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="Int32" />
+                <Field name="PersonType" size="2" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="WString" />
+                <Field name="NameStyle" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="Bool" />
+                <Field name="Title" size="8" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="V_WString" />
+                <Field name="FirstName" size="50" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="V_WString" />
+                <Field name="MiddleName" size="50" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="V_WString" />
+                <Field name="LastName" size="50" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="V_WString" />
+                <Field name="Suffix" size="10" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="V_WString" />
+                <Field name="EmailPromotion" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="Int32" />
+                <Field name="AdditionalContactInfo" size="16777216" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="V_String" />
+                <Field name="Demographics" size="16777216" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="V_String" />
+                <Field name="rowguid" size="36" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="V_String" />
+                <Field name="ModifiedDate" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.Person.* &#xA;from AdventureWorks2019.Person.Person" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="177">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="510" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="BusinessEntityID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="BusinessEntityID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_BusinessEntityID" selected="True" input="Left_" />
+                    <SelectField field="Left_Name" selected="True" input="Left_" />
+                    <SelectField field="Right_BusinessEntityID" selected="False" rename="Right_BusinessEntityID" input="Right_" />
+                    <SelectField field="Right_PersonID" selected="True" input="Right_" />
+                    <SelectField field="Right_ContactTypeID" selected="True" input="Right_" />
+                    <SelectField field="Right_ModifiedDate" selected="False" rename="Right_ModifiedDate" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="178">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="606" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BusinessEntityID" selected="True" />
+                <SelectField field="PersonID" selected="True" />
+                <SelectField field="Name" selected="True" rename="VendorName" />
+                <SelectField field="ContactTypeID" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="179">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="822" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File RecordLimit="" FileFormat="23">aka:AdventureWorks2019|||select AdventureWorks2019.Person.ContactType.* 
+from AdventureWorks2019.Person.ContactType</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:AdventureWorks2019
+Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ContactTypeID" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.ContactType.* &#xA;from AdventureWorks2019.Person.ContactType" type="Int32" />
+                <Field name="Name" size="50" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.ContactType.* &#xA;from AdventureWorks2019.Person.ContactType" type="V_WString" />
+                <Field name="ModifiedDate" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.ContactType.* &#xA;from AdventureWorks2019.Person.ContactType" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="180">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="714" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="PersonID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="BusinessEntityID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_BusinessEntityID" selected="False" rename="Right_BusinessEntityID" input="Right_" />
+                    <SelectField field="Right_PersonType" selected="False" input="Right_" />
+                    <SelectField field="Right_NameStyle" selected="False" input="Right_" />
+                    <SelectField field="Right_Title" selected="False" input="Right_" />
+                    <SelectField field="Right_MiddleName" selected="False" input="Right_" />
+                    <SelectField field="Right_Suffix" selected="False" input="Right_" />
+                    <SelectField field="Right_EmailPromotion" selected="False" input="Right_" />
+                    <SelectField field="Right_AdditionalContactInfo" selected="False" input="Right_" />
+                    <SelectField field="Right_Demographics" selected="False" input="Right_" />
+                    <SelectField field="Right_rowguid" selected="False" input="Right_" />
+                    <SelectField field="Right_ModifiedDate" selected="False" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="181">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="822" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="182">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="930" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="ContactTypeID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="ContactTypeID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_ContactTypeID" selected="False" rename="Right_ContactTypeID" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="183">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1026" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BusinessEntityID" selected="True" rename="vendorBusinessEntityID" />
+                <SelectField field="PersonID" selected="True" rename="VendorPersonID" />
+                <SelectField field="VendorName" selected="True" rename="vendorName" />
+                <SelectField field="FirstName" selected="True" rename="firstName" />
+                <SelectField field="LastName" selected="True" rename="lastName" />
+                <SelectField field="Name" selected="True" rename="contactType" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="184">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1146" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\umair\AppData\Local\Temp\Engine_11524_caf097b2fc6141159d1b5db8cc6f8b29_\Engine_15804_31e77a77605e4258967d134ff11e055c_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="185">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1122" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:team7_AdventureWorksPurchasingDW|||vendorContacts</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:team7_AdventureWorksPurchasingDW
+Query=vendorContacts</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
     <Node ToolID="169">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
         <Position x="871" y="54" width="157" height="24" />
@@ -2753,23 +3190,14 @@ DI_Create_Date = Dat...</DefaultAnnotationText>
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="773" y="184" width="781" height="426" />
+        <Position x="78" y="78" width="143" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>dimVendor</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="True" />
-          <Folded value="False" />
-          <Caption>dimVendor</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
-          <Caption>dimVendor</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="True" />
-          <Caption>dimVendor</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
+          <Folded value="True" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -2780,7 +3208,7 @@ DI_Create_Date = Dat...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="28">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="798" y="233" />
+            <Position x="102" y="126" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2829,7 +3257,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="29">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="906" y="233" />
+            <Position x="210" y="126" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2856,7 +3284,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1062" y="234" />
+            <Position x="366" y="126" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2884,7 +3312,7 @@ Query=select AdventureWorks2019.Pu...</DefaultAnnotationText>
         </Node>
         <Node ToolID="113">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1110" y="342" />
+            <Position x="414" y="234" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2909,7 +3337,7 @@ DI_Create_Date = Dat...</DefaultAnnotationText>
         </Node>
         <Node ToolID="117">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1350" y="378" />
+            <Position x="654" y="269" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2937,7 +3365,7 @@ DI_Create_Date = Dat...</DefaultAnnotationText>
         </Node>
         <Node ToolID="118">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="1314" y="246" />
+            <Position x="618" y="138" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2969,7 +3397,7 @@ Query=dimVendor</DefaultAnnotationText>
         </Node>
         <Node ToolID="119">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1182" y="378" />
+            <Position x="486" y="270" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3003,7 +3431,7 @@ Query=dimVendor</DefaultAnnotationText>
         </Node>
         <Node ToolID="112">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1470" y="414" />
+            <Position x="774" y="306" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3031,7 +3459,7 @@ Query=dimVendor</DefaultAnnotationText>
         </Node>
         <Node ToolID="116">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1350" y="450" />
+            <Position x="654" y="342" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3069,7 +3497,7 @@ Query=dimVendor</DefaultAnnotationText>
         </Node>
         <Node ToolID="120">
           <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-            <Position x="1254" y="414" />
+            <Position x="558" y="306" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3089,7 +3517,7 @@ Query=dimVendor</DefaultAnnotationText>
         </Node>
         <Node ToolID="121">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1350" y="510" />
+            <Position x="654" y="402" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3117,7 +3545,7 @@ Query=dimVendor</DefaultAnnotationText>
         </Node>
         <Node ToolID="170">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="798" y="449" />
+            <Position x="102" y="342" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3142,9 +3570,6 @@ from AdventureWorks2019.Person.BusinessEntityAddress</File>
 Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="BusinessEntityID" source="File: aka:AdventureWorks2019|||select AdventureWorks2019.Person.BusinessEntityAddress.* &#xA;from AdventureWorks2019.Person.BusinessEntityAddress" type="Int32" />
@@ -3159,7 +3584,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="172">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="882" y="401" />
+            <Position x="186" y="294" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -3191,7 +3616,7 @@ Query=select AdventureWorks2019.Pe...</DefaultAnnotationText>
         </Node>
         <Node ToolID="173">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="978" y="401" />
+            <Position x="281" y="294" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -4460,6 +4885,50 @@ Query=dimProductSubcategory</DefaultAnnotationText>
     </Node>
   </Nodes>
   <Connections>
+    <Connection>
+      <Origin ToolID="174" Connection="Output" />
+      <Destination ToolID="177" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="175" Connection="Output" />
+      <Destination ToolID="177" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="176" Connection="Output" />
+      <Destination ToolID="180" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="178" Connection="Output" />
+      <Destination ToolID="180" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="177" Connection="Join" />
+      <Destination ToolID="178" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="179" Connection="Output" />
+      <Destination ToolID="182" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="181" Connection="Output" />
+      <Destination ToolID="182" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="180" Connection="Join" />
+      <Destination ToolID="181" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="182" Connection="Join" />
+      <Destination ToolID="183" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="183" Connection="Output" />
+      <Destination ToolID="184" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="183" Connection="Output" />
+      <Destination ToolID="185" Connection="Input" />
+    </Connection>
     <Connection>
       <Origin ToolID="146" Connection="Output" />
       <Destination ToolID="151" Connection="Left" />

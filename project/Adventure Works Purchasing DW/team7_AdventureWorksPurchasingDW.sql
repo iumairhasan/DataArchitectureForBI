@@ -271,6 +271,22 @@ go
  * TABLE: dimVendor 
  */
 
+create table vendorContacts(
+	vendorBusinessEntityID int not null,
+	VendorPersonID	 varchar(150) not null,
+	vendorName varchar(150) null,
+	firstName varchar(150) null,
+	lastName varchar(150) null,
+	contactType varchar(150) null
+	CONSTRAINT PK_vendorContacts_BusinessEntityID PRIMARY KEY NONCLUSTERED (VendorPersonID)
+)
+ALTER TABLE vendorContacts ADD CONSTRAINT RefdimVendor60 
+    FOREIGN KEY (vendorBusinessEntityID)
+    REFERENCES dimVendor(VendorBusinessEntityID)
+
+	select * from dimVendor
+
+
 CREATE TABLE dimVendor(
     VendorBusinessEntityID           int               NOT NULL,
     AccountNumber              varchar(75)       NULL,
