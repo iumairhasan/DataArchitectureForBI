@@ -1,0 +1,1174 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="120">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="1031" height="240" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>stgSales</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+          <Caption>stgSales</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="631" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreatedDate" size="10" type="Date" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreatedDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="955" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_8416_c0aa6b69a8f54affb8389c0b4ea60579_\Engine_22484_0eb530e091ad4f2aa6bfa3519ee3c0b3_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="367" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Invoice/Item Number" selected="True" type="V_String" size="16" />
+                <SelectField field="Date" selected="True" />
+                <SelectField field="Store Number" selected="True" />
+                <SelectField field="Store Name" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="Zip Code" selected="True" />
+                <SelectField field="Store Location" selected="True" />
+                <SelectField field="County Number" selected="True" />
+                <SelectField field="County" selected="True" />
+                <SelectField field="Category" selected="True" />
+                <SelectField field="Category Name" selected="True" />
+                <SelectField field="Vendor Number" selected="True" />
+                <SelectField field="Vendor Name" selected="True" />
+                <SelectField field="Item Number" selected="True" />
+                <SelectField field="Item Description" selected="True" />
+                <SelectField field="Pack" selected="True" />
+                <SelectField field="Bottle Volume (ml)" selected="True" />
+                <SelectField field="State Bottle Cost" selected="True" />
+                <SelectField field="State Bottle Retail" selected="True" />
+                <SelectField field="Bottles Sold" selected="True" />
+                <SelectField field="Sale (Dollars)" selected="True" />
+                <SelectField field="Volume Sold (Liters)" selected="True" />
+                <SelectField field="Volume Sold (Gallons)" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="235" y="137" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Invoice/Item Number" selected="True" />
+                <Field field="Date" selected="True" />
+                <Field field="Store Number" selected="True" />
+                <Field field="Store Name" selected="True" />
+                <Field field="Address" selected="True" />
+                <Field field="City" selected="True" />
+                <Field field="Zip Code" selected="True" />
+                <Field field="Store Location" selected="True" />
+                <Field field="County Number" selected="True" />
+                <Field field="County" selected="True" />
+                <Field field="Category" selected="True" />
+                <Field field="Category Name" selected="True" />
+                <Field field="Vendor Number" selected="True" />
+                <Field field="Vendor Name" selected="True" />
+                <Field field="Item Number" selected="True" />
+                <Field field="Item Description" selected="True" />
+                <Field field="Pack" selected="True" />
+                <Field field="Bottle Volume (ml)" selected="True" />
+                <Field field="State Bottle Cost" selected="True" />
+                <Field field="State Bottle Retail" selected="True" />
+                <Field field="Bottles Sold" selected="True" />
+                <Field field="Sale (Dollars)" selected="True" />
+                <Field field="Volume Sold (Liters)" selected="True" />
+                <Field field="Volume Sold (Gallons)" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="15" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="Date" size="10" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="Store Number" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Int16" />
+                <Field name="Store Name" size="45" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Address" size="31" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="City" size="15" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Zip Code" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Int32" />
+                <Field name="Store Location" size="45" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="County Number" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Byte" />
+                <Field name="County" size="10" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="Category" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Int32" />
+                <Field name="Category Name" size="35" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Vendor Number" size="3" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="Vendor Name" size="49" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Item Number" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Int32" />
+                <Field name="Item Description" size="51" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Pack" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Byte" />
+                <Field name="Bottle Volume (ml)" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Int16" />
+                <Field name="State Bottle Cost" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Double" />
+                <Field name="State Bottle Retail" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Double" />
+                <Field name="Bottles Sold" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Int16" />
+                <Field name="Sale (Dollars)" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Double" />
+                <Field name="Volume Sold (Liters)" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Double" />
+                <Field name="Volume Sold (Gallons)" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Sales.tsv" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="499" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Date</InputFieldName>
+              <Language>English</Language>
+              <Format>MM-dd-yyyy</Format>
+              <OutputFieldName>dateOfSale</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Date From:
+MM-dd-yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="119">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="955" y="163" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:IowaLiquorSalesModel|||stgSales</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Create</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:IowaLiquorSalesModel
+Query=stgSales</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="138">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="882" width="719" height="327" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>stgItemsSCD</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="86">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="247" y="1003" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Category" selected="True" />
+                <SelectField field="Category Name" selected="True" />
+                <SelectField field="Vendor Number" selected="True" />
+                <SelectField field="Vendor Name" selected="True" />
+                <SelectField field="Item Number" selected="True" />
+                <SelectField field="Item Description" selected="True" />
+                <SelectField field="Pack" selected="True" />
+                <SelectField field="Bottle Volume (ml)" selected="True" />
+                <SelectField field="State Bottle Cost" selected="True" />
+                <SelectField field="State Bottle Retail" selected="True" />
+                <SelectField field="dateOfSale" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="88">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="367" y="1003" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Category" action="GroupBy" rename="Category" />
+                <SummarizeField field="Category Name" action="GroupBy" rename="Category Name" />
+                <SummarizeField field="Vendor Number" action="GroupBy" rename="Vendor Number" />
+                <SummarizeField field="Vendor Name" action="GroupBy" rename="Vendor Name" />
+                <SummarizeField field="Item Number" action="GroupBy" rename="Item Number" />
+                <SummarizeField field="Pack" action="GroupBy" rename="Pack" />
+                <SummarizeField field="Bottle Volume (ml)" action="GroupBy" rename="Bottle Volume (ml)" />
+                <SummarizeField field="dateOfSale" action="First" rename="First_dateOfSale" />
+                <SummarizeField field="dateOfSale" action="Last" rename="Last_dateOfSale" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="511" y="1003" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Category" selected="True" />
+                <SelectField field="Category Name" selected="True" />
+                <SelectField field="Vendor Number" selected="True" />
+                <SelectField field="Vendor Name" selected="True" />
+                <SelectField field="Item Number" selected="True" />
+                <SelectField field="Pack" selected="True" />
+                <SelectField field="Bottle Volume (ml)" selected="True" />
+                <SelectField field="First_dateOfSale" selected="True" />
+                <SelectField field="Last_dateOfSale" selected="True" />
+                <SelectField field="State Bottle Cost" selected="True" />
+                <SelectField field="State Bottle Retail" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="655" y="931" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_15920_a1ac77dc7a4845258e11a1d36b6e3a26_\Engine_19860_a99ab9326dcc4ce0a4ad54dc7e5b5903_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="137">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="1003" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File RecordLimit="" FileFormat="23">aka:IowaLiquorSalesModel|||select stgSales.*,
+	stgSales.[Item Number] as [Item Number1],
+	stgSales.[Vendor Name] as [Vendor Name1],
+	stgSales.[Vendor Number] as [Vendor Number1],
+	stgSales.[Category Name] as [Category Name1],
+	stgSales.Category as Category1,
+	stgSales.County as County1,
+	stgSales.[County Number] as [County Number1],
+	stgSales.[Store Location] as [Store Location1],
+	stgSales.[Zip Code] as [Zip Code1],
+	stgSales.City as City1,
+	stgSales.Address as Address1,
+	stgSales.[Store Name] as [Store Name1],
+	stgSales.[Store Number] as [Store Number1],
+	stgSales.Date as Date1,
+	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],
+	stgSales.DI_CreatedDate as DI_CreatedDate1,
+	stgSales.dateOfSale as dateOfSale1,
+	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],
+	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],
+	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],
+	stgSales.[Bottles Sold] as [Bottles Sold1],
+	stgSales.[State Bottle Retail] as [State Bottle Retail1],
+	stgSales.[State Bottle Cost] as [State Bottle Cost1],
+	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],
+	stgSales.[Item Description] as [Item Description1],
+	stgSales.Pack as Pack1 
+from stgSales</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:IowaLiquorSalesModel
+Query=select stgSales.*,
+	stgSale...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="16" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="Date" size="10" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="String" />
+                <Field name="Store Number" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Int16" />
+                <Field name="Store Name" size="47" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="Address" size="35" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="City" size="17" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="Zip Code" size="5" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="String" />
+                <Field name="Store Location" size="45" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="County Number" size="2" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="String" />
+                <Field name="County" size="13" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="Category" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Int32" />
+                <Field name="Category Name" size="36" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="Vendor Number" size="3" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="String" />
+                <Field name="Vendor Name" size="67" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_WString" />
+                <Field name="Item Number" size="7" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="String" />
+                <Field name="Item Description" size="63" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_WString" />
+                <Field name="Pack" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Int16" />
+                <Field name="Bottle Volume (ml)" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Int32" />
+                <Field name="State Bottle Cost" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Double" />
+                <Field name="State Bottle Retail" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Double" />
+                <Field name="Bottles Sold" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Int16" />
+                <Field name="Sale (Dollars)" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Double" />
+                <Field name="Volume Sold (Liters)" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Double" />
+                <Field name="Volume Sold (Gallons)" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Double" />
+                <Field name="dateOfSale" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Date" />
+                <Field name="DI_CreatedDate" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Date" />
+                <Field name="Item Number1" size="7" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="String" />
+                <Field name="Vendor Name1" size="67" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_WString" />
+                <Field name="Vendor Number1" size="3" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="String" />
+                <Field name="Category Name1" size="36" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="Category1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Int32" />
+                <Field name="County1" size="13" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="County Number1" size="2" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="String" />
+                <Field name="Store Location1" size="45" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="Zip Code1" size="5" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="String" />
+                <Field name="City1" size="17" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="Address1" size="35" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="Store Name1" size="47" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="Store Number1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Int16" />
+                <Field name="Date1" size="10" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="String" />
+                <Field name="Invoice/Item Number1" size="16" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_String" />
+                <Field name="DI_CreatedDate1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Date" />
+                <Field name="dateOfSale1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Date" />
+                <Field name="Volume Sold (Gallons)1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Double" />
+                <Field name="Volume Sold (Liters)1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Double" />
+                <Field name="Sale (Dollars)1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Double" />
+                <Field name="Bottles Sold1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Int16" />
+                <Field name="State Bottle Retail1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Double" />
+                <Field name="State Bottle Cost1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Double" />
+                <Field name="Bottle Volume (ml)1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Int32" />
+                <Field name="Item Description1" size="63" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="V_WString" />
+                <Field name="Pack1" source="File: aka:IowaLiquorSalesModel|||select stgSales.*,&#xA;	stgSales.[Item Number] as [Item Number1],&#xA;	stgSales.[Vendor Name] as [Vendor Name1],&#xA;	stgSales.[Vendor Number] as [Vendor Number1],&#xA;	stgSales.[Category Name] as [Category Name1],&#xA;	stgSales.Category as Category1,&#xA;	stgSales.County as County1,&#xA;	stgSales.[County Number] as [County Number1],&#xA;	stgSales.[Store Location] as [Store Location1],&#xA;	stgSales.[Zip Code] as [Zip Code1],&#xA;	stgSales.City as City1,&#xA;	stgSales.Address as Address1,&#xA;	stgSales.[Store Name] as [Store Name1],&#xA;	stgSales.[Store Number] as [Store Number1],&#xA;	stgSales.Date as Date1,&#xA;	stgSales.[Invoice/Item Number] as [Invoice/Item Number1],&#xA;	stgSales.DI_CreatedDate as DI_CreatedDate1,&#xA;	stgSales.dateOfSale as dateOfSale1,&#xA;	stgSales.[Volume Sold (Gallons)] as [Volume Sold (Gallons)1],&#xA;	stgSales.[Volume Sold (Liters)] as [Volume Sold (Liters)1],&#xA;	stgSales.[Sale (Dollars)] as [Sale (Dollars)1],&#xA;	stgSales.[Bottles Sold] as [Bottles Sold1],&#xA;	stgSales.[State Bottle Retail] as [State Bottle Retail1],&#xA;	stgSales.[State Bottle Cost] as [State Bottle Cost1],&#xA;	stgSales.[Bottle Volume (ml)] as [Bottle Volume (ml)1],&#xA;	stgSales.[Item Description] as [Item Description1],&#xA;	stgSales.Pack as Pack1 &#xA;from stgSales" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="139">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="643" y="1063" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:IowaLiquorSalesModel|||stgItemsSCD</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Create</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:IowaLiquorSalesModel
+Query=stgItemsSCD</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="136">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="306" width="875" height="264" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>stgStores</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="129">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="391" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Iowa_Liquor_Stores.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Store" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Name" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Store Status" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="State" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Store Address" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Report Date" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="130">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="235" y="391" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Store" selected="True" />
+                <Field field="Name" selected="True" />
+                <Field field="Store Status" selected="True" />
+                <Field field="Address" selected="True" />
+                <Field field="City" selected="True" />
+                <Field field="State" selected="True" />
+                <Field field="Zip Code" selected="True" />
+                <Field field="Store Address" selected="True" />
+                <Field field="Report Date" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Store" size="4" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="String" />
+                <Field name="Name" size="47" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_String" />
+                <Field name="Store Status" size="1" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="String" />
+                <Field name="Address" size="35" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_String" />
+                <Field name="City" size="17" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_String" />
+                <Field name="State" size="2" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="String" />
+                <Field name="Zip Code" size="5" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="String" />
+                <Field name="Store Address" size="45" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="V_String" />
+                <Field name="Report Date" size="10" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Stores.tsv" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="131">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="379" y="391" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Store" selected="True" />
+                <SelectField field="Name" selected="True" />
+                <SelectField field="Store Status" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="State" selected="True" />
+                <SelectField field="Zip Code" selected="True" />
+                <SelectField field="Store Address" selected="True" />
+                <SelectField field="Report Date" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="132">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="523" y="391" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Report Date</InputFieldName>
+              <Language>English</Language>
+              <Format>MM-dd-yyyy</Format>
+              <OutputFieldName>DateTime_Out</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Report Date From:
+MM-dd-yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="133">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="655" y="391" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreatedDate" size="19" type="DateTime" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreatedDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="134">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="799" y="355" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_11844_d1cdef2ac5614a28852faa425914cf67_\Engine_19860_bf20ef3c05e842b59af18d1b47773b09_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="799" y="439" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:IowaLiquorSalesModel|||stgStores</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Create</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:IowaLiquorSalesModel
+Query=stgStores</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="128">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="594" width="899" height="267" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>stgProducts</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="121">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Iowa_Liquor_Products.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Item Number" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Vendor" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Inner Pack" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Age" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Proof" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="List Date" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="UPC" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="SCC" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="State Case Cost" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Report Date" size="254" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="122">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="223" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Item Number" selected="True" />
+                <Field field="Category Name" selected="True" />
+                <Field field="Item Description" selected="True" />
+                <Field field="Vendor" selected="True" />
+                <Field field="Vendor Name" selected="True" />
+                <Field field="Bottle Volume (ml)" selected="True" />
+                <Field field="Pack" selected="True" />
+                <Field field="Inner Pack" selected="True" />
+                <Field field="Age" selected="True" />
+                <Field field="Proof" selected="True" />
+                <Field field="List Date" selected="True" />
+                <Field field="UPC" selected="True" />
+                <Field field="SCC" selected="True" />
+                <Field field="State Bottle Cost" selected="True" />
+                <Field field="State Case Cost" selected="True" />
+                <Field field="State Bottle Retail" selected="True" />
+                <Field field="Report Date" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Item Number" size="7" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="String" />
+                <Field name="Category Name" size="36" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_String" />
+                <Field name="Item Description" size="60" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Vendor" size="3" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="String" />
+                <Field name="Vendor Name" size="67" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="V_String" />
+                <Field name="Bottle Volume (ml)" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="Int16" />
+                <Field name="Pack" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="Inner Pack" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="Age" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="Int16" />
+                <Field name="Proof" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="List Date" size="10" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="String" />
+                <Field name="UPC" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="Int64" />
+                <Field name="SCC" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="Int64" />
+                <Field name="State Bottle Cost" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="Double" />
+                <Field name="State Case Cost" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="Double" />
+                <Field name="State Bottle Retail" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="Double" />
+                <Field name="Report Date" size="10" source="File: C:\Users\ameya\Documents\NEU\DAMG\IowaLiquorSales Data Model\Data\Iowa_Liquor_Products.tsv" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="123">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="367" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Item Number" selected="True" />
+                <SelectField field="Category Name" selected="True" />
+                <SelectField field="Item Description" selected="True" />
+                <SelectField field="Vendor" selected="True" />
+                <SelectField field="Vendor Name" selected="True" />
+                <SelectField field="Bottle Volume (ml)" selected="True" />
+                <SelectField field="Pack" selected="True" />
+                <SelectField field="Inner Pack" selected="True" />
+                <SelectField field="Age" selected="True" />
+                <SelectField field="Proof" selected="True" />
+                <SelectField field="List Date" selected="True" />
+                <SelectField field="UPC" selected="True" />
+                <SelectField field="SCC" selected="True" />
+                <SelectField field="State Bottle Cost" selected="True" />
+                <SelectField field="State Case Cost" selected="True" />
+                <SelectField field="State Bottle Retail" selected="True" />
+                <SelectField field="Report Date" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="124">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="499" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Report Date</InputFieldName>
+              <Language>English</Language>
+              <Format>MM-dd-yyyy</Format>
+              <OutputFieldName>DateTime_Out</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Report Date From:
+MM-dd-yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="125">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="655" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreatedDate" size="19" type="DateTime" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreatedDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="126">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="811" y="643" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ameya\AppData\Local\Temp\Engine_24788_b208c943b47d47c4b8ada47e29c7aa3f_\Engine_19860_a5748a34d2794016b7fe8c3d6887f21e_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="127">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="823" y="715" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:IowaLiquorSalesModel|||stgProducts</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Create</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:IowaLiquorSalesModel
+Query=stgProducts</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="139" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="129" Connection="Output" />
+      <Destination ToolID="130" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="131" Connection="Output" />
+      <Destination ToolID="132" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="132" Connection="Output" />
+      <Destination ToolID="133" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="133" Connection="Output" />
+      <Destination ToolID="134" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="133" Connection="Output" />
+      <Destination ToolID="135" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output" />
+      <Destination ToolID="122" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="122" Connection="Output" />
+      <Destination ToolID="123" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="123" Connection="Output" />
+      <Destination ToolID="124" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="Output" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="Output" />
+      <Destination ToolID="126" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="Output" />
+      <Destination ToolID="127" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Team7_IowaLiquorSales_Staging</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="bc9ae5f6-116e-468d-923b-e0576b25680f" />
+      <Telemetry>
+        <PreviousWorkflowId value="9a7afcad-71df-4282-8a51-96c517b5feee" />
+        <OriginWorkflowId value="82c98afe-094d-4579-85d7-97fa67542e4c" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
