@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:DPht7xr8dkVq2UxbBWg2Ki1jGnlMLJY0rjx+kR43"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:mprKgFmogwpd3RZ3873p3TvhWZTlMg2JY9OxUYHI"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/Fpv7dKhmOTQnM1fcXull/g1S0CuVb0O/4pC0afx"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nzcjRI8a38M8RUJzkkmtDmrUZHFv10+9W9bYuXlm"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -119,7 +119,7 @@
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_SQro0DO9EeyVpIpNjOxRHA - dimProduct_brief"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/umair/OneDrive - Northeastern University/COURSES/NEU/DAMG 7390 - Ric Sherman/DataArchitectureForBI/workshops/workshop 4/dimProduct_brief.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/umair/OneDrive - Northeastern University/COURSES/NEU/DAMG 7390 - Ric Sherman/DABI GIT/DataArchitectureForBI/workshops/workshop 4/dimProduct_brief.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -338,7 +338,7 @@
       <column comment="" key="false" length="20" name="DI_JobID" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables minimized="true" name="out_product_log" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="get_product_brief.ProductKey " name="ProductKey" nullable="true" type="id_Integer"/>
@@ -469,7 +469,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;damg7370_output&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;damg7370&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:donLYDH5JrnWqwcFakvyAnnvNMN0a2C9gAFdWk3OJZ6chs3BYbc="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:StmOGjj5lH9KNXJauLqjiNIjHWafV4swi+N3sBQwJm6+E5zZi60="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimProduct_Brief&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -632,7 +632,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;damg7370_output&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;damg7370&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5dX6uXnQ9bYEZUXuboQPXyeRV6+wjRYTCYcV/fzqjozh7Bfjut8="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:17v9j11FTj5faZ3ZxBy6s7rDmrWxl/BVoS54wb2mZ1lwtiB6sjQ="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimProduct_Brief&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -797,7 +797,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;XEPDB1&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;DAMG7370_OUTPUT&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;DAMG7370_OUTPUT&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xzfdrnipMLkAUdGsCCcu0Ch76AvZ0uV/aRZXq2cqFQjrvk9Jihw="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EflGnmo5aKM5xHorq+zKetyiRvr/cItgkoCZvS0jVc5NH89ynUE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimProduct_Brief&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -949,7 +949,7 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;damg7370&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KxBnluF+7v7Uaz/8rdTKGNDxNBGCLusTl7AMKGKWH9E6nolfaVg="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qJJIpw9oIGS5cJwcgplcDDCT5BRB79e2ed93qQeejJJHsuHZpnM="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimProduct_Brief&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1091,7 +1091,7 @@
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_rukisDKwEeyz_P2pAQNj2w - metadata"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/umair/OneDrive - Northeastern University/COURSES/NEU/DAMG 7390 - Ric Sherman/DataArchitectureForBI/workshops/workshop 4/dimProductSubcategory.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/umair/OneDrive - Northeastern University/COURSES/NEU/DAMG 7390 - Ric Sherman/DABI GIT/DataArchitectureForBI/workshops/workshop 4/dimProductSubcategory.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -1165,7 +1165,7 @@
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_NHzHADQLEeyOjbAypDt_Ng - dimProduct_Category"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/umair/OneDrive - Northeastern University/COURSES/NEU/DAMG 7390 - Ric Sherman/DataArchitectureForBI/workshops/workshop 4/dimProductCategory.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/umair/OneDrive - Northeastern University/COURSES/NEU/DAMG 7390 - Ric Sherman/DABI GIT/DataArchitectureForBI/workshops/workshop 4/dimProductCategory.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -1238,9 +1238,9 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;damg7370_output&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;damg7370&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:U9XQDQZfYKe3Eu0sfJ70S0311ZxXA5U/wDhAM6n9Nf4b4KWRVPs="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:eL0PypFsW+aEMZzofjat8kFoUGYYLN3d8QIB6ly+YB04NxB5AtI="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimProduct_Brief_rejects&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
@@ -1291,7 +1291,7 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="dimProduct_Brief"/>
+    <elementParameter field="TEXT" name="LABEL" value="dimProduct_Brief_rejects"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="rejects" name="tDBOutput_5">
       <column comment="" key="false" length="10" name="ProductKey" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -1478,13 +1478,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6d40d1b9-63b3-4229-96ef-d53d34729a85"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xVDGALh64rEyPLoPqGkAkz9py6OGpzK71Mg7Wn6/MNFLFUE35fWUsRkykidtDOX2EkOQG2UeQ/Lk
-h0F07ouZrA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_514a7498-d043-400f-9c9d-f361ac2433c8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bN6ZVMCVsOjQtSerezQSrMvSqhQFUpjH9yhwOF7ePuvs+RnQVl761KJaON3GFiq4f385Dzvy7SNs
-o+5jw+KegA==</DigestValue></Reference></SignedInfo><SignatureValue>pTHxeEkDBQR47dMIvsf9/mUiSpPm3Gxbm529AYRb7LTbxPjxp1wxxLl6jwEMMA9f/sdrxTd2HkX8
-YdHfyI3bM/dZ+wRB6un6rrYLxf7sKcCCKkhGHQ8nz5waAVmUB77hYQZV3v3uDbTg6t3QAlGynohI
-zqxijsexeu3J2Ft2mgpI07ckfRDtMHQwXg1SU8e0F8TRh0tNqRo2CR89l9zGMHfOB1LS/A5tQUfv
-Ngx/V5jZDTR7+oGJO53yTX4eTxFCMkoS8/8BPQQp0OVn7X+nU7yKhoWByPFf8zb+v0EgO/k5Oldm
-iyII3mWcbzQwvqCXDiv2HXrFyDzUrQviUKNrLg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3cf84f8f-a652-4fc8-a835-81d9591020bc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CJmloMXZjeCImr0wxqOUStmFEYINq1q1hydOkvPBsg6Tc05A4tKTMaJlNs/CCg9TYEz3FMNo3YTL
+cp0EAh5vow==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b3b1fc9c-5d77-4a4a-849e-f3155148844a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UAcGEMjggfqnyXs83GEu2PMriFLrhHJ3IaOzIXbiQl9A5nL2PQm1hcPoxsJ15E2Qs6fqA12ThnGB
+L3rEYmzl6g==</DigestValue></Reference></SignedInfo><SignatureValue>KSxYrk4JKub4NqYVZdM5mPihLPjdz5CNQP7J1h/z5V+d/wFcLLAxFsz5QQyHgYnDZlAI9CKPU/sI
+wqFfzJMu++LMtfenveboOIiKRlgL8FZ/UznqCBuMmwFQ8t/7i7V757AYlRGguSHmDiBI8RF9z34s
+nlKVCPggtlNUklb/deaXonJR8P/Qf0uu2huBVuZGA0TQGd6xS68N4E74aL6N/xzGsNQ+PXBJozV1
+8356IWOaewEEQUfM/9bLiaDx6ARejPZ8rljFReLUJ99r/VahqOdnK/hzjEjTvjPYaEDjlJKqnad9
+t+cBbzqrlQNj30GMH6E00s1TdZv+MQ/UvjN8Dw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -1506,4 +1506,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_514a7498-d043-400f-9c9d-f361ac2433c8" Target="#_6d40d1b9-63b3-4229-96ef-d53d34729a85"><Timestamp>2021-10-23 14:52:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b3b1fc9c-5d77-4a4a-849e-f3155148844a" Target="#_3cf84f8f-a652-4fc8-a835-81d9591020bc"><Timestamp>2021-10-23 18:31:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
