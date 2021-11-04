@@ -3,7 +3,7 @@ use AdventureWorksDW2019;
 order size (sales amount) of reseller sales by Product Hierarchy (Category, Subcategory, Model & 
 Product) and ranked by sales?*/
 Select d.ProductCategory, d.ProductSubcategory, d.ProductModel, d.ProductName, sum(SalesAmount) as Sales, sum(DiscountAmount) as discountAmount, TotalProductCost as productCost, 
-		sum(TotalProductCost - SalesAmount) as Profit, sum(OrderQuantity) as orderQuantity, count(SalesOrderNumber) as "Number of Orders",
+		sum(SalesAmount - TotalProductCost) as Profit, sum(OrderQuantity) as orderQuantity, count(SalesOrderNumber) as "Number of Orders",
 		AVG(SalesAmount) as "Average Order Size"
 From dbo.FactResellerSales_qvw f
 Join dbo.DimProduct_qvw d
@@ -13,27 +13,31 @@ Order By Sales Desc, d.ProductCategory, d.ProductSubcategory, d.ProductModel ;
 
 /*What are the sales, discount amounts, product costs, profit, quantity ordered, number of orders & average 
 order size (sales amount) of reseller sales by reseller hierarchy (business type, reseller name)?*/
-Select d.BusinessType, d.ResellerName, sum(SalesAmount) as Sales, sum(DiscountAmount) as discountAmount, TotalProductCost, 
-		sum(TotalProductCost - SalesAmount) as Profit, sum(OrderQuantity) orderQuantity, count(SalesOrderNumber) as "Number of Orders",
+Select d.BusinessType, d.ResellerName, p.ProductName, sum(SalesAmount) as Sales, sum(DiscountAmount) as discountAmount, TotalProductCost, 
+		sum(SalesAmount - TotalProductCost) as Profit, sum(OrderQuantity) orderQuantity, count(SalesOrderNumber) as "Number of Orders",
 		AVG(SalesAmount) as "Average Order Size"
 From dbo.FactResellerSales_qvw f
 Join dbo.DimReseller_qvw d
 On f.ResellerKey = d.ResellerKey
-Group By d.BusinessType, d.ResellerName, f.TotalProductCost
-Order By d.BusinessType, d.ResellerName, Sales Desc;
+join dbo.DimProduct_qvw p
+on f.ProductKey = p.ProductKey
+Group By d.BusinessType, d.ResellerName, p.ProductName, f.TotalProductCost
+Order By d.BusinessType, d.ResellerName,p.ProductName, Sales Desc;
 
 /*What are the sales, discount amounts, product costs, profit, quantity ordered, number of orders & average 
 order size (sales amount) of reseller sales by Geo Hierarchy (Country, State/Province & City of Reseller)?*/
-Select d.BusinessType, d.ResellerName, g.CountryRegion, g.StateProvince, g.City, f.TotalProductCost, sum(SalesAmount) as Sales, sum(DiscountAmount) as discountAmount, 
-		sum(TotalProductCost - SalesAmount) as Profit, sum(OrderQuantity) as orderQuantity, count(SalesOrderNumber) as "Number of Orders",
+Select d.BusinessType, d.ResellerName, g.CountryRegion, g.StateProvince, g.City, p.ProductName, f.TotalProductCost, sum(SalesAmount) as Sales, sum(DiscountAmount) as discountAmount, 
+		sum(SalesAmount - TotalProductCost) as Profit, sum(OrderQuantity) as orderQuantity, count(SalesOrderNumber) as "Number of Orders",
 		AVG(SalesAmount) as "Average Order Size"
 From dbo.FactResellerSales_qvw f
 Join dbo.DimReseller_qvw d
 On f.ResellerKey = d.ResellerKey
+join dbo.DimProduct_qvw p
+on f.ProductKey = p.ProductKey
 Join dbo.DimGeography_qvw g
 On d.GeographyKey = g.GeographyKey
-Group By d.BusinessType, d.ResellerName, g.CountryRegion, g.StateProvince, g.City, f.TotalProductCost
-Order By d.BusinessType, d.ResellerName, g.CountryRegion, g.StateProvince, g.City, Sales Desc;
+Group By d.BusinessType, d.ResellerName, g.CountryRegion, g.StateProvince, g.City,p.ProductName, f.TotalProductCost
+Order By d.BusinessType, d.ResellerName, g.CountryRegion, g.StateProvince, g.City,p.ProductName, Sales Desc;
 
 /*Who are the top salespeople?*/
 
@@ -97,13 +101,20 @@ Group By e.EmployeeName
 Order By Sales Desc;
 
 /*Top Resellers (Stores) ranked*/
-Select Dense_RANK() Over (Order By sum(f.SalesAmount) Desc) as Rank, d.ResellerName, sum(f.SalesAmount) as Sales 
+Select top 10 Dense_RANK() Over (Order By sum(f.SalesAmount) Desc) as Rank, d.ResellerName, sum(f.SalesAmount) as Sales 
 From dbo.FactResellerSales_qvw f
 Join dbo.DimReseller_qvw d
 On f.ResellerKey = d.ResellerKey
 Group By d.ResellerName
 Order by Sales Desc;
 
+/*Top Resellers (Stores) ranked by profit*/
+Select top 10 Dense_RANK() Over (Order By sum(TotalProductCost - SalesAmount) Desc) as Rank, d.ResellerName, sum(SalesAmount - TotalProductCost) as Profit 
+From dbo.FactResellerSales_qvw f
+Join dbo.DimReseller_qvw d
+On f.ResellerKey = d.ResellerKey
+Group By d.ResellerName
+Order by sum(SalesAmount - TotalProductCost) Desc;
 
 /*Geo Contribution to Sales*/
 Select g.CountryRegion, g.StateProvince, g.City, p.ProductCategory , p.ProductSubcategory, p.ProductName, sum(f.SalesAmount) as Sales
@@ -118,17 +129,18 @@ Group By p.ProductCategory, p.ProductSubcategory, g.CountryRegion, g.StateProvin
 Order by  g.CountryRegion, g.StateProvince, g.City, p.ProductCategory , p.ProductSubcategory, p.ProductName, Sales Desc;
 
 /*Salespeople’s report with sales, profit and various person’s attributes*/
-Select e.EmployeeName, e.Gender, e.MaritalStatus, e.BirthDate, e.DepartmentName, sum(f.SalesAmount) as Sales, sum(f.TotalProductCost - f.SalesAmount) as Profit
+Select e.EmployeeName, e.Gender, e.MaritalStatus, e.BirthDate, e.DepartmentName, sum(f.SalesAmount) as Sales, sum(SalesAmount - TotalProductCost) as Profit,
+Year(f.orderDate) as yeara
 From dbo.FactResellerSales_qvw f
 Join dbo.DimEmployee_qvw e
 On f.EmployeeKey = e.EmployeeKey
-Group By e.EmployeeName, e.Gender, e.MaritalStatus, e.BirthDate, e.DepartmentName
-Order by Profit Desc;
+Group By e.EmployeeName, e.Gender, e.MaritalStatus, e.BirthDate, e.DepartmentName, Year(f.orderDate) 
+Order by Year(f.orderDate) ;
 
 /*Resellers’ report with sales, profit and various person’s attributes*/
-Select d.ResellerName, d.BusinessType, d.YearOpened, sum(f.SalesAmount) as Sales, sum(f.TotalProductCost - f.SalesAmount) as Profit
+Select  d.BusinessType, d.ResellerName, sum(f.SalesAmount) as Sales, sum(SalesAmount - TotalProductCost) as Profit, Year(f.orderDate) as yeara
 From dbo.FactResellerSales_qvw f
 Join dbo.DimReseller_qvw d
 On f.ResellerKey = d.ResellerKey
-Group By d.ResellerName, d.BusinessType, d.YearOpened
-Order by Profit Desc;
+Group By d.BusinessType, d.ResellerName, Year(f.orderDate) 
+Order by Year(f.orderDate) ;
